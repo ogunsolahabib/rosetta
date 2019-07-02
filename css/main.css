@@ -1,0 +1,11 @@
+.navbar-fixed .brand-logo img {
+  height: 80px;
+  margin-top: 20px;
+  z-index: 1;
+}
+.nav-wrapper li a {
+  color: #000 !important;
+}
+.nav-wrapper li .btn {
+  color: #fff !important;
+}
