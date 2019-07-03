@@ -9,3 +9,12 @@
 .nav-wrapper li .btn {
   color: #fff !important;
 }
+.active {
+  text-decoration: underline;
+}
+.btn {
+  border-radius: 5em !important;
+}
+.btn-large {
+  border-radius: 10em !important;
+}
