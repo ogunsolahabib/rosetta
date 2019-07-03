@@ -1,9 +1,10 @@
 .navbar-fixed .brand-logo img {
   /* height: 80px;
   margin-top: 20px; */
-  width:67px;
+  width: 67px;
   z-index: 1;
 }
+
 .nav-wrapper li a {
   color: #000 !important;
 }
