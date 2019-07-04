@@ -31,11 +31,11 @@
           </a>
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#search">Sign Up</a></li>
-            <li><a href="#gallery" class="btn indigo darken-1">Log In</a></li>
-            <li><a href="#popular">About</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="#login-modal" class="btn indigo darken-1 modal-trigger">Log In</a></li>
+            <li><a href="#about">About</a></li>
 
-            <li><a href="#contact">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
         </div>
       </div>
@@ -43,13 +43,13 @@
   </div>
   <ul class="right side-nav amber lighten-1 center" id="mobile-nav">
     <li><a href="index.html">Rosetta</a></li>
-    <li><a href="#search">Sign Up</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
 
     <li>
-      <a href="#popular" class="btn indigo darken-1 white-text">Log In</a>
+      <a href="#login-modal" class="btn indigo darken-1 white-text modal-trigger">Log In</a>
     </li>
-    <li><a href="#gallery">About</a></li>
-    <li><a href="#contact">Blog</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
   </ul>
 
   <!-- Section: Slider -->
@@ -192,8 +192,41 @@
     </div>
     </div>
   </section>
- 
-
+ <!-- Login Modal -->
+<div class="modal indigo-text" id="login-modal">
+  <div class="modal-content center">
+    <h3>Welcome Back!</h3>
+    <h5>Login to access and customize your plans</h5>
+    <br>
+    <form  class="center" action="">
+      <div class="input-field">
+        <input type="email" id="email" placeholder="me@example.com">
+        <label for="email"><h6 class="indigo-text">Email</h6></label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password" placeholder="Password">
+        <label for="password"><h6 class="indigo-text">Password</h6></label>
+      </div> 
+    </form>
+  </div>
+  <div class="modal-footer">
+      <div class= "container center">
+        <div class="row">
+            <button class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close"> Login
+                <i class="material-icons right hide-on-small-and-down">send</i>
+            </button>
+          <p class="col s12 m8">
+              <a href="#" class="modal-action modal-close indigo-text">Forgotten Password</a>
+           <!-- <input type="checkbox" class="filled-in" id="auto-login"/>
+          <label for="auto-login">Login automatically</label> -->
+          </p>
+        </div>
+        <div class="row">
+          <div class="col s12 black-text">Don't have an account? <a class="btn btn-flat indigo-text">Sign Up</a></div>
+        </div>
+      </div>
+  </div>
+</div>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -211,6 +244,8 @@
         transition: 500,
         interval: 4000
       });
+      // Init Login Modal
+      $(".modal").modal();
     });
   </script>
 </body>
