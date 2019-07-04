@@ -20,3 +20,21 @@
 .btn-large {
   border-radius: 10em !important;
 }
+.modal {
+  width: 25% !important ;
+  height: 70% !important;
+}
+.filled-in[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #324ba6 !important;
+  background-color: #324ba6 !important;
+}
+.btn-flat:hover {
+  border: 1px solid #324ba6;
+  background: #fff;
+}
+@media only screen and (max-width: 1000px) {
+  .modal {
+    width: 75% !important ;
+    height: 70% !important;
+  }
+}
