@@ -32,6 +32,9 @@
   border: 1px solid #324ba6;
   background: #fff;
 }
+h5{
+  font-weight: bold;
+}
 @media only screen and (max-width: 1000px) {
   .modal {
     width: 75% !important ;
