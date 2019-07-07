@@ -31,12 +31,12 @@
             <i class="material-icons black-text">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="#login-modal" class="btn indigo darken-1 modal-trigger">Log In</a></li>
+            <li><a href="Dashboard.html" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
-
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="#login-modal2" class="btn indigo darken-1 modal-trigger">Sign Up</a></li>
+            <li><a href="#login-modal" class="btn indigo darken-1 modal-trigger">Log In</a></li>
+
           </ul>
         </div>
       </div>
@@ -44,13 +44,14 @@
   </div>
   <ul class="right side-nav amber lighten-1 center" id="mobile-nav">
     <li><a href="index.html">Rosetta</a></li>
-    <li><a href="Dashboard.html">Sign Up</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="#login-modal2" class="btn indigo darken-1 white-text modal-trigger">Sign Up</a></li>
 
     <li>
       <a href="#login-modal" class="btn indigo darken-1 white-text modal-trigger">Log In</a>
     </li>
-    <li><a href="#about">About</a></li>
-    <li><a href="blog.html">Blog</a></li>
+
   </ul>
 
   <!-- Section: Slider -->
@@ -240,6 +241,74 @@
       </div>
     </div>
   </div>
+  <!-- signup modal -->
+  <div class="modal indigo-text" id="login-modal2">
+    <div class="modal-content center">
+      <h3>Create a Meal Profile</h3>
+      <h5>Enter All Fields</h5>
+      <br>
+      <form class="center" action="">
+        <div class="input-field">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">
+            <h6 class="indigo-text">First Name</h6>
+          </label>
+        </div>
+        <div class="input-field">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">
+            <h6 class="indigo-text">Last Name</h6>
+          </label>
+        </div>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">
+            <h6 class="indigo-text">Email</h6>
+          </label>
+        </div>
+        <div class="input-field">
+          <input id="icon_telephone" type="number" class="validate" data-length="11">
+          <label for="icon_telephone">
+            <h6 class="indigo-text">Telephone</h6>
+          </label>
+        </div>
+
+        <div class="input-field col s12 m6">
+          <label>category choices</label>
+          <select class="icons">
+            <option value="1" disabled selected>Choose your option</option>
+            <option value="2" data-icon="images/sample-1.jpg">Most Preferred</option>
+            <option value="3" data-icon="images/office.jpg">More Preferred</option>
+            <option value="4" data-icon="images/yuna.jpg">Preferred</option>
+          </select>
+        </div>
+
+        <div class="input-field">
+          <input type="Number" class="datepicker">
+          <label for="date">
+            <h6 class="indigo-text">Delivery date</h6>
+          </label>
+        </div>
+        <input type="text" class="timepicker">
+      </form>
+    </div>
+    <div class="modal-footer">
+      <div class="container center">
+        <div class="row">
+          <button class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close"> Sign Up
+            <i class="material-icons right hide-on-small-and-down">send</i>
+          </button>
+
+          <!-- <input type="checkbox" class="filled-in" id="auto-login"/>
+          <label for="auto-login">Login automatically</label> -->
+
+        </div>
+        <div class="row">
+          <div class="col s12 black-text">Already have an account? <a class="btn btn-flat indigo-text">Log In</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Footer -->
   <footer class="amber lighten-1 page-footer">
     <div class="container">
@@ -248,7 +317,7 @@
           <img src="img/logo.png" class="logo responsive-img" width="120" alt="Rosetta Logo" />
 
           <h5 class="black-text  text-lighten-4">ROSETTA</h5>
-          
+
         </div>
         <div class="col l2 offset-l2 s12">
           <h5 class="black-text bolder"> Rosetta </h5>
@@ -284,9 +353,11 @@
             <li><a class="black-text text-lighten-3" href="#!">Chefs & Caterers </a></li>
             <li><a class="black-text text-lighten-3" href="#!">Restaurants</a></li>
             <h5 class="black-text">DOWNLOAD </h5>
-            <li><a class="black-text text-lighten-3" href="#!"><img src="img/applestore.png" class="logo responsive-img" width="120" alt="Rosetta Logo" /> </a></li>
-            <li><a class="black-text text-lighten-3" href="#!"><img src="img/googleplay.png" class="logo responsive-img" width="120" alt="Rosetta Logo" /></a></li>
-           
+            <li><a class="black-text text-lighten-3" href="#!"><img src="img/applestore.png" class="logo responsive-img"
+                  width="120" alt="Rosetta Logo" /> </a></li>
+            <li><a class="black-text text-lighten-3" href="#!"><img src="img/googleplay.png" class="logo responsive-img"
+                  width="120" alt="Rosetta Logo" /></a></li>
+
           </ul>
         </div>
       </div>
@@ -294,7 +365,7 @@
     <div class="footer-copyright">
       <div class="container">
         © 2019 Copyright Rosetta
-        </div>
+      </div>
     </div>
   </footer>
   <!--Import jQuery before materialize.js-->
@@ -316,9 +387,15 @@
         transition: 500,
         interval: 4000
       });
+
       // Init Login Modal
       $(".modal").modal();
+      $('.datepicker').datepicker();
+      $('.timepicker').timepicker();
+      $('input#icon_telephone').characterCounter();
+      $('select').formSelect();
     });
+
   </script>
 </body>
 
