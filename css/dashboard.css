@@ -16,6 +16,9 @@
     width: 90vw; /* unnecessary, but let's keep things consistent */
     height: 120vh;
   }
+  .navbar-fixed .brand-logo img{
+    width: 67px;
+  }
   
   @media screen and (min-width: 850px) {
     .wrapper {
@@ -39,6 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
   
   .avatar {
