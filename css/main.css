@@ -21,7 +21,7 @@
   border-radius: 10em !important;
 }
 .modal {
-  width: 25% !important ;
+  width: 40% !important ;
   height: 70% !important;
 }
 .filled-in[type="checkbox"].filled-in:checked + label:after {
@@ -32,6 +32,7 @@
   border: 1px solid #324ba6;
   background: #fff;
 }
+<<<<<<< HEAD
 /* Color of underline for input elements on focus */
 input:not([type]):focus:not([readonly]),
 input[type="text"]:not(.browser-default):focus:not([readonly]),
@@ -49,6 +50,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #324ba6;
   -webkit-box-shadow: 0 1px 0 0 #324ba6;
   box-shadow: 0 1px 0 0 #324ba6;
+=======
+h5{
+  font-weight: bold;
+>>>>>>> a26ab41bff5690826bfa5b9fba73fc55339480a1
 }
 @media only screen and (max-width: 1000px) {
   .modal {
