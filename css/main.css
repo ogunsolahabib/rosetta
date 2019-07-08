@@ -17,9 +17,9 @@
 .btn {
   border-radius: 5em !important;
 }
-.btn-large {
+/* .btn-large {
   border-radius: 10em !important;
-}
+} */
 .modal {
   width: 40% !important ;
   height: 70% !important;
@@ -28,9 +28,15 @@
   border: 2px solid #324ba6 !important;
   background-color: #324ba6 !important;
 }
+.nav-wrapper li .btn-flat {
+  border: 1px solid #324ba6;
+  color: #324ba6 !important;
+  background: inherit;
+}
 .btn-flat:hover {
   border: 1px solid #324ba6;
-  background: #fff;
+  color: #324ba6 !important;
+  background: inherit;
 }
 /* Color of underline for input elements on focus */
 input:not([type]):focus:not([readonly]),
