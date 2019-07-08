@@ -1,0 +1,15 @@
+td.fc-today {
+  background: #ffb300 !important;
+  color: #000 !important;
+}
+.fc-content {
+  max-width: 100%;
+  background: #324ba6 !important;
+  white-space: normal !important;
+  max-height: 100%;
+}
+span.fc-title {
+  display: block;
+  font-size: 16px;
+  width: 100%;
+}
