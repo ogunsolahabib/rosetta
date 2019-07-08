@@ -29,11 +29,11 @@
             <i class="material-icons black-text">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="Dashboard.html" class="active">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a></li>
-            <li><a href="#login-modal2" class="btn indigo darken-1 modal-trigger">Sign Up</a></li>
+            <li><a href="#signup-modal-1" class="btn indigo darken-1 modal-trigger">Sign Up</a></li>
           </ul>
         </div>
       </div>
@@ -60,7 +60,7 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Corrupti, expedita itaque numquam neque quo nihil
           </h5>
-          <a class="btn btn-large indigo darken-1 modal-trigger" href="#login-modal2">Sign Up</a>
+          <a class="btn btn-large indigo darken-1 modal-trigger" href="#signup-modal-1">Sign Up</a>
         </div>
       </li>
       <li>
@@ -71,7 +71,7 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Corrupti, expedita itaque numquam neque quo nihil
           </h5>
-          <a class="btn btn-large indigo darken-1 modal-trigger" href="#login-modal2">Sign Up</a>
+          <a class="btn btn-large indigo darken-1 modal-trigger" href="#signup-modal-1">Sign Up</a>
         </div>
       </li>
       <li>
@@ -82,7 +82,7 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Corrupti, expedita itaque numquam neque quo nihil
           </h5>
-          <a class="btn btn-large indigo darken-1 modal-trigger" href="#login-modal2">Sign Up</a>
+          <a class="btn btn-large indigo darken-1 modal-trigger" href="#signup-modal-1">Sign Up</a>
         </div>
       </li>
     </ul>
@@ -232,75 +232,63 @@
           </p>
         </div>
         <div class="row">
-          <div class="col s12 black-text">Don't have an account? <a class="btn btn-flat btn-signup indigo-text">Sign Up</a></div>
+          <div class="col s12 black-text">Don't have an account? <a href="#signup-modal-1" class="btn btn-flat btn-signup indigo-text modal-trigger modal-close">Sign Up</a></div>
         </div>
       </div>
     </div>
   </div>
   <!-- signup modal -->
-  <div class="modal indigo-text" id="login-modal2">
+  <div class="modal indigo-text" id="signup-modal-1">
     <div class="modal-content center">
       <h3>Create a Meal Profile</h3>
       <h5>Enter All Fields</h5>
       <br>
       <form class="center" action="">
-        <div class="input-field">
+        <div class="row">
+          <div class="input-field col s12 m6">
           <input id="first_name" type="text" class="validate">
           <label for="first_name">
             <h6 class="indigo-text">First Name</h6>
           </label>
-        </div>
-        <div class="input-field">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">
-            <h6 class="indigo-text">Last Name</h6>
-          </label>
-        </div>
-        <div class="input-field">
-          <input type="email" id="email">
-          <label for="email">
-            <h6 class="indigo-text">Email</h6>
-          </label>
-        </div>
-        <div class="input-field">
-          <input id="icon_telephone" type="number" class="validate" data-length="11">
-          <label for="icon_telephone">
-            <h6 class="indigo-text">Telephone</h6>
-          </label>
-        </div>
-
-        <div class="input-field col s12 m6">
-          <label>category choices</label>
-          <select class="icons">
-            <option value="1" disabled selected>Choose your option</option>
-            <option value="2" data-icon="images/sample-1.jpg">Most Preferred</option>
-            <option value="3" data-icon="images/office.jpg">More Preferred</option>
-            <option value="4" data-icon="images/yuna.jpg">Preferred</option>
-          </select>
-        </div>
-
-        <div class="input-field">
-          <input type="Number" class="datepicker">
-          <label for="date">
-            <h6 class="indigo-text">Delivery date</h6>
-          </label>
-        </div>
-        <input type="text" class="timepicker">
+        
+      </div>
+          <div class="input-field col s12 m6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">
+              <h6 class="indigo-text">Last Name</h6>
+            </label>      
+          </div>
+          <div class="input-field col s12">
+              <input type="email" id="email">
+              <label for="email">
+                <h6 class="indigo-text">Email</h6>
+              </label>
+            </div>
+            <div class="input-field col s12">
+              <input id="icon_telephone" type="number" class="validate" data-length="11">
+              <label for="icon_telephone">
+                <h6 class="indigo-text">Telephone</h6>
+              </label>
+            </div>
+      </div>    
+        
       </form>
     </div>
     <div class="modal-footer">
       <div class="container center">
         <div class="row">
-          <button class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close"> Sign Up
+          <a href="#signup-modal-2" class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close"> Sign Up
             <i class="material-icons right hide-on-small-and-down">send</i>
-          </button>
-
-          <!-- <input type="checkbox" class="filled-in" id="auto-login"/>
-          <label for="auto-login">Login automatically</label> -->
+          </a>
+        <div class="col s12 m7 right">
+          <input type="checkbox" class="filled-in" id="privacy-policy"/>
+                  <label for="privacy-policy">Agree to Privacy Policy and Terms and Conditions</label>
 
         </div>
+          
+        </div>
         <div class="row">
-          <div class="col s12 black-text">Already have an account? <a class="btn btn-flat indigo-text">Log In</a></div>
+          <div class="col s12 black-text">Already have an account? <a href="#login-modal" class="btn btn-flat indigo-text modal-trigger modal-close">Log In</a></div>
         </div>
       </div>
     </div>
@@ -385,10 +373,7 @@
       });
 
       // Init Login Modal
-      $(".modal").modal();
-      $('.datepicker').datepicker();
-      $('.timepicker').timepicker();
-      $('input#icon_telephone').characterCounter();
+      $(".modal").modal();    
       $('select').formSelect();
     });
 

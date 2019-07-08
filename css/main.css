@@ -17,12 +17,17 @@
 .btn {
   border-radius: 5em !important;
 }
-/* .btn-large {
+.btn-large {
   border-radius: 10em !important;
-} */
+  width: 15em !important;
+  margin-top: 20px !important;
+}
 .modal {
   width: 40% !important ;
   height: 70% !important;
+}
+.modal input {
+  height: 2.5em !important;
 }
 .filled-in[type="checkbox"].filled-in:checked + label:after {
   border: 2px solid #324ba6 !important;
