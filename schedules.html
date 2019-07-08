@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link type="text/css" href="css/calendar.css" rel="stylesheet" />
+
     <link
       type="text/css"
-      href="/fullcalendar/packages/core/main.min.css"
+      href="fullcalendar/packages/core/main.min.css"
       rel="stylesheet"
     />
     <link
       type="text/css"
-      href="/fullcalendar/packages/daygrid/main.min.css"
+      href="fullcalendar/packages/daygrid/main.min.css"
       rel="stylesheet"
     />
+
     <link
       type="text/css"
-      href="/fullcalendar/packages/interaction/main.min.js"
-      rel="stylesheet"
-    />
-    <link
-      type="text/css"
-      href="/fullcalendar/packages/timegrid/main.min.js"
+      href="fullcalendar/packages/timegrid/main.min.css"
       rel="stylesheet"
     />
 
@@ -27,7 +25,6 @@
     <script src="fullcalendar/packages/interaction/main.min.js"></script>
     <script src="fullcalendar/packages/timegrid/main.min.js"></script>
 
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -77,9 +74,7 @@
               <li><a href="index.html" class="active">Home</a></li>
               <li><a href="signup.html">Sign Up</a></li>
               <li>
-                <a href="#login-modal" class="btn indigo darken-1 modal-trigger"
-                  >Log In</a
-                >
+                <a href="inddex.html">Logout</a>
               </li>
               <li><a href="#about">About</a></li>
               <li><a href="blog.html">Blog</a></li>
@@ -93,22 +88,22 @@
         <div class="col s12 m4">
           <div class="container center">
             <h1 class="indigo-text">John Doe</h1>
-            <h3>
+            <h5>
               <span class="indigo-text text-lighten-2">Location:</span> 42,
               Montgomery Road, Sabo, Yaba
-            </h3>
-            <h3>
+            </h5>
+            <h5>
               <span class="indigo-text text-lighten-2">Delivery Time:</span>
               2:30pm
-            </h3>
-            <h3>
+            </h5>
+            <h5>
               <span class="indigo-text text-lighten-2">Start Date</span>: 15th
               July, 2019
-            </h3>
-            <h3>
+            </h5>
+            <h5>
               <span class="indigo-text text-lighten-2">End Date:</span> 15th
               August, 2019
-            </h3>
+            </h5>
             <div class="div">
               <div class="btn indigo">Edit Profile</div>
             </div>
@@ -128,7 +123,6 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         var srcCalendarEl = document.getElementById("calendar");
