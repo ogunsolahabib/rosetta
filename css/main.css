@@ -61,6 +61,22 @@ textarea.materialize-textarea:focus:not([readonly]) {
   -webkit-box-shadow: 0 1px 0 0 #324ba6;
   box-shadow: 0 1px 0 0 #324ba6;
 }
+
+/* Autocomplete color */
+.section-search input.autocomplete {
+  color: #000;
+}
+.input-field .prefix.active {
+  color: #000 !important;
+}
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #000 !important;
+}
+.autocomplete-content li .highlight {
+  color: #324ba6 !important;
+}
+
 @media only screen and (max-width: 1000px) {
   .modal {
     width: 75% !important ;
