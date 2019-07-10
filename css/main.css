@@ -33,6 +33,14 @@
   border: 2px solid #324ba6 !important;
   background-color: #324ba6 !important;
 }
+[type="checkbox"]:checked+label:before {
+  border-right:2px solid #324ba6 !important;
+  border-bottom:2px solid #324ba6 !important;
+
+}
+.col.s8.center-align{
+  margin: 0 auto !important;
+}
 .nav-wrapper li .btn-flat {
   border: 1px solid #324ba6;
   color: #324ba6 !important;
@@ -76,10 +84,15 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .autocomplete-content li .highlight {
   color: #324ba6 !important;
 }
-
+/* input.timepicker.picker__input{
+  background-color: red !important;
+} */
+.picker__date-display{
+  background-color: #324ba6;
+}
 @media only screen and (max-width: 1000px) {
   .modal {
     width: 75% !important ;
-    height: 70% !important;
+    height: 100vh !important;
   }
 }
