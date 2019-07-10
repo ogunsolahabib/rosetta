@@ -1,693 +1,656 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Import Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
 
-    <!--Import materialize.css-->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Import Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rosetta</title>
-  </head>
-  <body class="grey lighten-4">
-    <div class="navbar-fixed ">
-      <nav class="amber lighten-1  blue-text">
-        <div class="container">
-          <div class="nav-wrapper black-text">
-            R O S E T T A
-            <a href="index.html" class="brand-logo">
-              <img
-                src="img/logo.png"
-                class="logo responsive-img"
-                alt="Rosetta Logo"
-              />
-            </a>
-            <a
-              href="#"
-              data-activates="mobile-nav"
-              class="right button-collapse"
-            >
-              <i class="material-icons black-text">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li>
-                <a href="#login-modal" class="btn btn-flat modal-trigger"
-                  >Log In</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#signup_personal-data"
-                  class="btn indigo darken-1 modal-trigger"
-                  >Sign Up</a
-                >
-              </li>
-            </ul>
-          </div>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rosetta</title>
+</head>
+
+<body class="grey lighten-4">
+  <div class="navbar-fixed ">
+    <nav class="amber lighten-1  blue-text">
+      <div class="container">
+        <div class="nav-wrapper black-text">
+          R O S E T T A
+          <a href="index.html" class="brand-logo">
+            <img src="img/logo.png" class="logo responsive-img" alt="Rosetta Logo" />
+          </a>
+          <a href="#" data-activates="mobile-nav" class="right button-collapse">
+            <i class="material-icons black-text">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>
+              <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
+            </li>
+            <li>
+              <a href="#signup_personal-data" class="btn indigo darken-1 modal-trigger">Sign Up</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
 
-    <ul class="right side-nav amber lighten-1 center" id="mobile-nav">
-      <li><a href="index.html">Rosetta</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
+  <ul class="right side-nav amber lighten-1 center" id="mobile-nav">
+    <li><a href="index.html">Rosetta</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
+    <li>
+      <a href="#login-modal" class="btn waves-effect waves-light indigo darken-1 white-text modal-trigger">Log In</a>
+    </li>
+  </ul>
+
+  <!-- Section: Slider -->
+  <section class="slider">
+    <ul class="slides">
       <li>
-        <a
-          href="#login-modal"
-          class="btn waves-effect waves-light indigo darken-1 white-text modal-trigger"
-          >Log In</a
-        >
+        <img src="img/timely-deliveries.jpg" alt="" />
+        <div class="caption center-align">
+          <h2>One Button Click For The Month</h2>
+          <h5 class="light white-text hide-on-small-and-medium">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Corrupti, expedita itaque numquam neque quo nihil
+          </h5>
+          <a class="btn btn-large indigo darken-1 modal-trigger" href="#signup_personal-data">Sign Up</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/group-plan.jpg" alt="" />
+        <div class="caption center-align">
+          <h2>Perfect For Groups</h2>
+          <h5 class="light white-text hide-on-small-and-medium">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Corrupti, expedita itaque numquam neque quo nihil
+          </h5>
+          <a class="btn btn-large indigo darken-1 modal-trigger" href="#signup_personal-data">Sign Up</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/local-dish.jpg" alt="" />
+        <div class="caption center-align">
+          <h2>Local and Intercontinental Dishes</h2>
+          <h5 class="light white-text hide-on-small-and-medium">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Corrupti, expedita itaque numquam neque quo nihil
+          </h5>
+          <a class="btn btn-large indigo darken-1 modal-trigger" href="#signup_personal-data">Sign Up</a>
+        </div>
       </li>
     </ul>
+  </section>
 
-    <!-- Section: Slider -->
-    <section class="slider">
-      <ul class="slides">
-        <li>
-          <img src="img/timely-deliveries.jpg" alt="" />
-          <div class="caption center-align">
-            <h2>One Button Click For The Month</h2>
-            <h5 class="light white-text hide-on-small-and-medium">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Corrupti, expedita itaque numquam neque quo nihil
-            </h5>
-            <a
-              class="btn btn-large indigo darken-1 modal-trigger"
-              href="#signup_personal-data"
-              >Sign Up</a
-            >
-          </div>
-        </li>
-        <li>
-          <img src="img/group-plan.jpg" alt="" />
-          <div class="caption center-align">
-            <h2>Perfect For Groups</h2>
-            <h5 class="light white-text hide-on-small-and-medium">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Corrupti, expedita itaque numquam neque quo nihil
-            </h5>
-            <a
-              class="btn btn-large indigo darken-1 modal-trigger"
-              href="#signup_personal-data"
-              >Sign Up</a
-            >
-          </div>
-        </li>
-        <li>
-          <img src="img/local-dish.jpg" alt="" />
-          <div class="caption center-align">
-            <h2>Local and Intercontinental Dishes</h2>
-            <h5 class="light white-text hide-on-small-and-medium">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Corrupti, expedita itaque numquam neque quo nihil
-            </h5>
-            <a
-              class="btn btn-large indigo darken-1 modal-trigger"
-              href="#signup_personal-data"
-              >Sign Up</a
-            >
-          </div>
-        </li>
-      </ul>
-    </section>
-    
-        
-    <!-- Section: Promo -->
-    <section class="section section-promo">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 center">
-            <h3>
-              Care for a
-              <span class="indigo-text"><strong>FREE</strong></span> Meal Box?
-              Get Started Now
-            </h3>
-            <div class="container">
-              <div class="row">
-                <div class="col s6">
-                  <div class="input-field">
-                    <input
-                      type="text"
-                      placeholder="Enter your Full Name..."
-                      id="full-name"
-                    />
-                    <label for="full-name" class="indigo-text">
-                      <h6>Full Name</h6>
-                    </label>
-                  </div>
+
+  <!-- Section: Promo -->
+  <section class="section section-promo">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center">
+          <h3>
+            Care for a
+            <span class="indigo-text"><strong>FREE</strong></span> Meal Box?
+            Get Started Now
+          </h3>
+          <div class="container">
+            <div class="row">
+              <div class="col s6">
+                <div class="input-field">
+                  <input type="text" placeholder="Enter your Full Name..." id="full-name" />
+                  <label for="full-name" class="indigo-text">
+                    <h6>Full Name</h6>
+                  </label>
                 </div>
-                <div class="col s6">
-                  <div class="input-field">
-                    <input
-                      type="text"
-                      placeholder="Enter your Email..."
-                    
-                    />
-                    <label for="email" class="indigo-text">
-                      <h6>Email</h6>
-                    </label>
-                  </div>
+              </div>
+              <div class="col s6">
+                <div class="input-field">
+                  <input type="text" placeholder="Enter your Email..." />
+                  <label for="email" class="indigo-text">
+                    <h6>Email</h6>
+                  </label>
                 </div>
               </div>
             </div>
+          </div>
 
-            <a href="#" class="btn btn-large indigo">Place Order</a>
+          <a href="#" class="btn btn-large indigo">Place Order</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-features">
+    <div class="container center">
+      <h3>Our Trusted Vendors</h3>
+      <div class="row center">
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <img src="/img/KFC_logo.svg.png" class="logo responsive-img" alt="KFC">
+          </div>
+        </div>
+
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <img src="/img/roadchef.png" class="logo responsive-img" alt="road chef">
+          </div>
+        </div>
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <img src="/img/chickenrepublic.png" class="logo responsive-img" alt="chicken republic">
+          </div>
+        </div>
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <img src="/img/sweetsensation.png" class="logo responsive-img" alt="sweet sensation">
+          </div>
+        </div>
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <img src="/img/theplace.png" class="logo responsive-img" alt="the place">
+          </div>
+        </div>
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <img src="/img/Bukka-Hut-Logo.png" class="logo responsive-img" alt="bukka hut">
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Section: Features -->
-    <section class="section section-features">
-      <div class="container center">
-        <h3>What We Offer</h3>
-        <div class="row center">
-          <div class="col s12 m4 indigo-text">
-            <div class="card-panel white">
-              <i class="large material-icons">
-                event_note
-              </i>
-              <h5>Accurate Meal Plans</h5>
-              <p class="black-text hide-on-small-and-down">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-                veniam.
-              </p>
-            </div>
+  <!-- Section: Features -->
+  <section class="section section-features">
+    <div class="container center">
+      <h3>What We Offer</h3>
+      <div class="row center">
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <i class="large material-icons">
+              event_note
+            </i>
+            <h5>Accurate Meal Plans</h5>
+            <p class="black-text hide-on-small-and-down">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+              veniam.
+            </p>
           </div>
+        </div>
 
-          <div class="col s12 m4 indigo-text">
-            <div class="card-panel white">
-              <i class="large material-icons">
-                timer
-              </i>
-              <h5>Timed Deliveries</h5>
-              <p class="black-text hide-on-small-and-down">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-                veniam.
-              </p>
-            </div>
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <i class="large material-icons">
+              timer
+            </i>
+            <h5>Timed Deliveries</h5>
+            <p class="black-text hide-on-small-and-down">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+              veniam.
+            </p>
           </div>
-          <div class="col s12 m4 indigo-text">
-            <div class="card-panel white">
-              <i class="large material-icons">
-                local_dining
-              </i>
-              <h5>Various Delicacies</h5>
-              <p class="black-text hide-on-small-and-down">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-                veniam.
-              </p>
-            </div>
+        </div>
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <i class="large material-icons">
+              local_dining
+            </i>
+            <h5>Various Delicacies</h5>
+            <p class="black-text hide-on-small-and-down">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+              veniam.
+            </p>
           </div>
-          <div class="col s12 m4 indigo-text">
-            <div class="card-panel white">
-              <i class="large material-icons">
-                whatshot
-              </i>
-              <h5>Delivered Hot</h5>
-              <p class="black-text hide-on-small-and-down">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-                veniam.
-              </p>
-            </div>
+        </div>
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <i class="large material-icons">
+              whatshot
+            </i>
+            <h5>Delivered Hot</h5>
+            <p class="black-text hide-on-small-and-down">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+              veniam.
+            </p>
           </div>
-          <div class="col s12 m4 indigo-text">
-            <div class="card-panel white">
-              <i class="large material-icons">
-                motorcycle
-              </i>
-              <h5>Swift Delivery</h5>
-              <p class="black-text hide-on-small-and-down">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-                veniam.
-              </p>
-            </div>
+        </div>
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <i class="large material-icons">
+              motorcycle
+            </i>
+            <h5>Swift Delivery</h5>
+            <p class="black-text hide-on-small-and-down">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+              veniam.
+            </p>
           </div>
-          <div class="col s12 m4 indigo-text">
-            <div class="card-panel white">
-              <i class="large material-icons">
-                loyalty
-              </i>
-              <h5>Loyalty Benefits</h5>
-              <p class="black-text hide-on-small-and-down">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-                veniam.
-              </p>
-            </div>
+        </div>
+        <div class="col s12 m4 indigo-text">
+          <div class="card-panel white">
+            <i class="large material-icons">
+              loyalty
+            </i>
+            <h5>Loyalty Benefits</h5>
+            <p class="black-text hide-on-small-and-down">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+              veniam.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="amber lighten-1 page-footer">
+  <!-- Footer -->
+  <footer class="amber lighten-1 page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l2 s12">
+          <img src="img/logo.png" class="logo responsive-img" width="120" alt="Rosetta Logo" />
+
+          <h5 class="black-text  text-lighten-4">ROSETTA</h5>
+        </div>
+        <div class="col l2 offset-l2 s12">
+          <h5 class="black-text bolder">Rosetta</h5>
+          <ul>
+            <li><a class="black-text text-lighten-3" href="#!">About </a></li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Careers </a>
+            </li>
+            <li><a class="black-text text-lighten-3" href="#!">Blog </a></li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Press & Media
+              </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Developers </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l2 s12">
+          <h5 class="black-text">Support</h5>
+          <ul>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Customer Help
+              </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Fleet Help</a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Merchant Help
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l2  s12">
+          <h5 class="black-text">Follow us</h5>
+          <ul>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Twitter </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!"> Facebook </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Instagram</a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Snapchat</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l2  s12">
+          <h5 class="black-text">Merchants</h5>
+          <ul>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Chefs & Caterers
+              </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Restaurants</a>
+            </li>
+            <h5 class="black-text">DOWNLOAD</h5>
+            <li>
+              <a class="black-text text-lighten-3" href="#!"><img src="img/applestore.png" class="logo responsive-img"
+                  width="120" alt="Rosetta Logo" />
+              </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!"><img src="img/googleplay.png" class="logo responsive-img"
+                  width="120" alt="Rosetta Logo" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
       <div class="container">
+        © 2019 Copyright Rosetta
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <!-- Login Modal -->
+  <div class="modal indigo-text" id="login-modal">
+    <div class="modal-content center">
+      <h3>Welcome Back!</h3>
+      <h5>Login to access and customize your plans</h5>
+      <br />
+      <form class="center" action="">
+        <div class="input-field">
+          <input type="email" placeholder="me@example.com" />
+          <label for="email">
+            <h6 class="indigo-text">Email</h6>
+          </label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password" placeholder="Password" />
+          <label for="password">
+            <h6 class="indigo-text">Password</h6>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <div class="container center">
         <div class="row">
-          <div class="col l2 s12">
-            <img
-              src="img/logo.png"
-              class="logo responsive-img"
-              width="120"
-              alt="Rosetta Logo"
-            />
-
-            <h5 class="black-text  text-lighten-4">ROSETTA</h5>
-          </div>
-          <div class="col l2 offset-l2 s12">
-            <h5 class="black-text bolder">Rosetta</h5>
-            <ul>
-              <li><a class="black-text text-lighten-3" href="#!">About </a></li>
-              <li>
-                <a class="black-text text-lighten-3" href="#!">Careers </a>
-              </li>
-              <li><a class="black-text text-lighten-3" href="#!">Blog </a></li>
-              <li>
-                <a class="black-text text-lighten-3" href="#!"
-                  >Press & Media
-                </a>
-              </li>
-              <li>
-                <a class="black-text text-lighten-3" href="#!">Developers </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col l2 s12">
-            <h5 class="black-text">Support</h5>
-            <ul>
-              <li>
-                <a class="black-text text-lighten-3" href="#!"
-                  >Customer Help
-                </a>
-              </li>
-              <li>
-                <a class="black-text text-lighten-3" href="#!">Fleet Help</a>
-              </li>
-              <li>
-                <a class="black-text text-lighten-3" href="#!"
-                  >Merchant Help
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col l2  s12">
-            <h5 class="black-text">Follow us</h5>
-            <ul>
-              <li>
-                <a class="black-text text-lighten-3" href="#!">Twitter </a>
-              </li>
-              <li>
-                <a class="black-text text-lighten-3" href="#!"> Facebook </a>
-              </li>
-              <li>
-                <a class="black-text text-lighten-3" href="#!">Instagram</a>
-              </li>
-              <li>
-                <a class="black-text text-lighten-3" href="#!">Snapchat</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col l2  s12">
-            <h5 class="black-text">Merchants</h5>
-            <ul>
-              <li>
-                <a class="black-text text-lighten-3" href="#!"
-                  >Chefs & Caterers
-                </a>
-              </li>
-              <li>
-                <a class="black-text text-lighten-3" href="#!">Restaurants</a>
-              </li>
-              <h5 class="black-text">DOWNLOAD</h5>
-              <li>
-                <a class="black-text text-lighten-3" href="#!"
-                  ><img
-                    src="img/applestore.png"
-                    class="logo responsive-img"
-                    width="120"
-                    alt="Rosetta Logo"
-                  />
-                </a>
-              </li>
-              <li>
-                <a class="black-text text-lighten-3" href="#!"
-                  ><img
-                    src="img/googleplay.png"
-                    class="logo responsive-img"
-                    width="120"
-                    alt="Rosetta Logo"
-                /></a>
-              </li>
-            </ul>
+          <button class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close">
+            Login
+            <i class="material-icons right hide-on-small-and-down">send</i>
+          </button>
+          <p class="col s12 m8">
+            <a href="#" class="modal-action modal-close indigo-text">Forgotten Password</a>
+            <!-- <input type="checkbox" class="filled-in" id="auto-login"/>
+          <label for="auto-login">Login automatically</label> -->
+          </p>
+        </div>
+        <div class="row">
+          <div class="col s12 black-text">
+            Don't have an account?
+            <a href="#signup_personal-data" class="btn btn-flat btn-signup indigo-text modal-trigger modal-close">Sign
+              Up</a>
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-          © 2019 Copyright Rosetta
-        </div>
-      </div>
-    </footer>
-
-    <!-- MODALS -->
-
-    <!-- Login Modal -->
-    <div class="modal indigo-text" id="login-modal">
-      <div class="modal-content center">
-        <h3>Welcome Back!</h3>
-        <h5>Login to access and customize your plans</h5>
-        <br />
-        <form class="center" action="">
-          <div class="input-field">
-            <input type="email" placeholder="me@example.com" />
+    </div>
+  </div>
+  <!-- Signup Modal 1-->
+  <div class="modal indigo-text" id="signup_personal-data">
+    <div class="modal-content center">
+      <h4>Sign up for amazing meals!</h4>
+      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.</h5>
+      <br />
+      <form class="center" action="">
+        <div class="row">
+          <div class="input-field col s12 m6">
+            <input type="text" class="validate" />
+            <label for="first_name">
+              <h6 class="indigo-text">First Name</h6>
+            </label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input id="last_name" type="text" class="validate" />
+            <label for="last_name">
+              <h6 class="indigo-text">Last Name</h6>
+            </label>
+          </div>
+          <div class="input-field col s12">
+            <input type="email" id="email" />
             <label for="email">
               <h6 class="indigo-text">Email</h6>
             </label>
           </div>
-          <div class="input-field">
-            <input type="password" id="password" placeholder="Password" />
-            <label for="password">
-              <h6 class="indigo-text">Password</h6>
+          <div class="input-field col s12">
+            <input type="tel" class="validate" data-length="11" />
+            <label for="icon_telephone">
+              <h6 class="indigo-text">Telephone</h6>
             </label>
           </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <div class="container center">
-          <div class="row">
-            <button
-              class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close"
-            >
-              Login
-              <i class="material-icons right hide-on-small-and-down">send</i>
-            </button>
-            <p class="col s12 m8">
-              <a href="#" class="modal-action modal-close indigo-text"
-                >Forgotten Password</a
-              >
-              <!-- <input type="checkbox" class="filled-in" id="auto-login"/>
-          <label for="auto-login">Login automatically</label> -->
-            </p>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <div class="container center">
+        <div class="row">
+          <a href="#delivery-info"
+            class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-trigger modal-close">
+            Sign Up
+            <i class="material-icons right hide-on-small-and-down">send</i>
+          </a>
+          <div class="col s12 m7 right">
+            <input type="checkbox" class="filled-in" id="select-type-1" />
+            <label for="privacy-policy">Agree to Privacy Policy and Terms and Conditions</label>
           </div>
-          <div class="row">
-            <div class="col s12 black-text">
-              Don't have an account?
-              <a
-                href="#signup_personal-data"
-                class="btn btn-flat btn-signup indigo-text modal-trigger modal-close"
-                >Sign Up</a
-              >
-            </div>
+        </div>
+        <div class="row">
+          <div class="col s12 black-text">
+            Already have an account?
+            <a href="#login-modal" class="btn btn-flat indigo-text modal-trigger modal-close">Log In</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Signup Modal 1-->
-    <div class="modal indigo-text" id="signup_personal-data">
-      <div class="modal-content center">
-        <h4>Sign up for amazing meals!</h4>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.</h5>
-        <br />
-        <form class="center" action="">
-          <div class="row">
-            <div class="input-field col s12 m6">
-              <input type="text" class="validate" />
-              <label for="first_name">
-                <h6 class="indigo-text">First Name</h6>
-              </label>
-            </div>
-            <div class="input-field col s12 m6">
-              <input id="last_name" type="text" class="validate" />
-              <label for="last_name">
-                <h6 class="indigo-text">Last Name</h6>
-              </label>
-            </div>
-            <div class="input-field col s12">
-              <input type="email" id="email" />
-              <label for="email">
-                <h6 class="indigo-text">Email</h6>
-              </label>
-            </div>
-            <div class="input-field col s12">
-              <input
-                  type="tel"
-                  class="validate"
-                  data-length="11"
-                />
-              <label for="icon_telephone">
-                <h6 class="indigo-text">Telephone</h6>
-              </label>
-            </div>
+  </div>
+  <!-- Signup Modal 2 -->
+  <div class="modal indigo-text" id="delivery-info">
+    <div class="modal-content center">
+      <h4>Delivery Information</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, molestias.</p>
+      <br />
+      <form class="center" action="">
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="text" class="validate" />
+            <label for="first_name">
+              <h6 class="indigo-text">Street</h6>
+            </label>
           </div>
-        </form>
+
+          <div class="input-field col s12">
+            <input type="text" id="autocomplete-city" class="autocomplete input-city" />
+            <label for="autocomplete-city">
+              <h6 class="indigo-text">City</h6>
+            </label>
+          </div>
+          <div class="input-field col s6">
+            <label for="timepicker">
+              <h6 class="indigo-text">Delivery Time: </h6>
+            </label>
+            <input class="timepicker" id="timepicker" />
+
+          </div>
+          <div class="input-field col s6"><label for="datepicker">
+              <h6 class="indigo-text">Start Date: </h6>
+            </label>
+            <input class="datepicker" type="text" />
+
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <div class="container center">
+        <div class="row">
+          <a href="#signup_customize-plans"
+            class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close modal-trigger center">
+            Next
+            <i class="material-icons right hide-on-small-and-down">arrow</i>
+          </a>
+
+        </div>
+
       </div>
-      <div class="modal-footer">
-        <div class="container center">
-          <div class="row">
-            <a
-              href="#delivery-info"
-              class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-trigger modal-close"
-            >
-              Sign Up
-              <i class="material-icons right hide-on-small-and-down">send</i>
-            </a>
-            <div class="col s12 m7 right">
-              <input type="checkbox" class="filled-in" id="select-type-1" />
-              <label for="privacy-policy"
-                >Agree to Privacy Policy and Terms and Conditions</label
-              >
-            </div>
+    </div>
+  </div>
+  <!-- Signup Modal 3 -->
+  <div class="modal indigo-text" id="signup_customize-plans">
+    <div class="modal-content center">
+      <h4>You're Almost There!</h4>
+      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.</h5>
+      <br />
+      <form class="center" action="">
+        <div class="row center">
+          <div class="col s12 ">
+            <input type="checkbox" id="select-type-2" />
+            <label class="indigo-text" for="select-type-2">
+              Local Dishes: Lorem ipsum dolor sit amet consectetur.
+            </label>
           </div>
-          <div class="row">
-            <div class="col s12 black-text">
-              Already have an account?
-              <a
-                href="#login-modal"
-                class="btn btn-flat indigo-text modal-trigger modal-close"
-                >Log In</a
-              >
-            </div>
+          <div class="col s12 ">
+            <input type="checkbox" id="select-type-3" />
+            <label class="indigo-text" for="select-type-3">
+              Local Dishes: Lorem ipsum dolor sit amet consectetur.
+            </label>
           </div>
+          <div class="col s12 ">
+            <input type="checkbox" id="select-type-4" />
+            <label class="indigo-text" for="select-type-4">
+              Local Dishes: Lorem ipsum dolor sit amet consectetur.
+            </label>
+          </div>
+          <div class="col s12 ">
+            <input type="checkbox" id="select-type-5" />
+            <label class="indigo-text" for="select-type-5">
+              Local Dishes: Lorem ipsum dolor sit amet consectetur.
+            </label>
+          </div>
+          <div class="col s12 ">
+            <input type="checkbox" id="select-type-6" />
+            <label class="indigo-text" for="select-type-6">
+              Local Dishes: Lorem ipsum dolor sit amet consectetur.
+            </label>
+          </div>
+          <div class="col s8 center">
+            <select multiple>
+              <option value="" selected disabled>Pick Most Prefered First</option>
+              <option value="1">Local</option>
+              <option value="2">Intercontinental</option>
+              <option value="3">Regular</option>
+            </select>
+            <label class="indigo-text">Sort Your Meal Preferences</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <div class="container center">
+        <div class="row">
+          <a href="#payment"
+            class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-trigger modal-close">
+            Submit
+            <i class="material-icons right hide-on-small-and-down">send</i>
+          </a>
         </div>
       </div>
     </div>
-    <!-- Signup Modal 2 -->
-    <div class="modal indigo-text" id="delivery-info">
-        <div class="modal-content center">
-          <h4>Delivery Information</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, molestias.</p>
-          <br />
-          <form class="center" action="">
-            <div class="row">
-              <div class="input-field col s12">
-                <input type="text" class="validate" />
-                <label for="first_name">
-                  <h6 class="indigo-text">Street</h6>
-                </label>
-              </div>
-              
-              <div class="input-field col s12">
-                <input type="text" id="autocomplete-city" class="autocomplete input-city"/>
-                <label for="autocomplete-city">
-                  <h6 class="indigo-text">City</h6>
-                </label>
-              </div>
-              <div class="input-field col s6">
-                <label for="timepicker">
-                  <h6 class="indigo-text">Delivery Time: </h6>
-                </label>
-                <input class="timepicker" id="timepicker" />
-                
-              </div>
-              <div class="input-field col s6"><label for="datepicker">
-                  <h6 class="indigo-text">Start Date: </h6>
-                </label> 
-                <input class="datepicker" type="text" />
-                
-              </div>
-            </div>
-          </form>
+  </div>
+
+  <!-- Payment Modal -->
+  <div class="modal indigo-text" id="payment">
+    <!-- <div class="modal-content center">
+      <h4>Delivery Information</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, molestias.</p>
+      <br /> -->
+    <div id="paystackEmbedContainer"></div>
+    <!-- </div> -->
+    <!-- <div class="modal-footer">
+      <div class="container center">
+        <div class="row">
+          <a href="/schedules.html"
+            class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close modal-trigger center">
+            Next
+            <i class="material-icons right hide-on-small-and-down">arrow</i>
+          </a>
+
         </div>
-        <div class="modal-footer">
-          <div class="container center">
-            <div class="row">
-              <a
-                href="#signup_customize-plans"
-                class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close modal-trigger center"
-              >
-                Next
-                <i class="material-icons right hide-on-small-and-down">arrow</i>
-              </a>
-              
-            </div>
-            
-            </div>
-          </div>
-        </div>
-        <!-- Signup Modal 3 -->
-        <div class="modal indigo-text" id="signup_customize-plans">
-            <div class="modal-content center">
-              <h4>You're Almost There!</h4>
-              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.</h5>
-              <br />
-              <form class="center" action="">
-                <div class="row center">
-                  <div class="col s12 ">
-                        <input type="checkbox" id="select-type-2" />
-                        <label for="select-type-2">
-                          Local Dishes: Lorem ipsum dolor sit amet consectetur.
-                        </label>
-                    </div>
-                  <div class="col s12 ">
-                        <input type="checkbox" id="select-type-3" />
-                        <label for="select-type-3">
-                          Local Dishes: Lorem ipsum dolor sit amet consectetur.
-                        </label>
-                    </div>
-                  <div class="col s12 ">
-                        <input type="checkbox" id="select-type-4" />
-                        <label for="select-type-4">
-                          Local Dishes: Lorem ipsum dolor sit amet consectetur.
-                        </label>
-                    </div>
-                  <div class="col s12 ">
-                      <input type="checkbox" id="select-type-5" />
-                      <label for="select-type-5">
-                        Local Dishes: Lorem ipsum dolor sit amet consectetur.
-                      </label>
-                    </div>
-                  <div class="col s12 ">
-                        <input type="checkbox" id="select-type-6" />
-                        <label for="select-type-6">
-                          Local Dishes: Lorem ipsum dolor sit amet consectetur.
-                        </label>
-                    </div>
-                  <div class="col s8 center">
-                      <select multiple>
-                          <option value="" selected disabled>Pick Most Prefered First</option>
-                          <option value="1">Local</option>
-                          <option value="2">Intercontinental</option>
-                          <option value="3">Regular</option>
-                        </select>
-                      <label>Sort Your Meal Preferences</label> 
-                    </div>                    
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <div class="container center">
-                <div class="row">
-                  <a
-                    href="#delivery-info"
-                    class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-trigger modal-close"
-                  >
-                    Submit
-                    <i class="material-icons right hide-on-small-and-down">send</i>
-                  </a>
-                  
-                </div>
-                <div class="row">
-                  <div class="col s12 black-text">
-                    Already have an account?
-                    <a
-                      href="#login-modal"
-                      class="btn btn-flat indigo-text modal-trigger modal-close"
-                      >Log In</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      
 
-    <!--Import jQuery before materialize.js-->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        // Custom JS & jQuery here
-        // Init Side Nav
-        $(".button-collapse").sideNav({
-          menuWidth: 300,
-          closeOnClick: true,
-          edge: "right"
-        });
-        // Init Image Slider
-        $(".slider").slider({
-          indicators: false,
-          height: 500,
-          transition: 500,
-          interval: 4000
-        });
-
-        // Init Login Modal
-        $(".modal").modal();      
-
-        // Init Autocomplete City
-        $("#autocomplete-city").autocomplete({
-          data: {
-            Ajah: null,
-            Ikeja: null,
-            Ogudu: null,
-            Ojota: null,
-            Lekki: null,
-            Magodo: null,
-            Mushin: null,
-            Surulere: null,
-            "Victoria Island": null,
-            Ikoyi: null,
-            Agege: null,
-            Oshodi: null
-          }
-        });
-        // Init Date and Time Picker
-        $(".datepicker").pickadate();
-        $('.datepicker').on('mousedown',function(event){ 
-        event.preventDefault();
-        });
-        
-        $(".timepicker").pickatime();
-        $('.timepicker').on('mousedown',function(event){ 
-        event.preventDefault();
-        });
-        
-       
-          if($("#timepicker").val()){
-            $('label[for="timepicker"]').toggleClass("active");
-            console.log("SA");
-          }         
-        
-       
-        
-        // $("input.timepicker").click(function(){
-        //   $('label[for="timepicker"]').addClass("active");
-        // })
-        $('select').material_select();
+      </div>
+    </div> -->
+  </div>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Import Paystack.js -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Custom JS & jQuery here
+      // Init Side Nav
+      $(".button-collapse").sideNav({
+        menuWidth: 300,
+        closeOnClick: true,
+        edge: "right"
       });
-    </script>
-  </body>
+      // Init Image Slider
+      $(".slider").slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 4000
+      });
+
+      // Init Login Modal
+      $(".modal").modal();
+
+      // Init Autocomplete City
+      $("#autocomplete-city").autocomplete({
+        data: {
+          Ajah: null,
+          Ikeja: null,
+          Ogudu: null,
+          Ojota: null,
+          Lekki: null,
+          Magodo: null,
+          Mushin: null,
+          Surulere: null,
+          "Victoria Island": null,
+          Ikoyi: null,
+          Agege: null,
+          Oshodi: null
+        }
+      });
+      // Init Date and Time Picker
+      $(".datepicker").pickadate();
+      $('.datepicker').on('mousedown', function (event) {
+        event.preventDefault();
+      });
+
+      $(".timepicker").pickatime();
+      $('.timepicker').on('mousedown', function (event) {
+        event.preventDefault();
+      });
+
+
+      if ($("#timepicker").val()) {
+        $('label[for="timepicker"]').toggleClass("active");
+      }
+      $('select').material_select();
+      PaystackPop.setup({
+        key: 'pk_test_33631454b021fe648fdb381ff6f89d482ad5f95d',
+        email: 'customer@email.com',
+        amount: 10000,
+        container: 'paystackEmbedContainer',
+        callback: function (response) {
+          alert('successfully subscribed. transaction ref is ' + response.reference);
+        },
+      });
+
+
+    });
+  </script>
+</body>
+
 </html>
