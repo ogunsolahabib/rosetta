@@ -1,7 +1,9 @@
+nav{
+  height: 70px !important;
+}
 .navbar-fixed .brand-logo img {
-  height: 80px;
-  margin-top: 20px;
-  z-index: 1;
+  margin-top: 3px;
+  height: 67px;
 }
 
 .nav-wrapper li a {
@@ -83,9 +85,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .autocomplete-content li .highlight {
   color: #324ba6 !important;
 }
-/* input.timepicker.picker__input{
-  background-color: red !important;
-} */
+
+
+.carousel.carousel-slider{
+  height: 220px !important;
+}
 .picker__date-display{
   background-color: #324ba6;
 }
@@ -93,5 +97,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
   .modal {
     width: 75% !important ;
     height: 100vh !important;
+  }
+  h3{
+    font-size: 30px;    
+  }
+  h5{
+    font-size: 20px;
   }
 }
