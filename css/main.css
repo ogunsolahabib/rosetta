@@ -88,7 +88,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 
 .carousel.carousel-slider{
-  height: 220px !important;
+  height: 300px !important;
+}
+.carousel-item img{
+  max-height: 200px
 }
 .picker__date-display{
   background-color: #324ba6;
