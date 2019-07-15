@@ -5,7 +5,9 @@ nav{
   margin-top: 3px;
   height: 67px;
 }
-
+.section-promo{
+  background: #fff;
+}
 .nav-wrapper li a {
   color: #000 !important;
 }
