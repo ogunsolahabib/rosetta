@@ -1,3 +1,9 @@
+body{
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.5px !important;
+}
 nav{
   height: 70px !important;
 }
@@ -14,23 +20,48 @@ nav{
 .nav-wrapper li .btn {
   color: #fff !important;
 }
-.active {
+
+nav .active {
   text-decoration: underline;
 }
+
+h3{
+  font-size: 48px !important;
+  line-height: 40px;
+  letter-spacing: 0;
+}
+
+h4{
+  font-size: 34px !important;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+}
+
 .btn {
-  border-radius: 5em !important;
+  border-radius: 30px !important;
+  height: 35px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.btn:hover{
+ background: #323f6d !important; 
 }
 .btn-large {
-  border-radius: 10em !important;
   width: 15em !important;
   margin-top: 20px !important;
+  height: 50px;
+  font-size: 18px;
 }
 .modal {
+  background: #D8D8D8 !important;
   width: 40% !important ;
   height: 70% !important;
 }
 .modal input {
   height: 2.5em !important;
+}
+.modal-footer{
+  background: inherit !important;
 }
 .filled-in[type="checkbox"].filled-in:checked + label:after {
   border: 2px solid #324ba6 !important;
@@ -41,13 +72,14 @@ nav{
   border-bottom:2px solid #324ba6 !important;
 
 }
-.col.s8.center-align{
+.col.s8.center{
   margin: 0 auto !important;
+  float: none;
 }
 .nav-wrapper li .btn-flat {
   border: 1px solid #324ba6;
   color: #324ba6 !important;
-  background: inherit;
+  background: inherit !important;
 }
 .btn-flat:hover {
   border: 1px solid #324ba6;
@@ -93,16 +125,35 @@ textarea.materialize-textarea:focus:not([readonly]) {
   height: 300px !important;
 }
 .carousel-item img{
-  max-height: 200px !important
+  max-height: 200px !important;
 }
+
 .picker__date-display{
   background-color: #324ba6;
 }
-@media only screen and (max-width: 1000px) {
+
+.schedules-side-nav .card-panel{
+  min-height: 90vh !important;
+}
+.schedules-side-nav .container{
+  padding: 5px !important;
+  margin: 5px !important;
+}
+@media only screen and (max-width: 1100px) {
   .modal {
     width: 75% !important ;
     height: 100vh !important;
   }
+  .schedules-side-nav ul li .row span{
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+  }
+  .schedules-side-nav .container{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   h3{
     font-size: 30px;    
   }
