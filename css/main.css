@@ -1,17 +1,17 @@
-body{
-  font-family: 'Roboto', sans-serif !important;
+body {
+  font-family: "Roboto", sans-serif !important;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 0.5px !important;
 }
-nav{
+nav {
   height: 70px !important;
 }
 .navbar-fixed .brand-logo img {
   margin-top: 3px;
   height: 67px;
 }
-.section-promo{
+.section-promo {
   background: #fff;
 }
 .nav-wrapper li a {
@@ -25,13 +25,13 @@ nav .active {
   text-decoration: underline;
 }
 
-h3{
+h3 {
   font-size: 48px !important;
   line-height: 40px;
   letter-spacing: 0;
 }
 
-h4{
+h4 {
   font-size: 34px !important;
   line-height: 40px;
   letter-spacing: 0.25px;
@@ -43,8 +43,8 @@ h4{
   font-weight: 400;
   font-size: 14px;
 }
-.btn:hover{
- background: #323f6d !important; 
+.btn:hover {
+  background: #323f6d !important;
 }
 .btn-large {
   width: 15em !important;
@@ -53,26 +53,25 @@ h4{
   font-size: 18px;
 }
 .modal {
-  background: #D8D8D8 !important;
+  background: #d8d8d8 !important;
   width: 40% !important ;
   height: 70% !important;
 }
 .modal input {
   height: 2.5em !important;
 }
-.modal-footer{
+.modal-footer {
   background: inherit !important;
 }
 .filled-in[type="checkbox"].filled-in:checked + label:after {
   border: 2px solid #324ba6 !important;
   background-color: #324ba6 !important;
 }
-[type="checkbox"]:checked+label:before {
-  border-right:2px solid #324ba6 !important;
-  border-bottom:2px solid #324ba6 !important;
-
+[type="checkbox"]:checked + label:before {
+  border-right: 2px solid #324ba6 !important;
+  border-bottom: 2px solid #324ba6 !important;
 }
-.col.s8.center{
+.col.s8.center {
   margin: 0 auto !important;
   float: none;
 }
@@ -120,22 +119,21 @@ textarea.materialize-textarea:focus:not([readonly]) {
   color: #324ba6 !important;
 }
 
-
-.carousel.carousel-slider{
+.carousel.carousel-slider {
   height: 300px !important;
 }
-.carousel-item img{
+.carousel-item {
   max-height: 200px !important;
 }
 
-.picker__date-display{
+.picker__date-display {
   background-color: #324ba6;
 }
 
-.schedules-side-nav .card-panel{
+.schedules-side-nav .card-panel {
   min-height: 90vh !important;
 }
-.schedules-side-nav .container{
+.schedules-side-nav .container {
   padding: 5px !important;
   margin: 5px !important;
 }
@@ -144,20 +142,52 @@ textarea.materialize-textarea:focus:not([readonly]) {
     width: 75% !important ;
     height: 100vh !important;
   }
-  .schedules-side-nav ul li .row span{
+  .schedules-side-nav ul li .row span {
     display: block !important;
     width: 100% !important;
     float: none !important;
   }
-  .schedules-side-nav .container{
+  .schedules-side-nav .container {
     padding: 0 !important;
     margin: 0 !important;
   }
 
-  h3{
-    font-size: 30px;    
+  h3 {
+    font-size: 30px;
   }
-  h5{
+  h5 {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section.slider {
+    height: 400px !important;
+  }
+  .slides {
+    height: 400px !important;
+    padding-top: 10%;
+  }
+ 
+
+  h2 {
+    font-size: 25px !important;
+  }
+  h3,h4{
+    font-size: 20px !important;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  
+  .btn-large {
+    width: 12em !important;
+    padding-top: 12px !important;
+    height: 40px;
+    font-size: 16px;
+    line-height: 100%;
+    margin: 1em !important;
+  }
+  .carousel, .carousel .carousel-item{
+    max-height: 200px;
   }
 }
