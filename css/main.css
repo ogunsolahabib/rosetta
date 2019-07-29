@@ -122,7 +122,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .carousel.carousel-slider {
   height: 300px !important;
 }
-.carousel-item {
+.carousel-item img{
   max-height: 200px !important;
 }
 
@@ -150,6 +150,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
   .schedules-side-nav .container {
     padding: 0 !important;
     margin: 0 !important;
+  }
+  li .btn-flat {
+    border: 1px solid #324ba6;
+    color: #324ba6 !important;
+    background: inherit !important;
   }
 
   h3 {
