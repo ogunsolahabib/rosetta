@@ -38,6 +38,9 @@
               <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
             </li>
             <li>
+                <a href="#logout-modal" class="btn btn-flat modal-trigger" id='log-out'>Log out</a>
+              </li>
+            <li>
               <a href="#signup_personal-data" class="btn indigo darken-1 modal-trigger">Sign Up</a>
             </li>
           </ul>
@@ -173,7 +176,7 @@
               veniam.
             </p>
           </div>
-        </div>
+        </div>git
         <div class="col s12 m4 indigo-text">
           <div class="card-panel white">
             <i class="large material-icons">
@@ -384,43 +387,44 @@
       <h3>Welcome Back!</h3>
       <h5>Login to access and customize your plans</h5>
       <br />
-      <form class="center" action="">
+      <form class="center" id="login-form">
         <div class="input-field">
-          <input type="email" placeholder="me@example.com" />
+          <input type="email" id="login-email"placeholder="me@example.com" />
           <label for="email">
             <h6 class="indigo-text">Email</h6>
           </label>
         </div>
         <div class="input-field">
-          <input type="password" id="password" placeholder="Password" />
+          <input type="password" id="login-password" placeholder="Password" />
           <label for="password">
             <h6 class="indigo-text">Password</h6>
           </label>
         </div>
+        <div class="modal-footer">
+            <div class="container center">
+              <div class="row">
+                <button class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close">
+                  Login
+                  <i class="material-icons right hide-on-small-and-down">send</i>
+                </button>
+                <p class="col s12 m8">
+                  <a href="#" class="modal-action modal-close indigo-text">Forgotten Password</a>
+                  <!-- <input type="checkbox" class="filled-in" id="auto-login"/>
+                <label for="auto-login">Login automatically</label> -->
+                </p>
+              </div>
+              <div class="row">
+                <div class="col s12 black-text">
+                  Don't have an account?
+                  <a href="#signup_personal-data" class="btn btn-flat btn-signup indigo-text modal-trigger modal-close">Sign
+                    Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
       </form>
     </div>
-    <div class="modal-footer">
-      <div class="container center">
-        <div class="row">
-          <button class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close">
-            Login
-            <i class="material-icons right hide-on-small-and-down">send</i>
-          </button>
-          <p class="col s12 m8">
-            <a href="#" class="modal-action modal-close indigo-text">Forgotten Password</a>
-            <!-- <input type="checkbox" class="filled-in" id="auto-login"/>
-          <label for="auto-login">Login automatically</label> -->
-          </p>
-        </div>
-        <div class="row">
-          <div class="col s12 black-text">
-            Don't have an account?
-            <a href="#signup_personal-data" class="btn btn-flat btn-signup indigo-text modal-trigger modal-close">Sign
-              Up</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   </div>
   <!-- Signup Modal 1-->
   <div class="modal indigo-text" id="signup_personal-data">
@@ -428,7 +432,7 @@
       <h4>Sign up for amazing meals!</h4>
       <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.</h5>
       <br />
-      <form class="center" action="">
+      <form class="center" id="signup-data" >
         <div class="row">
           <div class="input-field col s12 m6">
             <input type="text" class="validate" />
@@ -449,12 +453,19 @@
             </label>
           </div>
           <div class="input-field col s12">
+            <input type="password" id="password" />
+            <label for="email">
+              <h6 class="indigo-text">Password</h6>
+            </label>
+          </div>
+          <div class="input-field col s12">
             <input type="tel" class="validate" data-length="11" />
             <label for="icon_telephone">
               <h6 class="indigo-text">Telephone</h6>
             </label>
           </div>
         </div>
+        <button class='btn blue  modal-action modal-close modal-trigger'>sign up</button>
       </form>
     </div>
     <div class="modal-footer">
@@ -601,6 +612,7 @@
 
   <!-- Import Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="js/auth.js"></script>
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
@@ -634,7 +646,18 @@
 
 
       // Init Modals
-      $(".modal").modal();
+       $(".modal").modal();
+          
+// setup materialize components
+// document.addEventListener('DOMContentLoaded', function() {
+
+// var modals = document.querySelector('.modal');
+// M.Modal.init(modals);
+
+// var items = document.querySelectorAll('.collapsible');
+// M.Collapsible.init(items);
+
+// });
 
       // Init Autocomplete City
       $("#autocomplete-city").autocomplete({
@@ -683,6 +706,7 @@
 
     });
   </script>
+  
 </body>
 
 </html>
