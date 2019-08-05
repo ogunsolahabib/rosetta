@@ -208,6 +208,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
   .carousel .carousel-item {
     max-height: 200px;
   }
+  footer div.col.l2.s6.m4 {
+    height: 200px;
+  }
 }
 /* Prevent the Features grid items from falling out of place */
 @media (min-width: 1140px) and (max-width: 1275px) {
