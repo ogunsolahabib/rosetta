@@ -174,6 +174,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
   }
 }
 @media only screen and (max-width: 600px) {
+  .navbar-fixed .brand-logo {
+    font-size: 13px;
+  }
   section.slider {
     height: 400px !important;
   }
