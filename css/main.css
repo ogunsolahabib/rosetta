@@ -41,6 +41,7 @@ h4 {
 }
 
 .btn {
+  margin-top:20px;
   border-radius: 30px !important;
   height: 35px;
   font-weight: 400;
