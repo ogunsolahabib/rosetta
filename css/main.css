@@ -55,6 +55,9 @@ h4 {
   height: 50px;
   font-size: 18px;
 }
+.btn-flat.indigo-text:hover {
+  color: #fff !important;
+}
 .modal.open {
   background: #d8d8d8 !important;
   /* height: 100vh !important; */
