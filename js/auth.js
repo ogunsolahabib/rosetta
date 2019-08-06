@@ -3,32 +3,25 @@ signupForm.addEventListener('submit', (e) =>{
     e.preventDefault();
 
     // get user info
+    const fname = signupForm['first_name'].value;
+    const lname = signupForm['last_name'].value;
     const email = signupForm['email'].value;
     const password = signupForm['password'].value;
-    
+    const phone = signupForm['telephone'].value;
+    console.log(email, password, fname, lname, phone);
     // sign up user
     
     auth.createUserWithEmailAndPassword(email , password).then(cred =>{
-        
-        // const modal = document.querySelector('#signup_personal-data');
-        // M.Modal.getInstance(modal).close();
+      console.log(cred);
+    
         signupForm.reset();
     });
 });
 
 
-// log out
-
-
-const logout = document.querySelector('#log-out');
-logout.addEventListener('click', (e) => {
-  e.preventDefault();
-  auth.signOut().then(() => {
-    console.log('user signed out');
-  })
-});
 
 // login
+window.onload=function(){
 const loginForm = document.querySelector('#login-form');
 loginForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -40,10 +33,16 @@ loginForm.addEventListener('submit', (e) => {
   // log the user in
   auth.signInWithEmailAndPassword(email, password).then((cred) => {
     console.log(cred.user);
-    // close the signup modal & reset form
-    // const modal = document.querySelector('#modal-login');
-    // M.Modal.getInstance(modal).close();
-    loginForm.reset();
+      
+      if (cred.user==='auth/wrong-password') {
+        alert("error");
+      } else {
+          window.location='schedules.html';
+      }
+      loginForm.reset();
+    
+    
   });
 
 });
+}
