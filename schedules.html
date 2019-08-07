@@ -101,7 +101,7 @@
               <li><a href="#about">About</a></li>
               <li><a href="#delivery-info" class="modal-trigger indigo-text" >Register</a></li>
                <li>
-                <button href="#" class="btn btn-flat" id='log-out'>Log out</button>
+                <a href="#" class="btn btn-flat" id='log-out'>Log out</a>
               </li>
               <!-- <li>
                     <a href="#logout-modal" class="btn btn-flat modal-trigger" id='log-out'>Log out</a>
@@ -184,119 +184,7 @@
         </div>
       </div>
     </section>
-    <!-- register Modal 2 -->
-  <div class="modal indigo-text" id="delivery-info">
-      <div class="modal-content center">
-        <h4>Delivery Information</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, molestias.</p>
-        <br />
-        <form class="center" action="">
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="text" class="validate" />
-              <label for="first_name">
-                <h6 class="indigo-text">Street</h6>
-              </label>
-            </div>
-  
-            <div class="input-field col s12">
-              <input type="text" id="autocomplete-city" class="autocomplete input-city" />
-              <label for="autocomplete-city">
-                <h6 class="indigo-text">City</h6>
-              </label>
-            </div>
-            <div class="input-field col s6">
-              <label for="timepicker">
-                <h6 class="indigo-text">Delivery Time: </h6>
-              </label>
-              <input class="timepicker" id="timepicker" />
-  
-            </div>
-            <div class="input-field col s6"><label for="datepicker">
-                <h6 class="indigo-text">Start Date: </h6>
-              </label>
-              <input class="datepicker" type="text" />
-  
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <div class="container center">
-          <div class="row">
-            <a href="#signup_customize-plans"
-              class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close modal-trigger center">
-              Next
-              <i class="material-icons right hide-on-small-and-down">arrow</i>
-            </a>
-  
-          </div>
-  
-        </div>
-      </div>
-    </div>
-    <!-- register Modal 3 -->
-    <div class="modal indigo-text" id="signup_customize-plans">
-      <div class="modal-content center">
-        <h4>You're Almost There!</h4>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.</h5>
-        <br />
-        <form class="center" action="">
-          <div class="row center">
-            <div class="col s12 ">
-              <input type="checkbox" id="select-type-2" />
-              <label class="indigo-text" for="select-type-2">
-                Local Dishes: Lorem ipsum dolor sit amet consectetur.
-              </label>
-            </div>
-            <div class="col s12 ">
-              <input type="checkbox" id="select-type-3" />
-              <label class="indigo-text" for="select-type-3">
-                Local Dishes: Lorem ipsum dolor sit amet consectetur.
-              </label>
-            </div>
-            <div class="col s12 ">
-              <input type="checkbox" id="select-type-4" />
-              <label class="indigo-text" for="select-type-4">
-                Local Dishes: Lorem ipsum dolor sit amet consectetur.
-              </label>
-            </div>
-            <div class="col s12 ">
-              <input type="checkbox" id="select-type-5" />
-              <label class="indigo-text" for="select-type-5">
-                Local Dishes: Lorem ipsum dolor sit amet consectetur.
-              </label>
-            </div>
-            <div class="col s12 ">
-              <input type="checkbox" id="select-type-6" />
-              <label class="indigo-text" for="select-type-6">
-                Local Dishes: Lorem ipsum dolor sit amet consectetur.
-              </label>
-            </div>
-            <div class="col s8 center">
-              <select multiple>
-                <option value="" selected disabled>Pick Most Prefered First</option>
-                <option value="1">Local</option>
-                <option value="2">Intercontinental</option>
-                <option value="3">Regular</option>
-              </select>
-              <label class="indigo-text">Sort Your Meal Preferences</label>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <div class="container center">
-          <div class="row">
-            <a href="schedules.html" onclick="window.open('https://paystack.com/pay/sample-page')"
-              class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-trigger modal-close">
-              Submit
-              <i class="material-icons right hide-on-small-and-down">send</i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+   
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
@@ -337,6 +225,87 @@
       $(document).ready(function () {
          // Init Modals
        $(".modal").modal();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        // Custom JS & jQuery here
+        // Init Side Nav
+        $(".button-collapse").sideNav({
+          menuWidth: 300,
+          closeOnClick: true,
+          edge: "right"
+        });
+        // Init Image Slider
+        $(".slider").slider({
+          indicators: false,
+          height: 500,
+          transition: 500,
+          interval: 4000
+        });
+  
+        // Init Typing Animation
+  
+        var type = new Typed(".typing", {
+          strings: ["<h3 class='indigo-text'>Easy steps to Use Rosetta</h3>", "<h4 class='text-lighten-1'>Provide Your Start Date and Delivery Time</h4>", "<h4 class='text-lighten-1'>Select Your Favourite Meals...</h4>", "<h4 class='text-lighten-1'>And We'll serve you tasty dishes for 30 days</h4>"],
+          typeSpeed: 50,
+          loop: true,
+          backSpeed: 20,
+          backDelay: 1000,
+          showCursor: false
+        })
+  
+  
+        // Init Modals
+         $(".modal").modal();
+            
+  
+  
+        // Init Autocomplete City
+        $("#autocomplete-city").autocomplete({
+          data: {
+            Ajah: null,
+            Ikeja: null,
+            Ogudu: null,
+            Ojota: null,
+            Lekki: null,
+            Magodo: null,
+            Mushin: null,
+            Surulere: null,
+            "Victoria Island": null,
+            Ikoyi: null,
+            Agege: null,
+            Oshodi: null
+          }
+        });
+        // Init Carousel Slider
+        $(".carousel.carousel-slider").carousel({ fullWidth: true, height: 100 });
+  
+        function autoSlide() {
+          $(".carousel").carousel("next");
+          setTimeout(autoSlide, 3000);
+        }
+  
+        autoSlide();
+  
+  
+        // Init Date and Time Picker
+        $(".datepicker").pickadate();
+        $('.datepicker').on('mousedown', function (event) {
+          event.preventDefault();
+        });
+  
+        $(".timepicker").pickatime();
+        $('.timepicker').on('mousedown', function (event) {
+          event.preventDefault();
+        });
+  
+  
+        if ($("#timepicker").val()) {
+          $('label[for="timepicker"]').toggleClass("active");
+        }
+        $('select').material_select();
+  
       });
     </script>
     <script>
