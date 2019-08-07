@@ -1,5 +1,6 @@
 const signupForm = document.querySelector('#signup-data');
-signupForm.addEventListener('submit', (e) =>{
+const signupBtn = document.querySelector('#sign-up');
+signupBtn.addEventListener('click', (e) =>{
     e.preventDefault();
 
     // get user info
