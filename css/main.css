@@ -40,6 +40,7 @@ h4 {
 }
 
 .btn {
+  margin-top:20px;
   border-radius: 30px !important;
   height: 35px;
   font-weight: 400;
@@ -124,9 +125,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .dropdown-content li > a,
 .dropdown-content li > span {
   color: #000 !important;
+  
 }
 .autocomplete-content li .highlight {
   color: #324ba6 !important;
+  
 }
 
 .carousel.carousel-slider {
@@ -146,6 +149,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .schedules-side-nav .container {
   padding: 5px !important;
   margin: 5px !important;
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 1100px) {

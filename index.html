@@ -40,9 +40,7 @@
             <li>
               <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
             </li>
-            <!-- <li>
-                <a href="#logout-modal" class="btn btn-flat modal-trigger" id='log-out'>Log out</a>
-              </li> -->
+           
             <li>
               <a href="#signup_personal-data" class="btn indigo darken-1 modal-trigger">Sign Up</a>
             </li>
@@ -406,14 +404,16 @@
           </label>
         </div>
         
+        <button class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close">
+            Login
+            <i class="material-icons right hide-on-small-and-down">send</i>
+          </button>
+        
       </form>
     </div><div class="modal-footer">
             <div class="container center">
               <div class="row">
-                <button class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close">
-                  Login
-                  <i class="material-icons right hide-on-small-and-down">send</i>
-                </button>
+                
                 <p class="col s12 m8">
                   <a href="#" class="modal-action modal-close indigo-text">Forgotten Password</a>
                   <!-- <input type="checkbox" class="filled-in" id="auto-login"/>
@@ -433,7 +433,7 @@
     
     
   </div>
-  <!-- Signup Modal 1-->
+  <!-- Signup Modal -->
   <div class="modal indigo-text" id="signup_personal-data">
     <div>
       <div class="modal-content center">
@@ -443,13 +443,13 @@
       <form class="center" id="signup-data" >
         <div class="row">
           <div class="input-field col s12 m6">
-            <input type="text" class="validate" />
+            <input type="text"  id="first_name"/>
             <label for="first_name">
               <h6 class="indigo-text">First Name</h6>
             </label>
           </div>
           <div class="input-field col s12 m6">
-            <input id="last_name" type="text" class="validate" />
+            <input id="last_name" type="text" />
             <label for="last_name">
               <h6 class="indigo-text">Last Name</h6>
             </label>
@@ -467,41 +467,43 @@
             </label>
           </div>
           <div class="input-field col s12">
-            <input type="tel" class="validate" data-length="11" />
+            <input type="number" id="telephone" data-length="11" />
             <label for="icon_telephone">
               <h6 class="indigo-text">Telephone</h6>
             </label>
           </div>
         </div>
+       
+                <a href="#delivery-info" id="sign-up"
+                  class="col s12 m4 btn waves-effect waves-light indigo  modal-close modal-trigger" >
+                  Sign Up
+                  <i class="material-icons right hide-on-small-and-down">send</i>
+      </a>
+               
+              
       </form>
+       <!-- <div class="modal-footer">
+            <div class="container center">
+              <div class="row"> -->
+                 <!-- <div class="col s12 m7 right">
+                  <input type="checkbox" class="filled-in" id="select-type-1" required />
+                  <label for="privacy-policy">Agree to Privacy Policy and Terms and Conditions</label>
+      
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 black-text">
+                  Already have an account?
+                  <a href="#login-modal" class="btn btn-flat indigo-text modal-trigger modal-close">Log In</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
     </div>
-    <div class="modal-footer">
-      <div class="container center">
-        <div class="row">
-          <a href="#delivery-info"
-            class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-trigger modal-close">
-            Sign Up
-            <i class="material-icons right hide-on-small-and-down">send</i>
-          </a>
-          <div class="col s12 m7 right">
-            <input type="checkbox" class="filled-in" id="select-type-1" />
-            <label for="privacy-policy">Agree to Privacy Policy and Terms and Conditions</label>
-
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12 black-text">
-            Already have an account?
-            <a href="#login-modal" class="btn btn-flat indigo-text modal-trigger modal-close">Log In</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    
   </div>
-  <!-- Signup Modal 2 -->
-  <div class="modal indigo-text" id="delivery-info">
+  </div>
+   <!-- register Modal 2 -->
+   <div class="modal indigo-text" id="delivery-info">
     <div class="modal-content center">
       <h4>Delivery Information</h4>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, molestias.</p>
@@ -551,7 +553,7 @@
       </div>
     </div>
   </div>
-  <!-- Signup Modal 3 -->
+  <!-- register Modal 3 -->
   <div class="modal indigo-text" id="signup_customize-plans">
     <div class="modal-content center">
       <h4>You're Almost There!</h4>
@@ -604,7 +606,7 @@
     <div class="modal-footer">
       <div class="container center">
         <div class="row">
-          <a href="schedules.html" onclick="window.open('https://paystack.com/pay/sample-page')"
+          <a href="index.html" onclick="window.open('https://paystack.com/pay/sample-page')"
             class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-trigger modal-close">
             Submit
             <i class="material-icons right hide-on-small-and-down">send</i>
@@ -637,8 +639,6 @@
   // make auth and firestore refrences
   const auth = firebase.auth();
   const db = firebase.firestore();
-  // update  firestore settings
-  // db.settings({timestampsInSnapshots: true});
   
 
 </script>
@@ -684,16 +684,7 @@
       // Init Modals
        $(".modal").modal();
           
-// setup materialize components
-// document.addEventListener('DOMContentLoaded', function() {
 
-// var modals = document.querySelector('.modal');
-// M.Modal.init(modals);
-
-// var items = document.querySelectorAll('.collapsible');
-// M.Collapsible.init(items);
-
-// });
 
       // Init Autocomplete City
       $("#autocomplete-city").autocomplete({
