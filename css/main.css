@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Robotto", sans-serif !important;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 0.5px !important;
@@ -15,9 +15,6 @@ body {
   vertical-align: middle;
 }
 
-.section-promo {
-  background: #fff;
-}
 .nav-wrapper li a {
   color: #000 !important;
 }
@@ -28,6 +25,9 @@ body {
 nav .active {
   text-decoration: underline;
 }
+.slider {
+  font-family: "Montserrat", sans-serif;
+}
 .slider .slider-signup-btn {
   display: block;
   position: absolute;
@@ -37,17 +37,60 @@ nav .active {
   margin-top: 5em;
   z-index: 10;
 }
+.section-promo {
+  background: #fff;
+  padding: 5em 0em;
+}
+.section-features {
+  padding-top: 0;
+}
+.section-features .heading {
+  height: 100px;
+  margin-bottom: 3em;
+}
+.section-features .heading h3 {
+  margin-top: 0;
+  line-height: 100px;
+}
+h3,
+h4 {
+  font-weight: 500;
+  letter-spacing: 0;
+}
 h3 {
   font-size: 48px !important;
-  line-height: 40px;
-  letter-spacing: 0;
+  line-height: 50px;
   font-weight: 500;
 }
 
 h4 {
   font-size: 34px !important;
   line-height: 40px;
-  letter-spacing: 0.25px;
+  font-family: "Roboto";
+}
+.section-features .left .row,
+.section-features .right .row {
+  display: grid !important;
+  grid-template-columns: auto auto;
+  grid-gap: 2em;
+}
+.icon-card {
+  width: 17vw;
+  height: 17vw;
+  border-radius: 50%;
+  position: relative;
+}
+.icon-card svg {
+  display: block;
+  height: 50%;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.feature-text {
+  height: 17vw;
 }
 
 .btn {
@@ -70,11 +113,11 @@ h4 {
   color: #fff !important;
 }
 .modal.open {
-  background: #d8d8d8 !important;
+  background: #ffffffea !important;
   /* height: 100vh !important; */
 }
 .modal {
-  min-height: 85% !important;
+  min-height: 65% !important;
 }
 .modal-open > div {
   min-height: 100% !important;
@@ -162,6 +205,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 @media only screen and (max-width: 1100px) {
+  .navbar-fixed .brand-logo {
+    left: 0;
+    transform: none;
+    font-size: 13px;
+  }
   .modal {
     width: 75% !important ;
     height: 100vh !important;
@@ -189,9 +237,6 @@ textarea.materialize-textarea:focus:not([readonly]) {
   }
 }
 @media only screen and (max-width: 600px) {
-  .navbar-fixed .brand-logo {
-    font-size: 13px;
-  }
   section.slider {
     height: 400px !important;
   }
@@ -210,7 +255,13 @@ textarea.materialize-textarea:focus:not([readonly]) {
   h5 {
     font-size: 18px;
   }
-
+  .icon-card {
+    width: 100px;
+    height: 100px;
+  }
+  .feature-text {
+    height: 100px;
+  }
   .btn-large {
     width: 12em !important;
     padding-top: 12px !important;
@@ -225,24 +276,5 @@ textarea.materialize-textarea:focus:not([readonly]) {
   }
   footer div.col.l2.s6.m4 {
     height: 200px;
-  }
-}
-/* Prevent the Features grid items from falling out of place */
-@media (min-width: 1140px) and (max-width: 1275px) {
-  .section-features div.col.s12.m4.indigo-text,
-  .section-features div.card-panel {
-    min-height: 375px;
-  }
-}
-@media (min-width: 993px) and (max-width: 1092px) {
-  .section-features div.col.s12.m4.indigo-text,
-  .section-features div.card-panel {
-    min-height: 392px;
-  }
-}
-@media (min-width: 827px) and (max-width: 897px) {
-  .section-features div.col.s12.m4.indigo-text,
-  .section-features div.card-panel {
-    min-height: 387px;
   }
 }
