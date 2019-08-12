@@ -37,10 +37,15 @@ nav .active {
   margin-top: 5em;
   z-index: 10;
 }
+.section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
 .section-promo {
   background: #fff;
   padding: 5em 0em;
 }
+
 .section-features {
   padding-top: 0;
 }
