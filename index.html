@@ -21,8 +21,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rosetta</title>
 </head>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+ <!-- <script>
+  $(window).load(function() {
+      // Animate loader off screen
+      $(".preloader-background").fadeOut("slow");;
+    });
+  </script> -->
 <body class="grey lighten-4">
+ 
+    
+    <!-- <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
   <div class="navbar-fixed ">
     <nav class="amber lighten-1  blue-text">
       <div class="container">
@@ -545,24 +569,19 @@
               <h6 class="indigo-text">Start Date: </h6>
             </label>
             <input class="datepicker" type="text" />
-
+            
+              
           </div>
+          <br>
+          <br>
+          <a href="#signup_customize-plans"
+                class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-close modal-trigger">
+                Next
+              </a>  
         </div>
       </form>
     </div>
-    <div class="modal-footer">
-      <div class="container center">
-        <div class="row">
-          <a href="#signup_customize-plans"
-            class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close modal-trigger center">
-            Next
-            <i class="material-icons right hide-on-small-and-down">arrow</i>
-          </a>
-
-        </div>
-
-      </div>
-    </div>
+    
   </div>
   <!-- register Modal 3 -->
   <div class="modal indigo-text" id="signup_customize-plans">
@@ -611,20 +630,14 @@
             </select>
             <label class="indigo-text">Sort Your Meal Preferences</label>
           </div>
+          <a href="index.html" onclick="window.open('https://paystack.com/pay/sample-page')"
+          class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-trigger modal-close">
+          Submit
+        </a>
         </div>
       </form>
     </div>
-    <div class="modal-footer">
-      <div class="container center">
-        <div class="row">
-          <a href="index.html" onclick="window.open('https://paystack.com/pay/sample-page')"
-            class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-trigger modal-close">
-            Submit
-            <i class="material-icons right hide-on-small-and-down">send</i>
-          </a>
-        </div>
-      </div>
-    </div>
+   
   </div>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -746,5 +759,4 @@
   </script>
   
 </body>
-
 </html>
