@@ -32,6 +32,18 @@ loginForm.addEventListener('submit', (e) => {
   const password = loginForm['login-password'].value;
   
  // log the user in
+  auth.signInWithEmailAndPassword(email,password).then(cred=> {
+    console.log(cred.user);
+    // signinForm.reset();
+    if (cred.user) {
+        window.location='schedules.html';
+        loginForm.querySelector(".error").innerHTML="";
+    }
+}).catch
+(err=>{
+  loginForm.querySelector(".error").innerHTML=err.message;
+});
+});
  
 
  }
