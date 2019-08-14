@@ -162,6 +162,9 @@ h4 {
   color: #324ba6 !important;
   background: inherit;
 }
+.time-and-date {
+  position: relative;
+}
 /* Color of underline for input elements on focus */
 input:not([type]):focus:not([readonly]),
 input[type="text"]:not(.browser-default):focus:not([readonly]),
