@@ -30,7 +30,7 @@ loginForm.addEventListener('submit', (e) => {
   // get user info
   const email = loginForm['login-email'].value;
   const password = loginForm['login-password'].value;
-
+  
  // log the user in
   auth.signInWithEmailAndPassword(email,password).then(cred=> {
     console.log(cred.user);
@@ -44,5 +44,6 @@ loginForm.addEventListener('submit', (e) => {
   loginForm.querySelector(".error").innerHTML=err.message;
 });
 });
+ 
 
  }
