@@ -156,6 +156,7 @@
           </div>
 
           <a href="#" class="btn btn-large indigo">Place Order</a>
+          
         </div>
         <div class="col s12 l6 center">
           <h3 style="margin-bottom: 30px" class="indigo-text">Easy Steps To Use Rosetta!</h3>
@@ -427,23 +428,23 @@
       <br />
       <form class="center" id="login-form">
         <div class="input-field">
-          <input type="email" id="login-email"placeholder="me@example.com" />
+          <input type="email" id="login-email"placeholder="me@example.com" required />
           <label for="email">
             <h6 class="indigo-text">Email</h6>
           </label>
         </div>
         <div class="input-field">
-          <input type="password" id="login-password" placeholder="Password" />
+          <input type="password" id="login-password" placeholder="Password"  required />
           <label for="password">
             <h6 class="indigo-text">Password</h6>
           </label>
         </div>
         
-        <button class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close">
+        <button class="col s12 m4 btn waves-effect waves-light indigo modal-action ">
             Login
             <i class="material-icons right hide-on-small-and-down">send</i>
           </button>
-        
+          <p class="error"></p>
       </form>
     </div><div class="modal-footer">
             <div class="container center">
@@ -478,31 +479,31 @@
       <form class="center" id="signup-data" >
         <div class="row">
           <div class="input-field col s12 m6">
-            <input type="text"  id="first_name"/>
+            <input type="text"  id="first_name"  data-error="wrong" data-success="right" class="validate">
             <label for="first_name">
               <h6 class="indigo-text">First Name</h6>
             </label>
           </div>
           <div class="input-field col s12 m6">
-            <input id="last_name" type="text" />
+            <input id="last_name" type="text" data-error="wrong" data-success="right" class="validate" >
             <label for="last_name">
               <h6 class="indigo-text">Last Name</h6>
             </label>
           </div>
           <div class="input-field col s12">
-            <input type="email" id="email" />
+            <input type="email" id="email" data-error="wrong" data-success="right" class="validate">
             <label for="email">
               <h6 class="indigo-text">Email</h6>
             </label>
           </div>
           <div class="input-field col s12">
-            <input type="password" id="password" />
+            <input type="password" id="password" data-error="wrong" data-success="right" class="validate"/>
             <label for="email">
               <h6 class="indigo-text">Password</h6>
             </label>
           </div>
           <div class="input-field col s12">
-            <input type="number" id="telephone" data-length="11" />
+            <input type="number" id="telephone" data-error="wrong" data-success="right" class="validate" data-length="11" />
             <label for="icon_telephone">
               <h6 class="indigo-text">Telephone</h6>
             </label>
@@ -546,7 +547,7 @@
       <form class="center" action="">
         <div class="row">
           <div class="input-field col s12">
-            <input type="text" class="validate" />
+            <input type="text"data-error="wrong" data-success="right" class="validate" />
             <label for="first_name">
               <h6 class="indigo-text">Street</h6>
             </label>
@@ -630,7 +631,7 @@
             </select>
             <label class="indigo-text">Sort Your Meal Preferences</label>
           </div>
-          <a href="index.html" onclick="window.open('https://paystack.com/pay/sample-page')"
+          <a href="schedules.html" onclick="window.open('https://paystack.com/pay/sample-page')"
           class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-trigger modal-close">
           Submit
         </a>
