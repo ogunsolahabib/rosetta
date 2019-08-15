@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,500&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,500,800&display=swap" rel="stylesheet">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <!-- Import Font Awesome Icons -->
@@ -23,16 +23,17 @@
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
- <!-- <script>
+<!-- <script>
   $(window).load(function() {
       // Animate loader off screen
       $(".preloader-background").fadeOut("slow");;
     });
   </script> -->
+
 <body class="grey lighten-4">
- 
-    
-    <!-- <div class="preloader-background">
+
+
+  <!-- <div class="preloader-background">
         <div class="preloader-wrapper big active">
           <div class="spinner-layer spinner-blue-only">
             <div class="circle-clipper left">
@@ -50,7 +51,7 @@
   <div class="navbar-fixed ">
     <nav class="amber lighten-1  blue-text">
       <div class="container">
-        <div class="nav-wrapper black-text">         
+        <div class="nav-wrapper black-text">
           <a href="index.html" class="brand-logo">
             <img src="img/logo-small.png" class="logo responsive-img" alt="Rosetta Logo" /> R O S E T T A
           </a>
@@ -58,11 +59,11 @@
             <i class="material-icons black-text">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            
+
             <li>
               <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
             </li>
-           
+
             <li>
               <a href="#signup_personal-data" class="btn indigo darken-1 modal-trigger">Sign Up</a>
             </li>
@@ -74,27 +75,27 @@
 
   <ul class="right side-nav amber lighten-1 center" id="mobile-nav">
     <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li>
-              <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
-            </li>
-            <li>
-              <a href="#signup_personal-data" class="btn waves-effect waves-light indigo darken-1 modal-trigger">Sign Up</a>
-            </li>
-    
+    <li><a href="#about">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li>
+      <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
+    </li>
+    <li>
+      <a href="#signup_personal-data" class="btn waves-effect waves-light indigo darken-1 modal-trigger">Sign Up</a>
+    </li>
+
   </ul>
 
   <!-- Section: Slider -->
-  <section class="slider">   
+  <section class="slider">
     <ul class="slides">
       <li>
         <img src="img/timely-deliveries.jpg" alt="" />
         <div class="caption center-align">
-          <h2>Let’’s take the stress off your plate</h2>
+          <h2>Let’s take the stress off your plate</h2>
           <h5 class="light white-text hide-on-small-and-medium">
             Schedule and preorder your favorite meals for up to a month in advance, all at the click of a buton.
-          </h5>  
+          </h5>
         </div>
       </li>
       <li>
@@ -104,7 +105,7 @@
           <h5 class="light white-text hide-on-small-and-medium">
             You can enjoy a solo meal or place order from friends and family.
           </h5>
-          
+
         </div>
       </li>
       <li>
@@ -112,13 +113,15 @@
         <div class="caption center-align">
           <h2>Local and Intercontinental Dishes</h2>
           <h5 class="light white-text hide-on-small-and-medium">
-            We offer a vide variety of menus to suit your taste, whatever your food preference Rosetta is the place for you.
+            We offer a vide variety of menus to suit your taste, whatever your food preference Rosetta is the place for
+            you.
           </h5>
-          
+
         </div>
       </li>
     </ul>
-    <a class="btn btn-large indigo darken-1 modal-trigger slider-signup-btn" href="#signup_personal-data">Place Order</a>
+    <a class="btn btn-large indigo darken-1 modal-trigger slider-signup-btn" href="#signup_personal-data">Place
+      Order</a>
   </section>
 
 
@@ -131,134 +134,157 @@
             First time user?<br>
             Get a <span class="indigo-text"><strong>free meal box</strong></span> on the house!!
           </h3>
-         
-            <div class="row">
-              <div class="col s12">
-                <div class="input-field">
-                  <input type="text" id="full-name" />
-                  <label for="full-name" class="indigo-text">
-                    <h6>Full Name</h6>
-                  </label>
-                </div>
+
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field">
+                <input type="text" id="full-name" />
+                <label for="full-name" class="indigo-text">
+                  <h6>Full Name</h6>
+                </label>
               </div>
-              <div class="col s12">
-                <div class="input-field">
-                  <input type="text" />
-                  <label for="email" class="indigo-text">
-                    <h6>Email</h6>
-                  </label>
-                </div>
+            </div>
+            <div class="col s12">
+              <div class="input-field">
+                <input type="text" />
+                <label for="email" class="indigo-text">
+                  <h6>Email</h6>
+                </label>
               </div>
-            
+            </div>
+
           </div>
 
           <a href="#" class="btn btn-large indigo">Place Order</a>
-          
+
         </div>
-        <div class="col s12 l6 center">
+        <div class="col s12 l6 center usage-steps">
           <h3 style="margin-bottom: 30px" class="indigo-text">Rosetta is easy to use...</h3>
           <div class="container typing">
 
           </div>
         </div>
       </div>
-      </div>
+    </div>
   </section>
 
-  
-    
+
+
 
 
   <!-- Section: Features -->
   <section class="section section-features ">
-      <div class="indigo lighten-1 white-text center heading"><h3>Why use Rosetta?</h3></div>
+    <div class="indigo lighten-1 white-text center heading">
+      <h3>Why use Rosetta?</h3>
+    </div>
     <div class="container center">
-      
+
       <div class="row">
         <div class="col s12 m10 l8 left left-align">
           <div class="row">
-            <div class="card-panel white icon-card">
-            
-                <svg viewBox="0 0 172 170" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M118.25 47.8125C117.917 62.0234 107.124 74.0244 107.124 74.0244C107.124 47.5894 86 26.5625 86 26.5625C86 26.5625 85.7151 42.2981 75.0189 58.1613C64.3226 21.1491 32.2231 0 32.2231 0C48.2729 58.1613 26.875 79.3156 26.875 121.614C26.875 146.428 48.1277 170 80.625 170C128.769 170 138.078 152.533 143.056 132.85C149.914 105.751 139.642 74.2475 118.25 47.8125ZM132.633 130.268C129.177 143.916 125.275 159.375 80.625 159.375C53.707 159.375 37.625 140.176 37.625 121.614C37.625 107.397 40.248 95.7259 43.0215 83.3691C46.5475 67.7025 50.1595 51.6641 48.5954 30.4513C65.1719 53.1303 71.0736 83.1778 71.0736 83.1778C71.0736 83.1778 86.5052 61.7631 90.6547 51.8181C93.8314 58.2091 96.75 79.6875 96.75 100.938C96.75 100.938 111.026 89.3138 121.733 71.8356C133.01 91.8213 137.073 112.715 132.633 130.268Z" fill="#324BA6"/>
-                  <path d="M120.572 89.2234L116.003 94.4562C110.343 100.98 104.99 107.164 90.6978 114.272C88.6499 108.205 86.7901 101.527 86.7901 91.3059V82.2268L78.6309 94.86C75.8789 99.1684 73.5999 102.738 70.2029 107.482C65.0483 95.9968 61.404 87.5021 58.6359 79.7937L56.0613 72.6218L53.2663 80.6437C49.7187 90.849 46.3594 100.486 46.3594 125.502C46.3594 126.969 47.558 128.159 49.0469 128.159C50.525 128.159 51.7344 126.969 51.7344 125.502C51.7344 106.33 53.664 96.8362 56.2494 88.6284C59.0444 95.6515 62.5704 103.636 67.1983 113.863L69.0903 118.028L71.8208 114.352C76.282 108.348 78.9373 104.311 81.8451 99.7793C82.6944 107.637 84.6563 113.273 86.602 118.851L87.5803 121.656L90.3 120.387C104.829 113.565 111.628 107.355 117.025 101.394C117.863 111.297 116.541 122.134 113.402 129.832C112.843 131.192 113.515 132.738 114.891 133.285C115.219 133.413 115.563 133.477 115.901 133.477C116.96 133.477 117.971 132.85 118.39 131.814C122.555 121.592 123.808 107.036 121.572 94.7218L120.572 89.2234Z" fill="#324BA6"/>
-                  </svg>   
-            
+
+            <div class="white icon-card">
+              <svg viewBox="0 0 172 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M118.25 47.8125C117.917 62.0234 107.124 74.0244 107.124 74.0244C107.124 47.5894 86 26.5625 86 26.5625C86 26.5625 85.7151 42.2981 75.0189 58.1613C64.3226 21.1491 32.2231 0 32.2231 0C48.2729 58.1613 26.875 79.3156 26.875 121.614C26.875 146.428 48.1277 170 80.625 170C128.769 170 138.078 152.533 143.056 132.85C149.914 105.751 139.642 74.2475 118.25 47.8125ZM132.633 130.268C129.177 143.916 125.275 159.375 80.625 159.375C53.707 159.375 37.625 140.176 37.625 121.614C37.625 107.397 40.248 95.7259 43.0215 83.3691C46.5475 67.7025 50.1595 51.6641 48.5954 30.4513C65.1719 53.1303 71.0736 83.1778 71.0736 83.1778C71.0736 83.1778 86.5052 61.7631 90.6547 51.8181C93.8314 58.2091 96.75 79.6875 96.75 100.938C96.75 100.938 111.026 89.3138 121.733 71.8356C133.01 91.8213 137.073 112.715 132.633 130.268Z"
+                  fill="#324BA6" />
+                <path
+                  d="M120.572 89.2234L116.003 94.4562C110.343 100.98 104.99 107.164 90.6978 114.272C88.6499 108.205 86.7901 101.527 86.7901 91.3059V82.2268L78.6309 94.86C75.8789 99.1684 73.5999 102.738 70.2029 107.482C65.0483 95.9968 61.404 87.5021 58.6359 79.7937L56.0613 72.6218L53.2663 80.6437C49.7187 90.849 46.3594 100.486 46.3594 125.502C46.3594 126.969 47.558 128.159 49.0469 128.159C50.525 128.159 51.7344 126.969 51.7344 125.502C51.7344 106.33 53.664 96.8362 56.2494 88.6284C59.0444 95.6515 62.5704 103.636 67.1983 113.863L69.0903 118.028L71.8208 114.352C76.282 108.348 78.9373 104.311 81.8451 99.7793C82.6944 107.637 84.6563 113.273 86.602 118.851L87.5803 121.656L90.3 120.387C104.829 113.565 111.628 107.355 117.025 101.394C117.863 111.297 116.541 122.134 113.402 129.832C112.843 131.192 113.515 132.738 114.891 133.285C115.219 133.413 115.563 133.477 115.901 133.477C116.96 133.477 117.971 132.85 118.39 131.814C122.555 121.592 123.808 107.036 121.572 94.7218L120.572 89.2234Z"
+                  fill="#324BA6" />
+              </svg>
+
+
+            </div>
+            <div class="feature-text valign-wrapper">
+              <h4>Hot meals<br>
+                <span class="grey-text text-darken-2">Say goodbye to cold food and hello to Rosetta.</span>
+              </h4>
+            </div>
           </div>
-          
-            <div class="feature-text valign-wrapper"><h4>Hot meals<br>    
-             Delivered right to your door step.           
-          </h4>
-        </div>
-          </div>
-         
+
         </div>
         <div class="col s12 m10 l8 right right-align">
-            <div class="row">        
-              <div class="feature-text valign-wrapper">
-                <h4>Hot meals<br>    
-               Delivered right to your door step.           
-            </h4>
-          </div>
-          <div class="card-panel white icon-card">
-              
+          <div class="row">
+            <div class="feature-text valign-wrapper">
+              <h4>Delicious food<br>
+                <span class="grey-text text-darken-2"> Delivered where you want it the way you want it.</span>
+              </h4>
+            </div>
+
+            <div class="white icon-card">
+
               <svg viewBox="0 0 227 197" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
-                <path d="M89.3221 114.379H57.7831V128.085H60.4946V197.002H86.8139V128.08H89.3221V114.379ZM95.4146 63.1902C95.4146 63.1235 95.4066 63.0707 95.4066 63.0039H95.4146V3.78941C95.4146 1.69754 93.4606 0.000413383 91.0518 0.000413383C88.6446 0.000413383 86.689 1.69615 86.689 3.78941V34.9826V48.4971V50.0038C86.2886 51.7315 84.5252 53.0408 82.4095 53.0408C80.0007 53.0408 78.0467 51.3451 78.0467 49.256V28.675V3.78941C78.0419 1.69615 76.0671 -0.000976562 73.6327 -0.000976562C71.1982 -0.000976562 69.225 1.69476 69.225 3.78802V28.6403V49.2476C69.225 51.3367 67.271 53.0338 64.8606 53.0338C62.455 53.0338 60.4994 51.3409 60.4994 49.2476V3.81165H60.4818C60.485 3.75883 60.4962 3.71296 60.4962 3.66014C60.4962 1.63638 58.5374 -0.000976562 56.1254 -0.000976562C53.715 -0.000976562 51.7594 1.63638 51.7594 3.65736C51.7594 3.71018 51.7658 3.75605 51.769 3.80887H51.7594V62.9998H51.7658C51.7658 63.0693 51.7594 63.1235 51.7594 63.1902C51.7594 78.0029 57.4307 90.6666 65.4484 95.8817V113.744H81.6567V95.922C89.7145 90.7375 95.4146 78.0473 95.4146 63.1902ZM156.529 140.172V60.7967V0.000413383C141.394 3.85474 130.339 16.0057 130.339 30.4041C130.339 30.4333 130.343 30.4653 130.344 30.4931H130.339V140.174H126.717V155.33H130.339V196.999H156.529V155.324H159.932V140.172H156.529Z" fill="#324BA6"/>
+                  <path
+                    d="M89.3221 114.379H57.7831V128.085H60.4946V197.002H86.8139V128.08H89.3221V114.379ZM95.4146 63.1902C95.4146 63.1235 95.4066 63.0707 95.4066 63.0039H95.4146V3.78941C95.4146 1.69754 93.4606 0.000413383 91.0518 0.000413383C88.6446 0.000413383 86.689 1.69615 86.689 3.78941V34.9826V48.4971V50.0038C86.2886 51.7315 84.5252 53.0408 82.4095 53.0408C80.0007 53.0408 78.0467 51.3451 78.0467 49.256V28.675V3.78941C78.0419 1.69615 76.0671 -0.000976562 73.6327 -0.000976562C71.1982 -0.000976562 69.225 1.69476 69.225 3.78802V28.6403V49.2476C69.225 51.3367 67.271 53.0338 64.8606 53.0338C62.455 53.0338 60.4994 51.3409 60.4994 49.2476V3.81165H60.4818C60.485 3.75883 60.4962 3.71296 60.4962 3.66014C60.4962 1.63638 58.5374 -0.000976562 56.1254 -0.000976562C53.715 -0.000976562 51.7594 1.63638 51.7594 3.65736C51.7594 3.71018 51.7658 3.75605 51.769 3.80887H51.7594V62.9998H51.7658C51.7658 63.0693 51.7594 63.1235 51.7594 63.1902C51.7594 78.0029 57.4307 90.6666 65.4484 95.8817V113.744H81.6567V95.922C89.7145 90.7375 95.4146 78.0473 95.4146 63.1902ZM156.529 140.172V60.7967V0.000413383C141.394 3.85474 130.339 16.0057 130.339 30.4041C130.339 30.4333 130.343 30.4653 130.344 30.4931H130.339V140.174H126.717V155.33H130.339V196.999H156.529V155.324H159.932V140.172H156.529Z"
+                    fill="#324BA6" />
                 </g>
                 <defs>
-                <clipPath id="clip0">
-                <rect width="227" height="197" fill="white"/>
-                </clipPath>
+                  <clipPath id="clip0">
+                    <rect width="227" height="197" fill="white" />
+                  </clipPath>
                 </defs>
-                </svg>
-                
-                
-              
+              </svg>
+
+
+
             </div>
-            </div>
-           
+
+          </div>
         </div>
         <div class="col s12 m10 l8 left left-align">
-            <div class="row">
-              <div class="card-panel white icon-card">
-                  <svg viewBox="0 0 194 195" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M109.71 72.6357H63.8706C62.6152 72.6357 61.5964 71.4653 61.5964 70.21C61.5964 68.9546 62.6152 67.7842 63.8706 67.7842H106.974C105.932 66.167 105.024 63.3369 104.253 61.7197H63.8706C62.6152 61.7197 61.5964 60.5582 61.5964 59.2939C61.5964 58.0386 62.6152 56.8682 63.8706 56.8682H102.853C101.851 53.2295 101.308 48.9423 101.308 44.7251C101.308 37.0204 103.014 29.7803 106.18 23.3115H21.2165C17.4686 23.3115 14.8213 26.4751 14.8213 30.2238V160.772H108.568C110.889 160.772 113.114 161.489 114.856 163.007C115.068 163.184 115.395 163.426 115.855 163.945L116.033 164.035C117.459 165.745 118.321 167.894 118.321 170.14V180.202C118.321 186.095 121.96 194.51 126.812 194.51V194.395C119.13 194.281 113.065 187.98 113.065 180.202V170.14C113.065 169.136 112.534 168.211 111.944 167.503C111.944 167.503 111.55 167.173 111.422 167.075C110.694 166.416 109.631 166.028 108.568 166.028H4.36415C2.07179 166.028 0.266602 167.847 0.266602 170.14V179.917C0.266602 187.923 6.70463 194.329 14.7117 194.329H126.702C130.341 194.329 133.269 193.236 135.68 191.343C139 188.751 141.366 184.748 141.366 180.2V93.3721C128.024 90.8263 116.907 83.5518 109.71 72.6357ZM38.0825 54.5738C40.5762 54.5738 42.8718 55.4022 44.7296 56.7857L36.5527 64.961L35.0786 63.2168C34.1863 62.162 32.6063 62.0298 31.5535 62.9221C30.4979 63.8144 30.3665 65.3928 31.2584 66.448L34.4895 70.2682C34.9403 70.8027 35.5957 71.1225 36.2955 71.152C36.3303 71.1536 36.3651 71.1544 36.3998 71.1544C37.0617 71.1544 37.698 70.8924 38.1678 70.4222L47.9854 60.6055C48.7814 62.1414 49.2387 63.8811 49.2387 65.7304C49.2387 71.891 44.2436 76.8865 38.0825 76.8865C31.921 76.8865 26.9272 71.8914 26.9272 65.7304C26.9272 59.5685 31.921 54.5738 38.0825 54.5738ZM38.0825 90.0739C40.5762 90.0739 42.871 90.9023 44.7296 92.285L36.5527 100.461L35.0786 98.7169C34.1863 97.6621 32.6063 97.5299 31.5535 98.4222C30.4979 99.3137 30.3665 100.893 31.2584 101.948L34.4895 105.768C34.9403 106.302 35.5957 106.623 36.2955 106.652C36.3303 106.654 36.3651 106.655 36.3998 106.655C37.0617 106.655 37.698 106.392 38.1678 105.922L47.9854 96.1056C48.7814 97.6415 49.2387 99.3812 49.2387 101.23C49.2387 107.391 44.2436 112.386 38.0825 112.386C31.921 112.386 26.9272 107.391 26.9272 101.23C26.9272 95.0682 31.921 90.0739 38.0825 90.0739ZM38.0825 147.885C31.921 147.885 26.9272 142.89 26.9272 136.73C26.9272 130.568 31.921 125.574 38.0825 125.574C40.5762 125.574 42.871 126.402 44.7296 127.785L36.5527 135.961L35.0786 134.217C34.1863 133.162 32.6063 133.03 31.5535 133.922C30.4979 134.813 30.3665 136.392 31.2584 137.447L34.4895 141.267C34.9403 141.802 35.5957 142.121 36.2955 142.152C36.3303 142.153 36.3651 142.153 36.3998 142.153C37.0617 142.153 37.698 141.891 38.1678 141.421L47.9854 131.605C48.7814 133.14 49.2387 134.881 49.2387 136.73C49.2387 142.891 44.2432 147.885 38.0825 147.885ZM120.318 143.388H63.8754C62.6193 143.388 61.6013 142.42 61.6013 141.164C61.6013 139.908 62.6193 138.94 63.8754 138.94H120.318C121.573 138.94 122.592 139.908 122.592 141.164C122.592 142.42 121.574 143.388 120.318 143.388ZM120.318 132.472H63.8754C62.6193 132.472 61.6013 131.504 61.6013 130.248C61.6013 128.992 62.6193 128.024 63.8754 128.024H120.318C121.573 128.024 122.592 128.992 122.592 130.248C122.592 131.504 121.574 132.472 120.318 132.472ZM120.318 107.81H63.8754C62.6193 107.81 61.6013 106.842 61.6013 105.586C61.6013 104.33 62.6193 103.362 63.8754 103.362H120.318C121.573 103.362 122.592 104.33 122.592 105.586C122.592 106.842 121.574 107.81 120.318 107.81ZM122.592 94.6699C122.592 95.9261 121.573 96.8936 120.318 96.8936H63.8754C62.6193 96.8936 61.6013 95.9261 61.6013 94.6699C61.6013 93.4138 62.6193 92.4463 63.8754 92.4463H120.318C121.574 92.4463 122.592 93.4138 122.592 94.6699Z" fill="#324BA6"/>
-                    <path d="M148.993 0.613464C124.513 0.613464 104.664 20.4628 104.664 44.9511C104.664 69.4301 124.513 89.2786 148.993 89.2786C173.481 89.2786 193.321 69.4301 193.321 44.9511C193.32 20.4628 173.481 0.613464 148.993 0.613464ZM151.512 50.9185C151.512 50.9549 151.503 51.0006 151.494 51.0362C151.457 51.964 150.897 52.8017 150.052 53.1927C149.716 53.3467 149.349 53.4203 148.995 53.4203C148.448 53.4203 147.902 53.2388 147.456 52.8834C147.429 52.8652 147.401 52.8377 147.374 52.8203L134.302 41.7038L134.284 41.6945L133.237 40.803C132.182 39.9115 132.054 38.3291 132.956 37.2828C133.847 36.228 135.11 36.1006 136.156 36.9921L145.852 45.507V19.4258C145.852 18.0431 147.298 16.924 148.682 16.924C150.064 16.924 151.512 18.0431 151.512 19.4258V50.9185Z" fill="#324BA6"/>
-                    </svg>    
+          <div class="row">
+
+            <div class="white icon-card">
+              <svg viewBox="0 0 194 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M109.71 72.6357H63.8706C62.6152 72.6357 61.5964 71.4653 61.5964 70.21C61.5964 68.9546 62.6152 67.7842 63.8706 67.7842H106.974C105.932 66.167 105.024 63.3369 104.253 61.7197H63.8706C62.6152 61.7197 61.5964 60.5582 61.5964 59.2939C61.5964 58.0386 62.6152 56.8682 63.8706 56.8682H102.853C101.851 53.2295 101.308 48.9423 101.308 44.7251C101.308 37.0204 103.014 29.7803 106.18 23.3115H21.2165C17.4686 23.3115 14.8213 26.4751 14.8213 30.2238V160.772H108.568C110.889 160.772 113.114 161.489 114.856 163.007C115.068 163.184 115.395 163.426 115.855 163.945L116.033 164.035C117.459 165.745 118.321 167.894 118.321 170.14V180.202C118.321 186.095 121.96 194.51 126.812 194.51V194.395C119.13 194.281 113.065 187.98 113.065 180.202V170.14C113.065 169.136 112.534 168.211 111.944 167.503C111.944 167.503 111.55 167.173 111.422 167.075C110.694 166.416 109.631 166.028 108.568 166.028H4.36415C2.07179 166.028 0.266602 167.847 0.266602 170.14V179.917C0.266602 187.923 6.70463 194.329 14.7117 194.329H126.702C130.341 194.329 133.269 193.236 135.68 191.343C139 188.751 141.366 184.748 141.366 180.2V93.3721C128.024 90.8263 116.907 83.5518 109.71 72.6357ZM38.0825 54.5738C40.5762 54.5738 42.8718 55.4022 44.7296 56.7857L36.5527 64.961L35.0786 63.2168C34.1863 62.162 32.6063 62.0298 31.5535 62.9221C30.4979 63.8144 30.3665 65.3928 31.2584 66.448L34.4895 70.2682C34.9403 70.8027 35.5957 71.1225 36.2955 71.152C36.3303 71.1536 36.3651 71.1544 36.3998 71.1544C37.0617 71.1544 37.698 70.8924 38.1678 70.4222L47.9854 60.6055C48.7814 62.1414 49.2387 63.8811 49.2387 65.7304C49.2387 71.891 44.2436 76.8865 38.0825 76.8865C31.921 76.8865 26.9272 71.8914 26.9272 65.7304C26.9272 59.5685 31.921 54.5738 38.0825 54.5738ZM38.0825 90.0739C40.5762 90.0739 42.871 90.9023 44.7296 92.285L36.5527 100.461L35.0786 98.7169C34.1863 97.6621 32.6063 97.5299 31.5535 98.4222C30.4979 99.3137 30.3665 100.893 31.2584 101.948L34.4895 105.768C34.9403 106.302 35.5957 106.623 36.2955 106.652C36.3303 106.654 36.3651 106.655 36.3998 106.655C37.0617 106.655 37.698 106.392 38.1678 105.922L47.9854 96.1056C48.7814 97.6415 49.2387 99.3812 49.2387 101.23C49.2387 107.391 44.2436 112.386 38.0825 112.386C31.921 112.386 26.9272 107.391 26.9272 101.23C26.9272 95.0682 31.921 90.0739 38.0825 90.0739ZM38.0825 147.885C31.921 147.885 26.9272 142.89 26.9272 136.73C26.9272 130.568 31.921 125.574 38.0825 125.574C40.5762 125.574 42.871 126.402 44.7296 127.785L36.5527 135.961L35.0786 134.217C34.1863 133.162 32.6063 133.03 31.5535 133.922C30.4979 134.813 30.3665 136.392 31.2584 137.447L34.4895 141.267C34.9403 141.802 35.5957 142.121 36.2955 142.152C36.3303 142.153 36.3651 142.153 36.3998 142.153C37.0617 142.153 37.698 141.891 38.1678 141.421L47.9854 131.605C48.7814 133.14 49.2387 134.881 49.2387 136.73C49.2387 142.891 44.2432 147.885 38.0825 147.885ZM120.318 143.388H63.8754C62.6193 143.388 61.6013 142.42 61.6013 141.164C61.6013 139.908 62.6193 138.94 63.8754 138.94H120.318C121.573 138.94 122.592 139.908 122.592 141.164C122.592 142.42 121.574 143.388 120.318 143.388ZM120.318 132.472H63.8754C62.6193 132.472 61.6013 131.504 61.6013 130.248C61.6013 128.992 62.6193 128.024 63.8754 128.024H120.318C121.573 128.024 122.592 128.992 122.592 130.248C122.592 131.504 121.574 132.472 120.318 132.472ZM120.318 107.81H63.8754C62.6193 107.81 61.6013 106.842 61.6013 105.586C61.6013 104.33 62.6193 103.362 63.8754 103.362H120.318C121.573 103.362 122.592 104.33 122.592 105.586C122.592 106.842 121.574 107.81 120.318 107.81ZM122.592 94.6699C122.592 95.9261 121.573 96.8936 120.318 96.8936H63.8754C62.6193 96.8936 61.6013 95.9261 61.6013 94.6699C61.6013 93.4138 62.6193 92.4463 63.8754 92.4463H120.318C121.574 92.4463 122.592 93.4138 122.592 94.6699Z"
+                  fill="#324BA6" />
+                <path
+                  d="M148.993 0.613464C124.513 0.613464 104.664 20.4628 104.664 44.9511C104.664 69.4301 124.513 89.2786 148.993 89.2786C173.481 89.2786 193.321 69.4301 193.321 44.9511C193.32 20.4628 173.481 0.613464 148.993 0.613464ZM151.512 50.9185C151.512 50.9549 151.503 51.0006 151.494 51.0362C151.457 51.964 150.897 52.8017 150.052 53.1927C149.716 53.3467 149.349 53.4203 148.995 53.4203C148.448 53.4203 147.902 53.2388 147.456 52.8834C147.429 52.8652 147.401 52.8377 147.374 52.8203L134.302 41.7038L134.284 41.6945L133.237 40.803C132.182 39.9115 132.054 38.3291 132.956 37.2828C133.847 36.228 135.11 36.1006 136.156 36.9921L145.852 45.507V19.4258C145.852 18.0431 147.298 16.924 148.682 16.924C150.064 16.924 151.512 18.0431 151.512 19.4258V50.9185Z"
+                  fill="#324BA6" />
+              </svg>
             </div>
-            
-              <div class="feature-text valign-wrapper"><h4>Save time<br>    
-               Schedule your meals fast and easy.           
-            </h4>
+
+
+            <div class="feature-text valign-wrapper">
+              <h4>Save time<br>
+                <span class="grey-text text-darken-2"> Schedule your meals fast and easy. No more endless waiting time.
+                </span>
+              </h4>
+            </div>
           </div>
-            </div>
-           
+
         </div>
         <div class="col s12 m10 l8 right right-align">
-            <div class="row">        
-              <div class="feature-text valign-wrapper">
-                <h4>Trusted names<br>    
-               All the brands you know and love.           
-            </h4>
-          </div>
-          <div class="card-panel white icon-card">
-              
+          <div class="row">
+            <div class="feature-text valign-wrapper">
+              <h4>Trusted names<br>
+                <span class="grey-text text-darken-2"> Your health is our priority. That's why we offer the brands you
+                  know and love. </span>
+              </h4>
+            </div>
+
+            <div class="white icon-card">
+
               <svg viewBox="0 0 172 191" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
-                <path d="M149.354 36.6879C145.694 32.6212 141.347 29.3952 136.564 27.1943C131.781 24.9933 126.653 23.8604 121.476 23.8604C116.298 23.8604 111.171 24.9933 106.387 27.1943C101.604 29.3952 97.2577 32.6212 93.5973 36.6879L86.0007 45.1237L78.404 36.6879C71.0102 28.4773 60.9821 23.8647 50.5257 23.8647C40.0692 23.8647 30.0411 28.4773 22.6473 36.6879C15.2535 44.8984 11.0997 56.0343 11.0997 67.6458C11.0997 79.2573 15.2535 90.3932 22.6473 98.6037L30.244 107.04L86.0007 168.955L141.757 107.04L149.354 98.6037C153.016 94.5389 155.921 89.7128 157.903 84.4009C159.885 79.0891 160.905 73.3956 160.905 67.6458C160.905 61.896 159.885 56.2025 157.903 50.8907C155.921 45.5788 153.016 40.7527 149.354 36.6879V36.6879Z" stroke="#324BA6" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path
+                    d="M149.354 36.6879C145.694 32.6212 141.347 29.3952 136.564 27.1943C131.781 24.9933 126.653 23.8604 121.476 23.8604C116.298 23.8604 111.171 24.9933 106.387 27.1943C101.604 29.3952 97.2577 32.6212 93.5973 36.6879L86.0007 45.1237L78.404 36.6879C71.0102 28.4773 60.9821 23.8647 50.5257 23.8647C40.0692 23.8647 30.0411 28.4773 22.6473 36.6879C15.2535 44.8984 11.0997 56.0343 11.0997 67.6458C11.0997 79.2573 15.2535 90.3932 22.6473 98.6037L30.244 107.04L86.0007 168.955L141.757 107.04L149.354 98.6037C153.016 94.5389 155.921 89.7128 157.903 84.4009C159.885 79.0891 160.905 73.3956 160.905 67.6458C160.905 61.896 159.885 56.2025 157.903 50.8907C155.921 45.5788 153.016 40.7527 149.354 36.6879V36.6879Z"
+                    stroke="#324BA6" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" />
                 </g>
                 <defs>
-                <clipPath id="clip0">
-                <rect width="172" height="191" fill="white"/>
-                </clipPath>
+                  <clipPath id="clip0">
+                    <rect width="172" height="191" fill="white" />
+                  </clipPath>
                 </defs>
-                </svg>
-                
-              
+              </svg>
+
+
             </div>
-            </div>
-           
+
+          </div>
+
         </div>
       </div>
     </div>
@@ -420,102 +446,103 @@
   <div class="modal indigo-text" id="login-modal">
     <div>
       <div class="modal-content center">
-      <h3>Welcome Back!</h3>
-      <h5>Login to access and customize your plans</h5>
-      <br />
-      <form class="center" id="login-form">
-        <div class="input-field">
-          <input type="email" id="login-email"placeholder="me@example.com" required />
-          <label for="email">
-            <h6 class="indigo-text">Email</h6>
-          </label>
-        </div>
-        <div class="input-field">
-          <input type="password" id="login-password" placeholder="Password"  required />
-          <label for="password">
-            <h6 class="indigo-text">Password</h6>
-          </label>
-        </div>
-        
-        <button class="col s12 m4 btn waves-effect waves-light indigo modal-action ">
+        <h3>Welcome Back!</h3>
+        <h5>Login to access and customize your plans</h5>
+        <br />
+        <form class="center" id="login-form">
+          <div class="input-field">
+            <input type="email" id="login-email" placeholder="me@example.com" required />
+            <label for="email">
+              <h6 class="indigo-text">Email</h6>
+            </label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="login-password" placeholder="Password" required />
+            <label for="password">
+              <h6 class="indigo-text">Password</h6>
+            </label>
+          </div>
+
+          <button class="col s12 m4 btn waves-effect waves-light indigo modal-action ">
             Login
             <i class="material-icons right hide-on-small-and-down">send</i>
           </button>
           <p class="error"></p>
-      </form>
+        </form>
         <br>
-      <div class="row">        
-        <div class="col s12">
-          <a href="#" class="modal-action modal-close indigo-text">Forgotten Password?</a>
-          <!-- <input type="checkbox" class="filled-in" id="auto-login"/>
+        <div class="row">
+          <div class="col s12">
+            <a href="#" class="modal-action modal-close indigo-text">Forgotten Password?</a>
+            <!-- <input type="checkbox" class="filled-in" id="auto-login"/>
         <label for="auto-login">Login automatically</label> -->
           </div>
-        
-        <div class="col s12 black-text">
-          Don't have an account?
-          <a href="#signup_personal-data" class="indigo-text modal-trigger modal-close">Sign
-            Up Now!</a>
+
+          <div class="col s12 black-text">
+            Don't have an account?
+            <a href="#signup_personal-data" class="indigo-text modal-trigger modal-close">Sign
+              Up Now!</a>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    
-    
+
+
   </div>
   <!-- Signup Modal -->
   <div class="modal indigo-text" id="signup_personal-data">
     <div>
       <div class="modal-content center">
-      <h4>Sign up for amazing meals!</h4>
-      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.</h5>
-      <br />
-      <form class="center" id="signup-data" >
-        <div class="row">
-          <div class="input-field col s12 m6">
-            <input type="text"  id="first_name" required data-error="wrong" data-success="right" class="validate">
-            <label for="first_name">
-              <h6 class="indigo-text">First Name</h6>
-            </label>
+        <h4>Sign up for amazing meals!</h4>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.</h5>
+        <br />
+        <form class="center" id="signup-data">
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <input type="text" id="first_name" required data-error="wrong" data-success="right" class="validate">
+              <label for="first_name">
+                <h6 class="indigo-text">First Name</h6>
+              </label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input id="last_name" type="text" required data-error="wrong" data-success="right" class="validate">
+              <label for="last_name">
+                <h6 class="indigo-text">Last Name</h6>
+              </label>
+            </div>
+            <div class="input-field col s12">
+              <input type="email" id="email" required data-error="wrong" data-success="right" class="validate">
+              <label for="email">
+                <h6 class="indigo-text">Email</h6>
+              </label>
+            </div>
+            <div class="input-field col s12">
+              <input type="password" id="password" required data-error="wrong" data-success="right" class="validate" />
+              <label for="email">
+                <h6 class="indigo-text">Password</h6>
+              </label>
+            </div>
+            <div class="input-field col s12">
+              <input type="number" id="telephone" required data-error="wrong" data-success="right" class="validate"
+                data-length="11" />
+              <label for="icon_telephone">
+                <h6 class="indigo-text">Telephone</h6>
+              </label>
+            </div>
           </div>
-          <div class="input-field col s12 m6">
-            <input id="last_name" type="text" required  data-error="wrong" data-success="right" class="validate" >
-            <label for="last_name">
-              <h6 class="indigo-text">Last Name</h6>
-            </label>
-          </div>
-          <div class="input-field col s12">
-            <input type="email" id="email" required  data-error="wrong" data-success="right" class="validate">
-            <label for="email">
-              <h6 class="indigo-text">Email</h6>
-            </label>
-          </div>
-          <div class="input-field col s12">
-            <input type="password" id="password" required  data-error="wrong" data-success="right" class="validate"/>
-            <label for="email">
-              <h6 class="indigo-text">Password</h6>
-            </label>
-          </div>
-          <div class="input-field col s12">
-            <input type="number" id="telephone" required  data-error="wrong" data-success="right" class="validate" data-length="11" />
-            <label for="icon_telephone">
-              <h6 class="indigo-text">Telephone</h6>
-            </label>
-          </div>
-        </div>
-       
-                <a href="#delivery-info" id="sign-up"
-                  class="col s12 m4 btn waves-effect waves-light indigo  modal-close modal-trigger" >
-                  Sign Up
-                  <i class="material-icons right hide-on-small-and-down">send</i>
-      </a>
-               
-              
-      </form>
+
+          <a href="#delivery-info" id="sign-up"
+            class="col s12 m4 btn waves-effect waves-light indigo  modal-close modal-trigger">
+            Sign Up
+            <i class="material-icons right hide-on-small-and-down">send</i>
+          </a>
+
+
+        </form>
+      </div>
     </div>
   </div>
-  </div>
-   <!-- register Modal 2 -->
-   <div class="modal indigo-text" id="delivery-info">
+  <!-- register Modal 2 -->
+  <div class="modal indigo-text" id="delivery-info">
     <div class="modal-content center">
       <h4>Delivery Information</h4>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, molestias.</p>
@@ -523,7 +550,7 @@
       <form class="center" action="">
         <div class="row">
           <div class="input-field col s12">
-            <input type="text"data-error="wrong" data-success="right" class="validate" />
+            <input type="text" data-error="wrong" data-success="right" class="validate" />
             <label for="first_name">
               <h6 class="indigo-text">Street</h6>
             </label>
@@ -545,18 +572,18 @@
             <label for="datepicker">
               <h6 class="indigo-text">Start Date: </h6>
             </label>
-            <input class="datepicker" type="text" />        
+            <input class="datepicker" type="text" />
           </div>
           <br>
           <br>
           <a href="#signup_customize-plans"
-                class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-close modal-trigger">
-                Next
-              </a>  
+            class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-close modal-trigger">
+            Next
+          </a>
         </div>
       </form>
     </div>
-    
+
   </div>
   <!-- register Modal 3 -->
   <div class="modal indigo-text" id="signup_customize-plans">
@@ -606,41 +633,41 @@
             <label class="indigo-text">Sort Your Meal Preferences</label>
           </div>
           <a href="index.html" onclick="window.open('https://paystack.com/pay/sample-page')"
-          class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-trigger modal-close">
-          Submit
-        </a>
+            class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-trigger modal-close">
+            Submit
+          </a>
         </div>
       </form>
     </div>
-   
+
   </div>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
- 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDO9db9-1KQ6Nk66F4f1eVZsm2LoOYCLE8",
-    authDomain: "rosetta-a890c.firebaseapp.com",
-    databaseURL: "https://rosetta-a890c.firebaseio.com",
-    projectId: "rosetta-a890c",
-    // storageBucket: "",
-    // messagingSenderId: "965331850656",
-    appId: "1:965331850656:web:58747987bfdcd1db"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
 
-  // make auth and firestore refrences
-  const auth = firebase.auth();
-  const db = firebase.firestore();
-  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDO9db9-1KQ6Nk66F4f1eVZsm2LoOYCLE8",
+      authDomain: "rosetta-a890c.firebaseapp.com",
+      databaseURL: "https://rosetta-a890c.firebaseio.com",
+      projectId: "rosetta-a890c",
+      // storageBucket: "",
+      // messagingSenderId: "965331850656",
+      appId: "1:965331850656:web:58747987bfdcd1db"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
 
-</script>
+    // make auth and firestore refrences
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+
+  </script>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -671,7 +698,7 @@
       // Init Typing Animation
 
       var type = new Typed(".typing", {
-        strings: ["<h3 class='indigo-text'>Rosetta is easy to use...</h3>", "<h4 class='text-lighten-1'>Select your favorite meals</h4>", "<h4 class='text-lighten-1'>choose your preferred meal plan</h4>", "<h4 class='text-lighten-1'>Provide delivery details</h4>","<h4 class='text-lighten-1'>And we'll send your meals right to your door step.</h4>"],
+        strings: ["<h3 class='indigo-text'>Rosetta is easy to use...</h3>", "<h4 class='text-lighten-1'>Select your favorite meals</h4>", "<h4 class='text-lighten-1'>choose your preferred meal plan</h4>", "<h4 class='text-lighten-1'>Provide delivery details</h4>", "<h4 class='text-lighten-1'>And we'll send your meals right to your door step.</h4>"],
         typeSpeed: 50,
         loop: true,
         backSpeed: 20,
@@ -681,8 +708,8 @@
 
 
       // Init Modals
-       $(".modal").modal();
-          
+      $(".modal").modal();
+
 
 
       // Init Autocomplete City
@@ -732,6 +759,7 @@
 
     });
   </script>
-  
+
 </body>
+
 </html>

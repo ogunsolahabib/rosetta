@@ -84,9 +84,17 @@ h4 {
   grid-template-columns: auto auto;
   grid-gap: 2em;
 }
+.feature-icon h1 {
+  font-weight: 700 !important;
+  font-size: 5vw;
+  margin-top: 0;
+}
+.feature-text h4 span {
+  font-weight: 300;
+}
 .icon-card {
-  width: 17vw;
-  height: 17vw;
+  width: 14vw;
+  height: 14vw;
   border-radius: 50%;
   position: relative;
 }
@@ -99,8 +107,11 @@ h4 {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+svg path {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1) !important;
+}
 .feature-text {
-  height: 17vw;
+  height: 14vw;
 }
 
 .btn {
@@ -272,6 +283,10 @@ ul.autocomplete-content.dropdown-content {
   }
   h5 {
     font-size: 18px;
+  }
+  .usage-steps {
+    margin-top: 2em;
+    text-align: left !important;
   }
   .icon-card {
     width: 100px;
