@@ -138,9 +138,10 @@ svg path {
   width: 30%;
   height: auto !important;
   max-height: 90%;
-}
-.modal.open {
   background: #ffffffea !important;
+}
+.modal#delivery-info {
+  width: 40%;
 }
 .modal .input {
   color: #000 !important;
