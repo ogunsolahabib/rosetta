@@ -134,21 +134,24 @@ svg path {
 .btn-flat.indigo-text:hover {
   color: #fff !important;
 }
+.modal {
+  width: 30%;
+  height: auto !important;
+  max-height: 100%;
+}
 .modal.open {
   background: #ffffffea !important;
-  /* height: 100vh !important; */
 }
-.modal {
-  min-height: 75% !important;
-}
-.modal-open > div {
-  min-height: 100% !important;
-}
-.modal .input-field {
+
+/* .modal .input-field {
   height: 2.4em !important;
-}
+} */
 .modal a.btn {
   margin: 5em auto !important;
+  float: none;
+}
+.modal .col.s12.btn-large {
+  width: 92% !important;
   float: none;
 }
 .filled-in[type="checkbox"].filled-in:checked + label:after {
