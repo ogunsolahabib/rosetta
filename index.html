@@ -413,8 +413,6 @@
             <li>
               <a class="black-text text-lighten-3" href="#!">Restaurants</a>
             </li>
-
-
           </ul>
         </div>
         <div class="col l2 s6 m4">
@@ -455,13 +453,13 @@
               <div class="col s12 input-field">
                 <input type="email" id="login-email" placeholder="me@example.com" required />
                 <label for="email">
-                  <h6 class="indigo-text">Email</h6>
+                  <h5 class="indigo-text">Email</h5>
                 </label>
               </div>
               <div class="col s12 input-field">
                 <input type="password" id="login-password" placeholder="Password" required />
                 <label for="password">
-                  <h6 class="indigo-text">Password</h6>
+                  <h5 class="indigo-text">Password</h5>
                 </label>
               </div>
               <br><br>
@@ -481,7 +479,7 @@
 
           <div class="col s12 black-text">
             New to Rosetta? <br>
-            <a href="#signup_personal-data" class="indigo-text modal-trigger modal-close">SIGN
+            <a href="#signup_personal-data" class="indigo-text modal-trigger modal-close alt">SIGN
               UP</a>
           </div>
         </div>
@@ -494,49 +492,67 @@
   <div class="modal indigo-text" id="signup_personal-data">
     <div>
       <div class="modal-content center">
-        <h4>Sign up for amazing meals!</h4>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.</h5>
+        <h3>SIGN UP</h3>
         <br />
+        <div class="divider"></div>
         <form class="center" id="signup-data">
-          <div class="row">
-            <div class="input-field col s12 m6">
+          <div class="container">
+            <div class="row">
+              <!-- <div class="input-field col s12 m6">
               <input type="text" id="first_name" required data-error="wrong" data-success="right" class="validate">
               <label for="first_name">
-                <h6 class="indigo-text">First Name</h6>
+                <h5 class="indigo-text">First Name</h5>
               </label>
             </div>
             <div class="input-field col s12 m6">
               <input id="last_name" type="text" required data-error="wrong" data-success="right" class="validate">
               <label for="last_name">
-                <h6 class="indigo-text">Last Name</h6>
+                <h5 class="indigo-text">Last Name</h5>
               </label>
-            </div>
-            <div class="input-field col s12">
-              <input type="email" id="email" required data-error="wrong" data-success="right" class="validate">
-              <label for="email">
-                <h6 class="indigo-text">Email</h6>
-              </label>
-            </div>
-            <div class="input-field col s12">
-              <input type="password" id="password" required data-error="wrong" data-success="right" class="validate" />
-              <label for="email">
-                <h6 class="indigo-text">Password</h6>
-              </label>
-            </div>
-            <div class="input-field col s12">
+            </div> -->
+
+              <div class="input-field col s12">
+                <input type="email" id="email" required data-error="wrong" data-success="right" class="validate">
+                <label for="email">
+                  <h5 class="indigo-text">Email</h5>
+                </label>
+              </div>
+              <div class="input-field col s12">
+                <input type="password" id="password" required data-error="wrong" data-success="right"
+                  class="validate" />
+                <label for="email">
+                  <h5 class="indigo-text">Password</h5>
+                </label>
+              </div>
+              <!--
+             <div class="input-field col s12">
               <input type="number" id="telephone" required data-error="wrong" data-success="right" class="validate"
                 data-length="11" />
               <label for="icon_telephone">
-                <h6 class="indigo-text">Telephone</h6>
+                <h5 class="indigo-text">Telephone</h5>
               </label>
+            </div>
+           -->
+              <p class="col s12 indigo-text text-lighten-2 note">By clicking the Sign Up or Facebook button, you agree
+                to our Terms of
+                Service and Privacy Policy.</p>
+              <a href="#delivery-info" id="sign-up"
+                class="col s12 m4 btn btn-large waves-effect waves-light indigo  modal-close modal-trigger">
+                Sign Up
+              </a>
+              <div class="divider"></div>
+              <br>
+              <br>
+              <div class="col s12 black-text">
+                Already have an account? <br>
+                <a href="#signup_personal-data" class="indigo-text modal-trigger modal-close alt">LOG IN
+                </a>
+              </div>
             </div>
           </div>
 
-          <a href="#delivery-info" id="sign-up"
-            class="col s12 m4 btn waves-effect waves-light indigo  modal-close modal-trigger">
-            Sign Up
-            <i class="material-icons right hide-on-small-and-down">send</i>
-          </a>
+
+
 
 
         </form>

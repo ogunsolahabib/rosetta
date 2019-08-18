@@ -137,17 +137,30 @@ svg path {
 .modal {
   width: 30%;
   height: auto !important;
-  max-height: 100%;
+  max-height: 90%;
 }
 .modal.open {
   background: #ffffffea !important;
 }
+.modal .input {
+  color: #000 !important;
+  font-size: 130% !important;
+}
+.modal .note {
+  font-size: 70%;
+}
 
-/* .modal .input-field {
-  height: 2.4em !important;
-} */
+.modal h5 {
+  font-size: 20px;
+  font-weight: 300 !important;
+  margin-bottom: 1em;
+  color: #000 !important;
+}
+.modal a.alt {
+  font-weight: 800;
+}
 .modal a.btn {
-  margin: 5em auto !important;
+  margin: 1em auto !important;
   float: none;
 }
 .modal .col.s12.btn-large {
