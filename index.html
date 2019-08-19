@@ -442,7 +442,12 @@
   <div class="modal indigo-text" id="login-modal">
     <div>
       <div class="modal-content center">
+        <div class="modal-top-nav"> <a class="right right-align modal-action modal-close"><i
+              class="material-icons black-text">close</i></a>
+        </div>
+
         <h3>Welcome Back!</h3>
+
         <div class="divider"></div>
         <br />
         <form class="center" id="login-form">
@@ -490,7 +495,11 @@
   <div class="modal indigo-text" id="signup_personal-data">
     <div>
       <div class="modal-content center">
-        <h3>SIGN UP</h3>
+        <div class="modal-top-nav">
+          <a class="right right-align modal-action modal-close">
+            <i class="material-icons black-text">close</i></a>
+        </div>
+        <h3>Sign Up</h3>
         <br />
         <div class="divider"></div>
         <form class="center" id="signup-data">
@@ -548,11 +557,6 @@
               </div>
             </div>
           </div>
-
-
-
-
-
         </form>
       </div>
     </div>
@@ -560,6 +564,12 @@
   <!-- register Modal 2 -->
   <div class="modal indigo-text" id="delivery-info">
     <div class="modal-content center">
+      <div class="modal-top-nav">
+        <a href="#signup_personal-data" class="left left-align modal-action modal-close modal-trigger black-text"><i
+            class="material-icons">keyboard_backspace</i></a>
+        <a class="right right-align modal-action modal-close black-text">
+          <i class="material-icons">close</i></a>
+      </div>
       <h4>Delivery Information</h4>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, molestias.</p>
       <br />
@@ -604,8 +614,14 @@
   <!-- register Modal 3 -->
   <div class="modal indigo-text" id="signup_customize-plans">
     <div class="modal-content center">
+      <div class="modal-top-nav">
+        <a href="#delivery-info" class="left left-align modal-action modal-close modal-trigger black-text"><i
+            class="material-icons">keyboard_backspace</i></a>
+        <a class="right right-align modal-action modal-close black-text">
+          <i class="material-icons">close</i></a>
+      </div>
       <h4>You're Almost There!</h4>
-      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.</h5>
+      <h5>Check or uncheck these boxes to help us create your meal plan</h5>
       <br />
       <form class="center" action="">
         <div class="row center">
