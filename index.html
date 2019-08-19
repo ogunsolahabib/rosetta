@@ -446,9 +446,9 @@
               class="material-icons black-text">close</i></a>
         </div>
 
-        <h3>Welcome Back!</h3>
+        <h4 class="modal-header">Welcome Back!</h4>
 
-        <div class="divider"></div>
+
         <br />
         <form class="center" id="login-form">
           <div class="container">
@@ -456,19 +456,19 @@
               <div class="col s12 input-field">
                 <input type="email" id="login-email" placeholder="me@example.com" required />
                 <label for="email">
-                  <h5 class="indigo-text">Email</h5>
+                  <h6 class="black-text">Email</h6>
                 </label>
               </div>
               <div class="col s12 input-field">
                 <input type="password" id="login-password" placeholder="Password" required />
                 <label for="password">
-                  <h5 class="indigo-text">Password</h5>
+                  <h6 class="black-text">Password</h6>
                 </label>
+                <a href="#" class="modal-action modal-close indigo-text left left-align note">Forgot Password?</a>
+                </p>
               </div>
-              <br><br>
-              <div class="col s12 left-align">
-                <a href="#" class="modal-action modal-close indigo-text">Forgotten Password?</a>
-              </div>
+              <br>
+              <br>
               <input type="submit" value="login"
                 class="col s12 btn btn-large waves-effect waves-light indigo modal-action center">
               </input>
@@ -477,9 +477,7 @@
           </div>
 
         </form>
-        <br>
         <div class="row">
-
           <div class="col s12 black-text">
             New to Rosetta? <br>
             <a href="#signup_personal-data" class="indigo-text modal-trigger modal-close alt">SIGN
@@ -499,9 +497,8 @@
           <a class="right right-align modal-action modal-close">
             <i class="material-icons black-text">close</i></a>
         </div>
-        <h3>Sign Up</h3>
-        <br />
-        <div class="divider"></div>
+        <h4 class="modal-header">Sign Up</h4>
+
         <form class="center" id="signup-data">
           <div class="container">
             <div class="row">
@@ -521,15 +518,18 @@
               <div class="input-field col s12">
                 <input type="email" id="email" required data-error="wrong" data-success="right" class="validate">
                 <label for="email">
-                  <h5 class="indigo-text">Email</h5>
+                  <h6 class="black-text">Email</h6>
                 </label>
               </div>
               <div class="input-field col s12">
                 <input type="password" id="password" required data-error="wrong" data-success="right"
                   class="validate" />
                 <label for="email">
-                  <h5 class="indigo-text">Password</h5>
+                  <h6 class="black-text">Password</h6>
                 </label>
+                <p class="indigo-text text-lighten-2 note">By clicking the Sign Up or Facebook button, you agree
+                  to our Terms of
+                  Service and Privacy Policy.</p>
               </div>
               <!--
              <div class="input-field col s12">
@@ -540,16 +540,12 @@
               </label>
             </div>
            -->
-              <p class="col s12 indigo-text text-lighten-2 note">By clicking the Sign Up or Facebook button, you agree
-                to our Terms of
-                Service and Privacy Policy.</p>
+
               <a href="#delivery-info" id="sign-up"
                 class="col s12 m4 btn btn-large waves-effect waves-light indigo  modal-close modal-trigger">
                 Sign Up
               </a>
-              <div class="divider"></div>
-              <br>
-              <br>
+
               <div class="col s12 black-text">
                 Already have an account? <br>
                 <a href="#login-modal" class="indigo-text modal-trigger modal-close alt">LOG IN
@@ -570,7 +566,7 @@
         <a class="right right-align modal-action modal-close black-text">
           <i class="material-icons">close</i></a>
       </div>
-      <h4>Delivery Information</h4>
+      <h4 class="modal-header">Delivery Information</h4>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, molestias.</p>
       <br />
       <form class="center" action="">
@@ -620,7 +616,7 @@
         <a class="right right-align modal-action modal-close black-text">
           <i class="material-icons">close</i></a>
       </div>
-      <h4>You're Almost There!</h4>
+      <h4 class="modal-header">You're Almost There!</h4>
       <h5>Check or uncheck these boxes to help us create your meal plan</h5>
       <br />
       <form class="center" action="">
