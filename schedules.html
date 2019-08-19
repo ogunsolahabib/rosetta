@@ -1,510 +1,388 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/site.webmanifest" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
-      rel="stylesheet"
-    />
 
-    <link type="text/css" href="css/calendar.css" rel="stylesheet" />
+<head>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+  <link rel="manifest" href="img/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet" />
 
-    <link
-      type="text/css"
-      href="fullcalendar/packages/core/main.min.css"
-      rel="stylesheet"
-    />
-    <link
-      type="text/css"
-      href="fullcalendar/packages/daygrid/main.min.css"
-      rel="stylesheet"
-    />
+  <link type="text/css" href="css/calendar.css" rel="stylesheet" />
 
-    <link
-      type="text/css"
-      href="fullcalendar/packages/timegrid/main.min.css"
-      rel="stylesheet"
-    />
+  <link type="text/css" href="fullcalendar/packages/core/main.min.css" rel="stylesheet" />
+  <link type="text/css" href="fullcalendar/packages/daygrid/main.min.css" rel="stylesheet" />
 
-    <script src="fullcalendar/packages/core/main.min.js"></script>
-    <script src="fullcalendar/packages/daygrid/main.min.js"></script>
-    <script src="fullcalendar/packages/interaction/main.min.js"></script>
-    <script src="fullcalendar/packages/timegrid/main.min.js"></script>
+  <link type="text/css" href="fullcalendar/packages/timegrid/main.min.css" rel="stylesheet" />
 
-    <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Import Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
+  <script src="fullcalendar/packages/core/main.min.js"></script>
+  <script src="fullcalendar/packages/daygrid/main.min.js"></script>
+  <script src="fullcalendar/packages/interaction/main.min.js"></script>
+  <script src="fullcalendar/packages/timegrid/main.min.js"></script>
 
-    <!--Import materialize.css-->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Import Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rosetta</title>
-  </head>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
 
-  <body>
-    <div class="navbar-fixed ">
-      <ul id="dropdown-profile" class="dropdown-content center">
-        <li><a href="#!">Profile</a></li>
-        <li><a href="#!">Settings</a></li>
-        <li><a href="#!">Logout</a></li>
-      </ul>
-      <nav class="amber lighten-1 blue-text">
-        <div class="container">
-          <div class="nav-wrapper black-text">
-            <a href="index.html" class="brand-logo">
-              <img
-                src="img/logo-small.png"
-                class="logo responsive-img"
-                alt="Rosetta Logo"
-              />
-              R O S E T T A
-            </a>
-            <a
-              href="#"
-              data-activates="mobile-nav"
-              class="right button-collapse"
-            >
-              <i class="material-icons black-text">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <!-- <li><a href="#delivery-info" class="modal-trigger indigo-text" >Register</a></li> -->
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rosetta</title>
+</head>
+
+<body>
+  <div class="navbar-fixed ">
+    <ul id="dropdown-profile" class="dropdown-content center">
+      <li><a href="#!">Profile</a></li>
+      <li><a href="#!">Settings</a></li>
+      <li><a href="#!">Logout</a></li>
+    </ul>
+    <nav class="amber lighten-1 blue-text">
+      <div class="container">
+        <div class="nav-wrapper black-text">
+          <a href="index.html" class="brand-logo">
+            <img src="img/logo-small.png" class="logo responsive-img" alt="Rosetta Logo" />
+            R O S E T T A
+          </a>
+          <a href="#" data-activates="mobile-nav" class="right button-collapse">
+            <i class="material-icons black-text">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#delivery-info" class="modal-trigger indigo-text" >Register</a></li> -->
+            <li>
+              <a href="#" class="btn btn-flat" id="log-out">Log out</a>
+            </li>
+            <li>
+              <a class="dropdown-trigger" href="#!" data-activates="dropdown-profile"><i
+                  class="material-icons">expand_more</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="right side-nav amber lighten-1 center" id="mobile-nav">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <!-- <li><a href="#delivery-info" class="btn modal-trigger">Register</a></li> -->
+    <li><a href="index.html">Logout</a></li>
+  </ul>
+
+  <section class="section section-shedules">
+    <div class="row">
+      <div class="col s3 schedules-side-nav">
+        <div class="card-panel indigo white-text">
+          <div class="container">
+            <h1>John Doe</h1>
+            <ul>
               <li>
-                <a href="#" class="btn btn-flat" id="log-out">Log out</a>
+                <div class="row">
+                  <span class="col s5 left indigo-text text-lighten-2">Location:</span>
+                  <span class="col s7"> 42, Montgomery Road, Sabo, Yaba</span>
+                </div>
               </li>
               <li>
-                <a
-                  class="dropdown-trigger"
-                  href="#!"
-                  data-activates="dropdown-profile"
-                  ><i class="material-icons">expand_more</i
-                ></a>
+                <div class="row">
+                  <span class="col s5 left indigo-text text-lighten-2">Delivery Time:</span>
+                  <span class="col s7">2:30pm</span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <span class="col s5 left indigo-text text-lighten-2">Start Date: </span><span class="col s7">15th
+                    July, 2019</span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <span class="col s5 left indigo-text text-lighten-2">End Date:</span>
+                  <span class="col s7">15th August, 2019</span>
+                </div>
               </li>
             </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <ul class="right side-nav amber lighten-1 center" id="mobile-nav">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <!-- <li><a href="#delivery-info" class="btn modal-trigger">Register</a></li> -->
-      <li><a href="index.html">Logout</a></li>
-    </ul>
 
-    <section class="section section-shedules">
-      <div class="row">
-        <div class="col s3 schedules-side-nav">
-          <div class="card-panel indigo white-text">
-            <div class="container">
-              <h1>John Doe</h1>
-              <ul>
-                <li>
-                  <div class="row">
-                    <span class="col s5 left indigo-text text-lighten-2"
-                      >Location:</span
-                    >
-                    <span class="col s7"> 42, Montgomery Road, Sabo, Yaba</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="row">
-                    <span class="col s5 left indigo-text text-lighten-2"
-                      >Delivery Time:</span
-                    >
-                    <span class="col s7">2:30pm</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="row">
-                    <span class="col s5 left indigo-text text-lighten-2"
-                      >Start Date: </span
-                    ><span class="col s7">15th July, 2019</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="row">
-                    <span class="col s5 left indigo-text text-lighten-2"
-                      >End Date:</span
-                    >
-                    <span class="col s7">15th August, 2019</span>
-                  </div>
-                </li>
-              </ul>
+            <div class="div">
 
-              <div class="div">
-                <div class="btn indigo modal-trigger">
-                  <a href="#delivery-info" class="modal-trigger">
-                    Edit <span class="hide-on-med-and-down">Profile</span></a
-                  >
-                </div>
-              </div>
+              <a href="#delivery-info" class="btn indigo modal-trigger">
+                Edit <span class="hide-on-med-and-down">Profile</span></a>
+
             </div>
-          </div>
-        </div>
-        <div class="col s12 m8">
-          <div class="card-panel">
-            <div id="calendar"></div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- register Modal 2 -->
-    <div class="modal indigo-text" id="delivery-info">
-      <div class="modal-content center">
-        <h4>Delivery Information</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
-          molestias.
-        </p>
-        <br />
-        <form class="center" action="">
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="text" class="validate" />
-              <label for="first_name">
-                <h6 class="indigo-text">Street</h6>
-              </label>
-            </div>
-
-            <div class="input-field col s12">
-              <input
-                type="text"
-                id="autocomplete-city"
-                class="autocomplete input-city"
-              />
-              <label for="autocomplete-city">
-                <h6 class="indigo-text">City</h6>
-              </label>
-            </div>
-            <div class="input-field col s6">
-              <label for="timepicker">
-                <h6 class="indigo-text">Delivery Time:</h6>
-              </label>
-              <input class="timepicker" id="timepicker" />
-            </div>
-            <div class="input-field col s6">
-              <label for="datepicker">
-                <h6 class="indigo-text">Start Date:</h6>
-              </label>
-              <input class="datepicker" type="text" />
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <div class="container center">
-          <div class="row">
-            <a
-              href="#signup_customize-plans"
-              class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-close modal-trigger center"
-            >
-              Next
-              <i class="material-icons right hide-on-small-and-down">arrow</i>
-            </a>
-          </div>
+      <div class="col s12 m8">
+        <div class="card-panel">
+          <div id="calendar"></div>
         </div>
       </div>
     </div>
-    <!-- register Modal 3 -->
-    <div class="modal indigo-text" id="signup_customize-plans">
-      <div class="modal-content center">
-        <h4>You're Almost There!</h4>
-        <h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel.
-        </h5>
-        <br />
-        <form class="center" action="">
-          <div class="row center">
-            <div class="col s12 ">
-              <input type="checkbox" id="select-type-2" />
-              <label class="indigo-text" for="select-type-2">
-                Local Dishes: Lorem ipsum dolor sit amet consectetur.
-              </label>
-            </div>
-            <div class="col s12 ">
-              <input type="checkbox" id="select-type-3" />
-              <label class="indigo-text" for="select-type-3">
-                Local Dishes: Lorem ipsum dolor sit amet consectetur.
-              </label>
-            </div>
-            <div class="col s12 ">
-              <input type="checkbox" id="select-type-4" />
-              <label class="indigo-text" for="select-type-4">
-                Local Dishes: Lorem ipsum dolor sit amet consectetur.
-              </label>
-            </div>
-            <div class="col s12 ">
-              <input type="checkbox" id="select-type-5" />
-              <label class="indigo-text" for="select-type-5">
-                Local Dishes: Lorem ipsum dolor sit amet consectetur.
-              </label>
-            </div>
-            <div class="col s12 ">
-              <input type="checkbox" id="select-type-6" />
-              <label class="indigo-text" for="select-type-6">
-                Local Dishes: Lorem ipsum dolor sit amet consectetur.
-              </label>
-            </div>
-            <div class="col s8 center">
-              <select multiple>
-                <option value="" selected disabled
-                  >Pick Most Prefered First</option
-                >
-                <option value="1">Local</option>
-                <option value="2">Intercontinental</option>
-                <option value="3">Regular</option>
-              </select>
-              <label class="indigo-text">Sort Your Meal Preferences</label>
-            </div>
+  </section>
+  <!-- Edit -->
+  <div class="modal indigo-text" id="delivery-info">
+    <div class="modal-content center">
+      <h4>Edit Delivery Details</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, molestias.</p>
+      <br />
+      <form class="center" action="">
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="text" data-error="wrong" data-success="right" class="validate" />
+            <label for="first_name">
+              <h6 class="indigo-text">Street</h6>
+            </label>
           </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <div class="container center">
-          <div class="row">
-            <a
-              href="index.html"
-              onclick="window.open('https://paystack.com/pay/sample-page')"
-              class="col s12 m4 btn waves-effect waves-light indigo modal-action modal-trigger modal-close"
-            >
-              Submit
-              <i class="material-icons right hide-on-small-and-down">send</i>
-            </a>
+
+          <div class="input-field col s12">
+            <input type="text" id="autocomplete-city" class="autocomplete input-city" />
+            <label for="autocomplete-city">
+              <h6 class="indigo-text">City</h6>
+            </label>
           </div>
+          <div class="input-field col s6 time-and-date">
+            <label for="timepicker">
+              <h6 class="indigo-text">Delivery Time: </h6>
+            </label>
+            <input class="timepicker" id="timepicker" />
+          </div>
+          <div class="input-field col s6 time-and-date">
+            <label for="datepicker">
+              <h6 class="indigo-text">Start Date: </h6>
+            </label>
+            <input class="datepicker" type="text" />
+          </div>
+          <br>
+          <br>
+          <a href="#signup_customize-plans"
+            class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-close">
+            Save
+          </a>
         </div>
-      </div>
+      </form>
     </div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+  </div>
 
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyDO9db9-1KQ6Nk66F4f1eVZsm2LoOYCLE8",
-        authDomain: "rosetta-a890c.firebaseapp.com",
-        databaseURL: "https://rosetta-a890c.firebaseio.com",
-        projectId: "rosetta-a890c",
-        // storageBucket: "",
-        // messagingSenderId: "965331850656",
-        appId: "1:965331850656:web:58747987bfdcd1db"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
 
-      // make auth and firestore refrences
-      const auth = firebase.auth();
-      const db = firebase.firestore();
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDO9db9-1KQ6Nk66F4f1eVZsm2LoOYCLE8",
+      authDomain: "rosetta-a890c.firebaseapp.com",
+      databaseURL: "https://rosetta-a890c.firebaseio.com",
+      projectId: "rosetta-a890c",
+      // storageBucket: "",
+      // messagingSenderId: "965331850656",
+      appId: "1:965331850656:web:58747987bfdcd1db"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // make auth and firestore refrences
+    const auth = firebase.auth();
+    const db = firebase.firestore();
       // update  firestore settings
       // db.settings({timestampsInSnapshots: true});
-    </script>
+  </script>
 
-    <script src="js/authOut.js"></script>
-    <!--Import jQuery before materialize.js-->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        // Init Modals
-        $(".modal").modal();
+  <script src="js/authOut.js"></script>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Init Modals
+      $(".modal").modal();
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      // Custom JS & jQuery here
+      // Init Side Nav
+      $(".button-collapse").sideNav({
+        menuWidth: 300,
+        closeOnClick: true,
+        edge: "right"
       });
-    </script>
-    <script>
-      $(document).ready(function() {
-        // Custom JS & jQuery here
-        // Init Side Nav
-        $(".button-collapse").sideNav({
-          menuWidth: 300,
-          closeOnClick: true,
-          edge: "right"
-        });
 
-        // Init Modals
-        $(".modal").modal();
+      // Init Modals
+      $(".modal").modal();
 
-        // Init Nav Dropdown Menu
-        $(".dropdown-trigger").dropdown();
+      // Init Nav Dropdown Menu
+      $(".dropdown-trigger").dropdown();
 
-        // Init Date and Time Picker
-        $(".datepicker").pickadate();
-        $(".datepicker").on("mousedown", function(event) {
-          event.preventDefault();
-        });
+      // Init Date and Time Picker
+      $(".datepicker").pickadate();
+      $(".datepicker").on("mousedown", function (event) {
+        event.preventDefault();
+      });
 
-        $(".timepicker").pickatime();
-        $(".timepicker").on("mousedown", function(event) {
-          event.preventDefault();
-        });
+      $(".timepicker").pickatime();
+      $(".timepicker").on("mousedown", function (event) {
+        event.preventDefault();
+      });
 
-        if ($("#timepicker").val()) {
-          $('label[for="timepicker"]').toggleClass("active");
+      if ($("#timepicker").val()) {
+        $('label[for="timepicker"]').toggleClass("active");
+      }
+      $("select").material_select();
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var srcCalendarEl = document.getElementById("calendar");
+      const addEvents = [
+        {
+          title: "Jollof Rice",
+        },
+        {
+          title: "Pounded Yam with Egusi Soup",
+        },
+        {
+          title: "Fried Rice",
+        },
+        {
+          title: "Beans with Beef",
+
+        },
+        {
+          title: "Chicken Pizza",
+
+        },
+        {
+          title: "Fufu with Ogbono Soup",
+        },
+        {
+          title: "Spaghetti",
+        },
+        {
+          title: "Eba with Afang Soup",
+        },
+        {
+          title: "Fried Rice with Salad",
+        },
+        {
+          title: "Jollof Rice",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Amala with Ewedu Soup",
+        },
+        {
+          title: "Chicken Pizza",
+
+        },
+        {
+          title: "Fufu with Ogbono Soup",
+        },
+        {
+          title: "Spaghetti",
+        },
+        {
+          title: "Eba with Afang Soup",
+        },
+        {
+          title: "Fried Rice with Salad",
+        },
+        {
+          title: "Jollof Rice",
+        },
+      ]
+      function formatDate(date) {
+        var d = new Date(date),
+          month = '' + (d.getMonth() + 1),
+          day = '' + d.getDate(),
+          year = d.getFullYear();
+        dayOfWeek = d.getDay();
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+        if (dayOfWeek === 6 || dayOfWeek === 0) {
+          return "weekend";
         }
-        $("select").material_select();
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var srcCalendarEl = document.getElementById("calendar");
+        return [year, month, day].join('-');
+      }
+      function nextDay(num) {
+        return new Date(new Date().setDate(new Date().getDate() + num));
 
-        var srcCalendar = new FullCalendar.Calendar(srcCalendarEl, {
-          plugins: ["interaction", "dayGrid"],
-          editable: true,
-          defaultDate: "2019-07-15",
-          events: [
-            {
-              title: "Jollof Rice",
-              start: "2019-07-15T14:30:00"
-            },
-            {
-              title: "Pounded Yam with Egusi Soup",
-              start: "2019-07-16T14:30:00"
-            },
-            {
-              title: "Fried Rice",
-              start: "2019-07-17T14:30:00"
-            },
-            {
-              title: "Beans with Beef",
-              start: "2019-07-18T14:30:00"
-            },
-            {
-              title: "Chicken Pizza",
-              start: "2019-07-19T14:30:00"
-            },
-            {
-              title: "Fufu with Ogbono Soup",
-              start: "2019-07-22T14:30:00"
-            },
-            {
-              title: "Spaghetti",
-              start: "2019-07-23T14:30:00"
-            },
-            {
-              title: "Eba with Afang Soup",
-              start: "2019-07-24T14:30:00"
-            },
-            {
-              title: "Fried Rice with Salad",
-              start: "2019-07-25T14:30:00"
-            },
-            {
-              title: "Jollof Rice",
-              start: "2019-07-26T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-07-12T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-07-29T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-07-30T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-07-31T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-01T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-02T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-05T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-06T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-07T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-08T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-09T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-12T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-13T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-14T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-15T14:30:00"
-            },
-            {
-              title: "Amala with Ewedu Soup",
-              start: "2019-08-16T14:30:00"
-            }
-          ],
-          eventLeave: function(info) {
-            console.log("event left!", info.event);
-          }
-        });
+      }
 
-        srcCalendar.render();
+      $.each(addEvents, function (i) {
+        this.start = formatDate(nextDay(i));
       });
-    </script>
-  </body>
+
+      var srcCalendar = new FullCalendar.Calendar(srcCalendarEl, {
+        plugins: ["interaction", "dayGrid"],
+        editable: true,
+        defaultDate: "2019-08-20",
+        events: addEvents
+
+        ,
+        eventLeave: function (info) {
+          console.log("event left!", info.event);
+        }
+      });
+
+
+
+      srcCalendar.render();
+    });
+  </script>
+</body>
+
 </html>
