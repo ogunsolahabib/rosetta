@@ -134,7 +134,7 @@
             First time user?<br>
             Get a <span class="indigo-text"><strong>free meal box</strong></span> on the house!!
           </h3>
-          <form>
+          <form id="promo_form">
             <div class="row">
               <div class="input-field col s12">
                 <input type="text" id="promo_full-name" required class="active validate" />
@@ -150,7 +150,7 @@
                 </label>
               </div>
               <a onclick="openToast()">
-                <input id="btn_free-order" class="btn btn-large indigo" value="Place Order"></input>
+                <input type="submit" id="btn_free-order" class="btn btn-large indigo" value="Place Order"></input>
               </a>
             </div>
           </form>
@@ -833,6 +833,8 @@
       }
       $('select').material_select();
 
+
+
       // Select Meal Preferences Checks
       $.each($(".type-img"), function () {
         $(this).on("click", function () { $(this).toggleClass("selected") });
@@ -848,6 +850,9 @@
       }
 
     }
+    $("#promo_form").on("submit", function (e) {
+      e.preventDefault();
+    })
     $(".carousel.carousel-slider").carousel({ fullWidth: true, height: 100 });
     function autoSlide() {
       $(".carousel").carousel("next");
