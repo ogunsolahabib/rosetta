@@ -134,28 +134,27 @@
             First time user?<br>
             Get a <span class="indigo-text"><strong>free meal box</strong></span> on the house!!
           </h3>
-
-          <div class="row">
-            <div class="col s12">
-              <div class="input-field">
-                <input type="text" id="full-name" />
+          <form action="">
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="text" id="full-name" required class="active validate" />
                 <label for="full-name" class="indigo-text">
                   <h6>Full Name</h6>
                 </label>
               </div>
-            </div>
-            <div class="col s12">
-              <div class="input-field">
-                <input type="text" />
+
+              <div class="input-field col s12">
+                <input type="email" required class="active" />
                 <label for="email" class="indigo-text">
                   <h6>Email</h6>
                 </label>
               </div>
+              <input type="submit" id="btn_free-order" class="btn btn-large indigo" onclick="openToast()"
+                value="Place Order"></input>
             </div>
+          </form>
 
-          </div>
 
-          <a href="#" class="btn btn-large indigo">Place Order</a>
 
         </div>
         <div class="col s12 l6 center usage-steps">
@@ -302,7 +301,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col s4">
-                    <img src="img/KFC-logo.png" class="logo responsive-img" alt="KFC">
+                    <img src="/img/KFC-logo.png" class="logo responsive-img" alt="KFC">
                   </div>
                   <div class="col s4">
                     <img src="img/road-chef-logo.png" class="logo responsive-img" alt="road chef">
@@ -445,10 +444,7 @@
         <div class="modal-top-nav"> <a class="right right-align modal-action modal-close"><i
               class="material-icons black-text">close</i></a>
         </div>
-
         <h4 class="modal-header">Welcome Back!</h4>
-
-
         <br />
         <form class="center" id="login-form">
           <div class="container">
@@ -475,7 +471,6 @@
               <p class="error red-text text-lighten-1 center"></p>
             </div>
           </div>
-
         </form>
         <div class="row">
           <div class="col s12 black-text">
@@ -486,9 +481,8 @@
         </div>
       </div>
     </div>
-
-
   </div>
+
   <!-- Signup Modal -->
   <div class="modal indigo-text" id="signup_personal-data">
     <div>
@@ -527,7 +521,7 @@
                 <label for="email">
                   <h6 class="black-text">Password</h6>
                 </label>
-                <p class="indigo-text text-lighten-2 note">By clicking the Sign Up or Facebook button, you agree
+                <p class="indigo-text text-lighten-2 note">By clicking the Sign Up button, you agree
                   to our Terms of
                   Service and Privacy Policy.</p>
               </div>
@@ -598,17 +592,17 @@
           </div>
           <br>
           <br>
-          <a href="#signup_customize-plans"
+          <a href="#signup_meal-preferences"
             class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-close modal-trigger">
             Next
           </a>
         </div>
       </form>
     </div>
-
   </div>
   <!-- register Modal 3 -->
-  <div class="modal indigo-text" id="signup_customize-plans">
+  <!--
+    <div class="modal indigo-text" id="signup_customize-plans">
     <div class="modal-content center">
       <div class="modal-top-nav">
         <a href="#delivery-info" class="left left-align modal-action modal-close modal-trigger black-text"><i
@@ -669,7 +663,57 @@
     </div>
 
   </div>
+  -->
 
+  <!-- Signup: Meal Preference -->
+  <div class="modal black-text" id="signup_meal-preferences">
+    <div class="modal-content center">
+      <div class="modal-top-nav">
+        <a class="right right-align modal-action modal-close">
+          <i class="material-icons black-text">close</i></a>
+      </div>
+      <h4 class="modal-header black-text">Choose your preferred meals</h4>
+      <h6 class="black-text">This will help us know what restaraunts and menus to recommend for you. <a
+          class="indigo-text" href="#">Learn
+          more >></a></h6>
+      <form class="center" id="meal-types">
+        <div class="container">
+          <div class="row">
+            <div class="col s6 m3">
+              <div class="type-img"><img src="/img/egusi.png" alt="" class="responsive-img">
+                <i class="material-icons indigo-text">done</i>
+              </div>
+              <p>Local dishes</p>
+            </div>
+            <div class="col s6 m3">
+              <div class="type-img"><img src="/img/PIZZA.png" alt="" class="responsive-img">
+                <i class="material-icons indigo-text">done</i>
+              </div>
+              <p>Fast food</p>
+            </div>
+            <div class="col s6 m3">
+              <div class="type-img"><img src="/img/chinese_food.png" alt="" class="responsive-img">
+                <i class="material-icons indigo-text">done</i>
+              </div>
+              <p>Chinese</p>
+            </div>
+            <div class="col s6 m3">
+              <div class="type-img"><img src="/img/Dessert.png" alt="" class="responsive-img">
+                <i class="material-icons indigo-text">done</i>
+              </div>
+              <p>Dessert</p>
+            </div>
+            <br>
+            <br>
+            <a href="schedules.html" onclick="window.open('https://paystack.com/pay/sample-page')"
+              class="col s12 m4 btn right center-align waves-effect waves-light indigo modal-action modal-trigger modal-close">
+              Submit
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
@@ -715,6 +759,7 @@
         closeOnClick: true,
         edge: "right"
       });
+
       // Init Image Slider
       $(".slider").slider({
         indicators: false,
@@ -723,8 +768,9 @@
         interval: 4000
       });
 
-      // Init Typing Animation
 
+
+      // Init Typing Animation
       var type = new Typed(".typing", {
         strings: ["<h3 class='indigo-text'>Rosetta is easy to use...</h3>", "<h4 class='text-lighten-1'>Select your favorite meals</h4>", "<h4 class='text-lighten-1'>choose your preferred meal plan</h4>", "<h4 class='text-lighten-1'>Provide delivery details</h4>", "<h4 class='text-lighten-1'>And we'll send your meals right to your door step.</h4>"],
         typeSpeed: 50,
@@ -737,7 +783,6 @@
 
       // Init Modals
       $(".modal").modal();
-
 
 
       // Init Autocomplete City
@@ -785,7 +830,26 @@
       }
       $('select').material_select();
 
+      // Select Meal Preferences Checks
+      $.each($(".type-img"), function () {
+        $(this).on("click", function () { $(this).toggleClass("selected") });
+      })
+
     });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    function openToast() {
+      M.toast({ html: 'We\'ve sent you an email for the next steps', classes: 'toast-message' });
+    }
+    var instance = M.Carousel.getInstance(elem);
+    $(".carousel.carousel-slider").carousel({ fullWidth: true, height: 100 });
+    function autoSlide() {
+      $(".carousel").carousel("next");
+      setTimeout(autoSlide, 3000);
+    }
+
+    autoSlide();
   </script>
 
 </body>
