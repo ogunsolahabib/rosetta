@@ -173,7 +173,8 @@ form#meal-types {
   display: block;
 }
 
-.modal input:-internal-autofill-selected {
+.modal input {
+  height: 0.5em;
   background-color: #fff !important;
 }
 .modal .input-field label h6 {
@@ -287,9 +288,9 @@ ul.autocomplete-content.dropdown-content {
   margin: 5px !important;
   font-size: 14px;
 }
-section.section-sponsors {
+/* section.section-sponsors {
   display: none;
-}
+} */
 span.character-counter {
   display: none !important;
 }
@@ -319,7 +320,6 @@ footer .logo-container {
 
   .modal {
     width: 70% !important ;
-    height: 100vh !important;
   }
   .schedules-side-nav ul li .row span {
     display: block !important;

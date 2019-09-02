@@ -466,9 +466,9 @@
               </div>
               <br>
               <br>
-              <input type="submit" value="login"
-                class="col s12 btn btn-large waves-effect waves-light indigo modal-action center">
-              </input>
+              <button type="submit" form="login-form"
+                class="col s12 btn btn-large waves-effect waves-light indigo modal-action center"
+                value="Login">Login</button>
               <p class="error red-text text-lighten-1 center"></p>
             </div>
           </div>
@@ -583,13 +583,13 @@
             <label for="timepicker">
               <h6 class="indigo-text">Delivery Time: </h6>
             </label>
-            <input class="timepicker" id="timepicker" />
+            <input class="timepicker" type="text" id="timepicker" />
           </div>
           <div class="input-field col s6 time-and-date">
             <label for="datepicker">
               <h6 class="indigo-text">Start Date: </h6>
             </label>
-            <input class="datepicker" type="text" />
+            <input class="datepicker" type="text" id="datepicker" />
           </div>
           <br>
           <br>
@@ -708,8 +708,8 @@
             </div>
             <br>
             <br>
-            <a href="schedules.html" onclick="window.open('https://paystack.com/pay/sample-page')"
-              class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-trigger modal-close">
+            <a href="schedules.html" class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-trigger
+              modal-close">
               Submit
             </a>
           </div>
@@ -806,14 +806,14 @@
         }
       });
       // Init Carousel Slider
-      $(".carousel.carousel-slider").carousel({ fullWidth: true, height: 100 });
+      // $(".carousel.carousel-slider").carousel({ fullWidth: true, height: 100 });
 
-      function autoSlide() {
-        $(".carousel").carousel("next");
-        setTimeout(autoSlide, 3000);
-      }
+      // function autoSlide() {
+      //   $(".carousel").carousel("next");
+      //   setTimeout(autoSlide, 3000);
+      // }
 
-      autoSlide();
+      // autoSlide();
 
 
       // Init Date and Time Picker
@@ -852,14 +852,26 @@
     }
     $("#promo_form").on("submit", function (e) {
       e.preventDefault();
-    })
-    $(".carousel.carousel-slider").carousel({ fullWidth: true, height: 100 });
-    function autoSlide() {
-      $(".carousel").carousel("next");
-      setTimeout(autoSlide, 3000);
+    });
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("carousel-item");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 5000); // Change image every 2 seconds
     }
 
-    autoSlide();
+    var elem = document.querySelector('.carousel-slider');
+    var instance = M.Carousel.getInstance(elem);
+
   </script>
 
 </body>
