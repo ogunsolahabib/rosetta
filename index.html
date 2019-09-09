@@ -109,7 +109,7 @@
         </div>
       </li>
       <li>
-        <img src="img/local-dish.jpg" alt="" />
+        <img src="img/local-dish.jpg" alt="logo" />
         <div class="caption center-align">
           <h2>Local and Intercontinental Dishes</h2>
           <h5 class="light white-text hide-on-small-and-medium">
@@ -511,13 +511,13 @@
             </div> -->
 
               <div class="input-field col s12">
-                <input type="email" id="email" required data-error="wrong" data-success="right" class="validate">
+                <input type="email" id="email" required="" aria-required="true" data-error="wrong" data-success="right" class="validate">
                 <label for="email">
                   <h6 class="black-text">Email</h6>
                 </label>
               </div>
               <div class="input-field col s12">
-                <input type="password" id="password" required data-error="wrong" data-success="right"
+                <input type="password" id="password" required="" aria-required="true" data-error="wrong" data-success="right"
                   class="validate" />
                 <label for="email">
                   <h6 class="black-text">Password</h6>
@@ -536,11 +536,13 @@
             </div>
            -->
 
-              <a href="#delivery-info" id="sign-up"
-                class="col s12 m4 btn btn-large waves-effect waves-light indigo  modal-close modal-trigger">
+             <a href="schedules.html"  > 
+               <button onsubmit="href=('schedules.html')" id="sign-up"
+                class="col s12 m4 btn btn-large waves-effect waves-light indigo modal-action modal-trigger">
                 Sign Up
-              </a>
-
+          </button>
+        </a>
+            </form>
               <div class="col s12 black-text">
                 Already have an account? <br>
                 <a href="#login-modal" class="indigo-text modal-trigger modal-close alt">LOG IN
@@ -548,7 +550,7 @@
               </div>
             </div>
           </div>
-        </form>
+        
       </div>
     </div>
   </div>
