@@ -134,16 +134,47 @@ svg path {
 .btn-flat.indigo-text:hover {
   color: #fff !important;
 }
+.toast-message {
+  color: #fff;
+  background: #324ba6;
+}
 .modal {
   width: 30%;
   height: auto !important;
   max-height: 90%;
 }
-.modal#delivery-info {
-  width: 40%;
+.modal#delivery-info,
+.modal#signup_meal-preferences {
+  width: 43%;
+}
+form#meal-types {
+  margin-top: 3em;
+}
+#meal-types p {
+  font-size: 14px;
+  text-align: center;
+}
+.type-img {
+  position: relative;
+}
+.type-img i {
+  display: none;
+  position: absolute;
+  font-size: 200%;
+  font-weight: 500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.type-img.selected img {
+  opacity: 0.5;
+}
+.type-img.selected i {
+  display: block;
 }
 
-.modal input:-internal-autofill-selected {
+.modal input {
+  height: 0.5em;
   background-color: #fff !important;
 }
 .modal .input-field label h6 {
@@ -168,7 +199,7 @@ svg path {
   font-weight: 800;
 }
 .modal a.btn {
-  margin: 1em auto !important;
+  margin: 2em auto !important;
   float: none;
 }
 .modal .col.s12.btn-large {
@@ -257,6 +288,12 @@ ul.autocomplete-content.dropdown-content {
   margin: 5px !important;
   font-size: 14px;
 }
+/* section.section-sponsors {
+  display: none;
+} */
+span.character-counter {
+  display: none !important;
+}
 footer {
   position: relative;
 }
@@ -273,9 +310,16 @@ footer .logo-container {
     transform: none;
     font-size: 13px;
   }
+  .slider .slider-signup-btn {
+    top: 73%;
+  }
+  .col.s12.usage-steps {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
   .modal {
     width: 70% !important ;
-    height: 100vh !important;
   }
   .schedules-side-nav ul li .row span {
     display: block !important;

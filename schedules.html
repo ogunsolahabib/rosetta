@@ -54,7 +54,6 @@
             <i class="material-icons black-text">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <!-- <li><a href="#delivery-info" class="modal-trigger indigo-text" >Register</a></li> -->
             <li>
@@ -78,10 +77,10 @@
 
   <section class="section section-shedules">
     <div class="row">
-      <div class="col s3 schedules-side-nav">
+      <div class="col s3 schedules-side-nav hide-on-small-and-down">
         <div class="card-panel indigo white-text">
           <div class="container">
-            <h1>John Doe</h1>
+            <h3>John Doe</h3>
             <ul>
               <li>
                 <div class="row">
@@ -137,14 +136,14 @@
       <form class="center" action="">
         <div class="row">
           <div class="input-field col s12">
-            <input type="text" data-error="wrong" data-success="right" class="validate" />
+            <input type="text" data-error="wrong" data-success="right" class="validate" value="42, Montgomery Rd" />
             <label for="first_name">
               <h6 class="indigo-text">Street</h6>
             </label>
           </div>
 
           <div class="input-field col s12">
-            <input type="text" id="autocomplete-city" class="autocomplete input-city" />
+            <input type="text" id="autocomplete-city" class="autocomplete input-city" value="Yaba" />
             <label for="autocomplete-city">
               <h6 class="indigo-text">City</h6>
             </label>
@@ -153,13 +152,13 @@
             <label for="timepicker">
               <h6 class="indigo-text">Delivery Time: </h6>
             </label>
-            <input class="timepicker" id="timepicker" />
+            <input class="timepicker" type="text" id="timepicker" />
           </div>
           <div class="input-field col s6 time-and-date">
             <label for="datepicker">
               <h6 class="indigo-text">Start Date: </h6>
             </label>
-            <input class="datepicker" type="text" />
+            <input class="datepicker" type="text" id="datepicker" />
           </div>
           <br>
           <br>
