@@ -511,14 +511,13 @@
             </div> -->
 
               <div class="input-field col s12">
-                <input type="email" id="email" required data-error="wrong" data-success="right" class="validate">
+                <input type="email" id="email" required class="active validate">
                 <label for="email">
                   <h6 class="black-text">Email</h6>
                 </label>
               </div>
               <div class="input-field col s12">
-                <input type="password" id="password" required data-error="wrong" data-success="right"
-                  class="validate" />
+                <input type="password" id="password" required class="active validate" />
                 <label for="email">
                   <h6 class="black-text">Password</h6>
                 </label>
@@ -526,20 +525,11 @@
                   to our Terms of
                   Service and Privacy Policy.</p>
               </div>
-              <!--
-             <div class="input-field col s12">
-              <input type="number" id="telephone" required data-error="wrong" data-success="right" class="validate"
-                data-length="11" />
-              <label for="icon_telephone">
-                <h5 class="indigo-text">Telephone</h5>
-              </label>
-            </div>
-           -->
 
-              <a href="#delivery-info" id="sign-up"
-                class="col s12 m4 btn btn-large waves-effect waves-light indigo  modal-close modal-trigger">
-                Sign Up
-              </a>
+              <button href="#delivery-info" id="sign-up" type="submit" value="Sign Up"
+                class="col s12 m4 btn btn-large waves-effect waves-light indigo modal-trigger modal-close"
+                onclick="return isEmpty()">Sign Up
+              </button>
 
               <div class="col s12 black-text">
                 Already have an account? <br>
@@ -562,7 +552,6 @@
           <i class="material-icons">close</i></a>
       </div>
       <h4 class="modal-header">Delivery Information</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, molestias.</p>
       <br />
       <form class="center" action="">
         <div class="row">
@@ -574,7 +563,7 @@
           </div>
 
           <div class="input-field col s12">
-            <input type="text" id="autocomplete-city" class="autocomplete input-city" />
+            <input type="text" id="autocomplete-city" class="autocomplete input-city validate" />
             <label for="autocomplete-city">
               <h6 class="indigo-text">City</h6>
             </label>
@@ -583,13 +572,13 @@
             <label for="timepicker">
               <h6 class="indigo-text">Delivery Time: </h6>
             </label>
-            <input class="timepicker" type="text" id="timepicker" />
+            <input class="timepicker validate" type="text" id="timepicker" />
           </div>
           <div class="input-field col s6 time-and-date">
             <label for="datepicker">
               <h6 class="indigo-text">Start Date: </h6>
             </label>
-            <input class="datepicker" type="text" id="datepicker" />
+            <input class="datepicker validate" type="text" id="datepicker" />
           </div>
           <br>
           <br>
@@ -805,6 +794,9 @@
           Oshodi: null
         }
       });
+
+
+
       // Init Carousel Slider
       // $(".carousel.carousel-slider").carousel({ fullWidth: true, height: 100 });
 
