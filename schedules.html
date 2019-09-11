@@ -84,41 +84,34 @@
             <ul>
               <li>
                 <div class="row">
-<<<<<<< HEAD
+
                   <span class="col s5 left indigo-text text-lighten-4">Location:</span>
-=======
-                  <span class="col s5 left indigo-text text-lighten-2">Location:</span>
->>>>>>> 9a25d090c323eec44958651c9467f27b638e9e5e
+
                   <span class="col s7"> 42, Montgomery Road, Sabo, Yaba</span>
                 </div>
               </li>
               <li>
                 <div class="row">
-<<<<<<< HEAD
+
                   <span class="col s5 left indigo-text text-lighten-4">Delivery Time:</span>
-=======
-                  <span class="col s5 left indigo-text text-lighten-2">Delivery Time:</span>
->>>>>>> 9a25d090c323eec44958651c9467f27b638e9e5e
+
                   <span class="col s7">2:30pm</span>
                 </div>
               </li>
               <li>
                 <div class="row">
-<<<<<<< HEAD
+
                   <span class="col s5 left indigo-text text-lighten-4">Start Date: </span><span class="col s7">15th
-=======
-                  <span class="col s5 left indigo-text text-lighten-2">Start Date: </span><span class="col s7">15th
->>>>>>> 9a25d090c323eec44958651c9467f27b638e9e5e
+
+
                     July, 2019</span>
                 </div>
               </li>
               <li>
                 <div class="row">
-<<<<<<< HEAD
+
                   <span class="col s5 left indigo-text text-lighten-4">End Date:</span>
-=======
-                  <span class="col s5 left indigo-text text-lighten-2">End Date:</span>
->>>>>>> 9a25d090c323eec44958651c9467f27b638e9e5e
+
                   <span class="col s7">15th August, 2019</span>
                 </div>
               </li>
@@ -261,11 +254,9 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var srcCalendarEl = document.getElementById("calendar");
-<<<<<<< HEAD
+
       const EventsArray = [
-=======
-      const addEvents = [
->>>>>>> 9a25d090c323eec44958651c9467f27b638e9e5e
+
         {
           title: "Jollof Rice",
         },
@@ -384,24 +375,19 @@
 
       }
 
-<<<<<<< HEAD
+
       $.each(EventsArray, function (i) {
-=======
-      $.each(addEvents, function (i) {
->>>>>>> 9a25d090c323eec44958651c9467f27b638e9e5e
+
         this.start = formatDate(nextDay(i));
       });
 
       var srcCalendar = new FullCalendar.Calendar(srcCalendarEl, {
         plugins: ["interaction", "dayGrid"],
         editable: true,
-<<<<<<< HEAD
+
         defaultDate: formatDate(new Date()),
         events: EventsArray
-=======
-        defaultDate: "2019-08-20",
-        events: addEvents
->>>>>>> 9a25d090c323eec44958651c9467f27b638e9e5e
+
 
         ,
         eventLeave: function (info) {
