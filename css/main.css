@@ -1,0 +1,390 @@
+body {
+  font-family: "Robotto", sans-serif !important;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.5px !important;
+}
+
+.navbar-fixed .brand-logo {
+  color: #324ba6;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar-fixed .brand-logo img {
+  vertical-align: middle;
+}
+
+.nav-wrapper li a {
+  color: #000 !important;
+}
+.nav-wrapper li .btn {
+  color: #fff !important;
+}
+
+nav .active {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  color: #324ba6 !important;
+}
+.slider {
+  font-family: "Montserrat", sans-serif;
+}
+.slider .slider-signup-btn {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  margin-top: 5em;
+  z-index: 10;
+}
+.section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.section-promo {
+  background: #fff;
+  padding: 5em 0em;
+}
+
+.section-features {
+  padding-top: 0;
+}
+.section-features .heading {
+  height: 100px;
+  margin-bottom: 3em;
+}
+.section-features .heading h3 {
+  margin-top: 0;
+  line-height: 100px;
+}
+h3,
+h4 {
+  font-weight: 500;
+  letter-spacing: 0;
+}
+h3 {
+  font-size: 48px !important;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 34px !important;
+  line-height: 40px;
+  font-family: "Roboto";
+}
+
+.section-features .left .row,
+.section-features .right .row {
+  display: grid !important;
+  grid-template-columns: auto auto;
+  grid-gap: 2em;
+}
+.feature-icon h1 {
+  font-weight: 700 !important;
+  font-size: 5vw;
+  margin-top: 0;
+}
+.feature-text h4 span {
+  font-weight: 300;
+}
+.icon-card {
+  width: 14vw;
+  height: 14vw;
+  border-radius: 50%;
+  position: relative;
+}
+.icon-card svg {
+  display: block;
+  height: 50%;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+svg path {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1) !important;
+}
+.feature-text {
+  height: 14vw;
+}
+
+.btn {
+  margin-top: 20px;
+  border-radius: 20px !important;
+  height: 35px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+}
+.btn:hover {
+  background: #323f6d !important;
+}
+.btn-large {
+  width: 15em !important;
+  margin-top: 20px !important;
+  height: 50px;
+  font-size: 18px;
+}
+.btn-flat.indigo-text:hover {
+  color: #fff !important;
+}
+.toast-message {
+  color: #fff;
+  background: #324ba6;
+}
+.modal {
+  width: 30%;
+  height: auto !important;
+  max-height: 90%;
+}
+.modal#delivery-info,
+.modal#signup_meal-preferences {
+  width: 43%;
+}
+form#meal-types {
+  margin-top: 3em;
+}
+#meal-types p {
+  font-size: 14px;
+  text-align: center;
+}
+.type-img {
+  position: relative;
+}
+.type-img i {
+  display: none;
+  position: absolute;
+  font-size: 200%;
+  font-weight: 500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.type-img.selected img {
+  opacity: 0.5;
+}
+.type-img.selected i {
+  display: block;
+}
+
+.modal input {
+  height: 0.5em;
+  background-color: #fff !important;
+}
+.modal .input-field label h6 {
+  font-size: 24px !important;
+  line-height: 28px;
+  font-weight: 300 !important;
+}
+.modal .note {
+  font-size: 12px !important;
+  font-weight: normal !important;
+}
+
+.modal .modal-header {
+  font-weight: normal !important;
+  border-bottom: 1px solid #c4c4c4;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 0.5em;
+  line-height: 50px;
+}
+.modal a.alt {
+  font-weight: 800;
+}
+.modal a.btn {
+  margin: 2em auto !important;
+  float: none;
+}
+.modal .col.s12.btn-large {
+  width: 92% !important;
+  float: none;
+  margin-top: 40px !important;
+}
+.filled-in[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #324ba6 !important;
+  background-color: #324ba6 !important;
+}
+[type="checkbox"]:checked + label:before {
+  border-right: 2px solid #324ba6 !important;
+  border-bottom: 2px solid #324ba6 !important;
+}
+.col.s8.center {
+  margin: 0 auto !important;
+  float: none;
+}
+.nav-wrapper li .btn-flat {
+  border: 1px solid #324ba6;
+  color: #324ba6 !important;
+  background: inherit !important;
+}
+.btn-flat:hover {
+  border: 1px solid #324ba6;
+  color: #324ba6 !important;
+  background: inherit;
+}
+.time-and-date {
+  position: relative;
+}
+/* Color of underline for input elements on focus */
+input:not([type]):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="date"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="search"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #324ba6;
+  -webkit-box-shadow: 0 1px 0 0 #324ba6;
+  box-shadow: 0 1px 0 0 #324ba6;
+}
+
+/* Autocomplete color */
+ul.autocomplete-content.dropdown-content {
+  z-index: 100000 !important;
+}
+.section-search input.autocomplete {
+  color: #000;
+}
+.input-field .prefix.active {
+  color: #000 !important;
+}
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #000 !important;
+}
+.autocomplete-content li .highlight {
+  color: #324ba6 !important;
+}
+
+.carousel.carousel-slider {
+  height: 300px !important;
+}
+.carousel-item img {
+  max-height: 200px !important;
+}
+
+.picker__date-display {
+  background-color: #324ba6;
+}
+
+.schedules-side-nav .card-panel {
+  min-height: 90vh !important;
+}
+.schedules-side-nav .container {
+  padding: 5px !important;
+  margin: 5px !important;
+  font-size: 14px;
+}
+/* section.section-sponsors {
+  display: none;
+} */
+span.character-counter {
+  display: none !important;
+}
+footer {
+  position: relative;
+}
+footer .logo-container {
+  display: inline-block;
+  margin: 2em auto;
+  vertical-align: middle;
+  width: 100px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .navbar-fixed .brand-logo {
+    left: 0;
+    transform: none;
+    font-size: 13px;
+  }
+  .slider .slider-signup-btn {
+    top: 73%;
+  }
+  .col.s12.usage-steps {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  .modal {
+    width: 70% !important ;
+  }
+  .schedules-side-nav ul li .row span {
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+  }
+  .schedules-side-nav .container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  li .btn-flat {
+    border: 1px solid #324ba6;
+    color: #324ba6 !important;
+    background: inherit !important;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section.slider {
+    height: 400px !important;
+  }
+  .slides {
+    height: 400px !important;
+    padding-top: 10%;
+  }
+
+  h2 {
+    font-size: 25px !important;
+  }
+  h3,
+  h4 {
+    font-size: 20px !important;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  .usage-steps {
+    margin-top: 2em;
+    text-align: left !important;
+  }
+  .icon-card {
+    width: 100px;
+    height: 100px;
+  }
+  .feature-text {
+    height: 100px;
+  }
+  .btn-large {
+    width: 12em !important;
+    padding-top: 12px !important;
+    height: 40px;
+    font-size: 16px;
+    line-height: 100%;
+  }
+  .carousel,
+  .carousel .carousel-item {
+    max-height: 200px;
+  }
+  footer div.col.l2.s6.m4 {
+    height: 200px;
+  }
+}
