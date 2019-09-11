@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const signupForm = document.querySelector("#signup-data");
 const signupBtn = document.querySelector("#sign-up");
 signupForm.addEventListener("submit", e => {
@@ -21,37 +20,6 @@ signupForm.addEventListener("submit", e => {
   // sign up user
   auth.createUserWithEmailAndPassword(email, password).then(cred => {
     console.log(cred);
-=======
-
-
-const signupForm = document.querySelector('#signup-data');
-
-// const signupBtn = document.querySelector('#sign-up');
-signupForm.addEventListener('submit', (e) =>{
-    e.preventDefault();
-
-    // get user info
-    // const fname = signupForm['first_name'].value;
-    // const lname = signupForm['last_name'].value;
-    const email = signupForm['email'].value;
-    const password = signupForm['password'].value;
-    // const phone = signupForm['telephone'].value;
-    console.log(email, password);
-
-    // sign up user
-    
-    auth.createUserWithEmailAndPassword(email , password).then(cred =>{
-      console.log(cred);
-     
-        signupForm.reset();
-    });
-});
-
-
-  auth.createUserWithEmailAndPassword(email, password).then(cred => {
-    console.log(cred);
-
->>>>>>> 9a25d090c323eec44958651c9467f27b638e9e5e
     signupForm.reset();
   });
 });
