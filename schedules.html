@@ -84,34 +84,25 @@
             <ul>
               <li>
                 <div class="row">
-
                   <span class="col s5 left indigo-text text-lighten-4">Location:</span>
-
                   <span class="col s7"> 42, Montgomery Road, Sabo, Yaba</span>
                 </div>
               </li>
               <li>
                 <div class="row">
-
                   <span class="col s5 left indigo-text text-lighten-4">Delivery Time:</span>
-
                   <span class="col s7">2:30pm</span>
                 </div>
               </li>
               <li>
                 <div class="row">
-
                   <span class="col s5 left indigo-text text-lighten-4">Start Date: </span><span class="col s7">15th
-
-
                     July, 2019</span>
                 </div>
               </li>
               <li>
                 <div class="row">
-
                   <span class="col s5 left indigo-text text-lighten-4">End Date:</span>
-
                   <span class="col s7">15th August, 2019</span>
                 </div>
               </li>
@@ -254,9 +245,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var srcCalendarEl = document.getElementById("calendar");
-
       const EventsArray = [
-
         {
           title: "Jollof Rice",
         },
@@ -375,19 +364,15 @@
 
       }
 
-
       $.each(EventsArray, function (i) {
-
         this.start = formatDate(nextDay(i));
       });
 
       var srcCalendar = new FullCalendar.Calendar(srcCalendarEl, {
         plugins: ["interaction", "dayGrid"],
         editable: true,
-
         defaultDate: formatDate(new Date()),
         events: EventsArray
-
 
         ,
         eventLeave: function (info) {

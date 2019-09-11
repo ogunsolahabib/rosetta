@@ -36,7 +36,7 @@ nav .active {
   display: block;
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 61%;
   transform: translate(-50%, -50%);
   margin-top: 5em;
   z-index: 10;
