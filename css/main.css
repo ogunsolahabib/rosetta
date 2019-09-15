@@ -138,6 +138,15 @@ svg path {
   color: #fff;
   background: #324ba6;
 }
+.usage-steps {
+  display: none;
+}
+.eating {
+  background: url("../img/eating_together.svg");
+  height: 24em;
+  background-size: cover;
+  background-position: center;
+}
 .modal {
   width: 30%;
   height: auto !important;
