@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,500,800&display=swap" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rosetta</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<body class="grey lighten-4">
+
+    <div class="navbar-fixed ">
+        <nav class="amber lighten-1  blue-text">
+            <div class="container">
+                <div class="nav-wrapper black-text">
+                    <a href="index.html" class="brand-logo">
+                        <img src="img/logo-small.png" class="logo responsive-img" alt="Rosetta Logo" /> R O S E T T A
+                    </a>
+                    <a href="#" data-activates="mobile-nav" class="right button-collapse">
+                        <i class="material-icons black-text">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+
+                        <li>
+                            <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
+                        </li>
+
+                        <li>
+                            <a href="#signup_personal-data" class="btn indigo darken-1 modal-trigger">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="right side-nav amber lighten-1 center" id="mobile-nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+            <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
+        </li>
+        <li>
+            <a href="#signup_personal-data" class="btn waves-effect waves-light indigo darken-1 modal-trigger">Sign
+                Up</a>
+        </li>
+    </ul>
+    <section class="section section-subscription-form">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h3 class="header--pry">SUBSCRIBE!</h3>
+                    <h5 class="header--sec">Please enter your delivery information</h5>
+                    <form class="center" id="subscription-form" action="">
+                        <div class="row">
+                            <div class="col s12 delivery-data">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="text" id="autocomplete-city"
+                                            class="autocomplete input-city validate" required />
+                                        <label for="autocomplete-city">
+                                            <h6 class="indigo-text">City</h6>
+                                        </label>
+                                    </div>
+
+                                    <div class="input-field col s12">
+                                        <input type="text" id="street" data-error="wrong" data-success="right"
+                                            class="validate" required />
+                                        <label for="street">
+                                            <h6 class="indigo-text">Street</h6>
+                                        </label>
+                                    </div>
+
+                                    <div class="input-field col s6 time-and-date">
+                                        <label for="timepicker">
+                                            <h6 class="indigo-text">Delivery Time: </h6>
+                                        </label>
+                                        <input class="timepicker validate" type="text" id="timepicker" required />
+                                    </div>
+                                    <div class="input-field col s6 time-and-date">
+                                        <label for="datepicker">
+                                            <h6 class="indigo-text">Start Date: </h6>
+                                        </label>
+                                        <input class="datepicker" type="date" id="datepicker" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 meal-types">
+                                <div class="row">
+
+                                    <div>
+                                        <div class="col s6 m3">
+                                            <div class="type-img"><img src="img/egusi.png" alt=""
+                                                    class="responsive-img">
+                                                <i class="material-icons indigo-text">done</i>
+                                            </div>
+                                            <p class="center">Local dishes</p>
+                                        </div>
+                                        <div class="col s6 m3">
+                                            <div class="type-img"><img src="img/PIZZA.png" alt=""
+                                                    class="responsive-img">
+                                                <i class="material-icons indigo-text">done</i>
+                                            </div>
+                                            <p class="center">Fast food</p>
+                                        </div>
+                                        <div class="col s6 m3">
+                                            <div class="type-img"><img src="img/chinese_food.png" alt=""
+                                                    class="responsive-img">
+                                                <i class="material-icons indigo-text">done</i>
+                                            </div>
+                                            <p class="center">Chinese</p>
+                                        </div>
+                                        <div class="col s6 m3">
+                                            <div class="type-img"><img src="img/Dessert.png" alt=""
+                                                    class="responsive-img">
+                                                <i class="material-icons indigo-text">done</i>
+                                            </div>
+                                            <p class="center">Dessert</p>
+                                        </div>
+
+                                    </div>
+                                    <br>
+                                    <br>
+
+                                </div>
+                            </div>
+                            <input type="submit" value="submit" href="schedules.html"
+                                class="col s12 m4 btn btn-large center center-align waves-effect waves-light indigo"
+                                required />
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="amber lighten-1 page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l2 s6 m4 logo-container">
+                    <img src="img/logo.png" class="logo responsive-img" width="120" alt="Rosetta Logo" />
+                </div>
+                <div class="col l2 offset-l2 s6 m4">
+                    <h5 class="black-text bolder">Rosetta</h5>
+                    <ul>
+                        <li><a class="black-text text-lighten-3" href="#!">About </a></li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Careers </a>
+                        </li>
+                        <li><a class="black-text text-lighten-3" href="#!">Blog </a></li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Press & Media
+                            </a>
+                        </li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Developers </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l2 s6 m4">
+                    <h5 class="black-text">Support</h5>
+                    <ul>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Customer Help
+                            </a>
+                        </li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Fleet Help</a>
+                        </li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Merchant Help
+                            </a>
+                        </li>
+                        <br>
+                        <br>
+                    </ul>
+                </div>
+                <div class="col l2 s6 m4">
+                    <h5 class="black-text">Follow us</h5>
+                    <ul>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Twitter </a>
+                        </li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!"> Facebook </a>
+                        </li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Instagram</a>
+                        </li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Snapchat</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l2  s6 m4">
+                    <h5 class="black-text">Merchants</h5>
+                    <ul>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Chefs & Caterers
+                            </a>
+                        </li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!">Restaurants</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l2 s6 m4">
+                    <h5 class="black-text modal-trigger">
+                        DOWNLOAD
+                    </h5>
+                    <ul>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!"><img src="img/play-store.png"
+                                    class="logo responsive-img" width="120" alt="play-store" />
+                            </a>
+                        </li>
+                        <li>
+                            <a class="black-text text-lighten-3" href="#!"><img src="img/app-store.png"
+                                    class="logo responsive-img" width="120" alt="app-store" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright indigo-text center">
+            <div class="container">
+                © 2019 Copyright Rosetta
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal indigo-text" id="login-modal">
+        <div>
+            <div class="modal-content center">
+                <div class="modal-top-nav"> <a class="right right-align modal-action modal-close"><i
+                            class="material-icons black-text">close</i></a>
+                </div>
+                <h4 class="modal-header">Welcome Back!</h4>
+                <br />
+                <form class="center" id="login-form">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12 input-field">
+                                <input type="email" id="login-email" placeholder="me@example.com" required />
+                                <label for="email">
+                                    <h6 class="black-text">Email</h6>
+                                </label>
+                            </div>
+                            <div class="col s12 input-field">
+                                <input type="password" id="login-password" placeholder="Password" required />
+                                <label for="password">
+                                    <h6 class="black-text">Password</h6>
+                                </label>
+                                <a href="#" class="modal-action modal-close indigo-text left left-align note">Forgot
+                                    Password?</a>
+                                </p>
+                            </div>
+                            <br>
+                            <br>
+                            <button type="submit" form="login-form"
+                                class="col s12 btn btn-large waves-effect waves-light indigo modal-action center"
+                                value="Login">Login</button>
+                            <p class="error red-text text-lighten-1 center"></p>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col s12 black-text">
+                        New to Rosetta? <br>
+                        <a href="#signup_personal-data" class="indigo-text modal-trigger modal-close alt">SIGN
+                            UP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIgn Up Modal -->
+    <div class="modal indigo-text" id="signup_personal-data">
+        <div>
+            <div class="modal-content center">
+                <div class="modal-top-nav">
+                    <a class="right right-align modal-action modal-close">
+                        <i class="material-icons black-text">close</i></a>
+                </div>
+                <h4 class="modal-header">Sign Up</h4>
+
+                <form class="center" id="signup-data">
+                    <div class="container">
+                        <div class="row">
+                            <!-- <div class="input-field col s12 m6">
+                      <input type="text" id="first_name" required data-error="wrong" data-success="right" class="validate">
+                      <label for="first_name">
+                        <h5 class="indigo-text">First Name</h5>
+                      </label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                      <input id="last_name" type="text" required data-error="wrong" data-success="right" class="validate">
+                      <label for="last_name">
+                        <h5 class="indigo-text">Last Name</h5>
+                      </label>
+                    </div> -->
+
+                            <div class="input-field col s12">
+                                <input type="email" id="email" required class="active validate">
+                                <label for="email">
+                                    <h6 class="black-text">Email</h6>
+                                </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input type="password" id="password" required class="active validate" />
+                                <label for="email">
+                                    <h6 class="black-text">Create Password</h6>
+                                </label>
+                                <p class="indigo-text text-lighten-2 note">By clicking the Sign Up button, you agree
+                                    to our Terms of
+                                    Service and Privacy Policy.</p>
+                            </div>
+
+                            <button id="sign-up" type="submit" value="Sign Up"
+                                class="col s12 m4 btn btn-large waves-effect waves-light indigo"
+                                onclick="return isEmpty()">Sign Up
+                            </button>
+                            <br>
+                            <br>
+                            <div class="col s12 black-text">
+                                Already have an account? <br>
+                                <a href="#login-modal" class="indigo-text modal-trigger modal-close alt">LOG IN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDO9db9-1KQ6Nk66F4f1eVZsm2LoOYCLE8",
+            authDomain: "rosetta-a890c.firebaseapp.com",
+            databaseURL: "https://rosetta-a890c.firebaseio.com",
+            projectId: "rosetta-a890c",
+            // storageBucket: "",
+            // messagingSenderId: "965331850656",
+            appId: "1:965331850656:web:58747987bfdcd1db"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // make auth and firestore refrences
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+
+    </script>
+
+    <script src="js/auth.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Custom JS & jQuery here
+            // Init Side Nav
+            $(".button-collapse").sideNav({
+                menuWidth: 300,
+                closeOnClick: true,
+                edge: "right"
+            });
+
+
+            // Init Modals
+            $(".modal").modal();
+
+
+            // Init Autocomplete City
+            $("#autocomplete-city").autocomplete({
+                data: {
+                    Ajah: null,
+                    Ikeja: null,
+                    Ogudu: null,
+                    Ojota: null,
+                    Lekki: null,
+                    Magodo: null,
+                    Mushin: null,
+                    Surulere: null,
+                    "Victoria Island": null,
+                    Ikoyi: null,
+                    Agege: null,
+                    Oshodi: null
+                }
+            });
+
+
+            // Init Date and Time Picker
+            $(".datepicker").pickadate();
+            $('.datepicker').on('mousedown', function (event) {
+                event.preventDefault();
+            });
+
+            $(".timepicker").pickatime();
+            $('.timepicker').on('mousedown', function (event) {
+                event.preventDefault();
+            });
+
+
+            if ($("#timepicker").val()) {
+                $('label[for="timepicker"]').toggleClass("active");
+            }
+            $('select').material_select();
+
+
+
+            // Select Meal Preferences Checks
+            $.each($(".type-img"), function () {
+                $(this).on("click", function () { $(this).toggleClass("selected") });
+            })
+            $("#subscription-form").on("submit", function (e) {
+                e.preventDefault();
+            })
+
+        });
+    </script>
+</body>
+
+</html>
