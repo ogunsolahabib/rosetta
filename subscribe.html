@@ -73,7 +73,7 @@
                             <div class="col s12 delivery-data">
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input type="text" id="autocomplete-city"
+                                        <input type="text" id="autocomplete-city" name="city"
                                             class="autocomplete input-city validate" required />
                                         <label for="autocomplete-city">
                                             <h6 class="indigo-text">City</h6>
@@ -81,7 +81,7 @@
                                     </div>
 
                                     <div class="input-field col s12">
-                                        <input type="text" id="street" data-error="wrong" data-success="right"
+                                        <input type="text" id="street" name="street" data-error="wrong" data-success="right"
                                             class="validate" required />
                                         <label for="street">
                                             <h6 class="indigo-text">Street</h6>
@@ -92,13 +92,13 @@
                                         <label for="timepicker">
                                             <h6 class="indigo-text">Delivery Time: </h6>
                                         </label>
-                                        <input class="timepicker validate" type="text" id="timepicker" required />
+                                        <input class="timepicker validate" name="time" type="text" id="timepicker" required />
                                     </div>
                                     <div class="input-field col s6 time-and-date">
                                         <label for="datepicker">
                                             <h6 class="indigo-text">Start Date: </h6>
                                         </label>
-                                        <input class="datepicker" type="date" id="datepicker" required />
+                                        <input class="datepicker" type="date" name="date" id="datepicker" required />
                                     </div>
                                 </div>
                             </div>
@@ -141,17 +141,24 @@
 
                                 </div>
                             </div>
-                            <input type="submit" value="submit" href="schedules.html"
+                            <!-- <button type="submit" href="schedules.html"
                                 class="col s12 m4 btn btn-large center center-align waves-effect waves-light indigo"
-                                required />
+                                >submit</button> -->
 
                         </div>
+                        <button type="submit" href="schedules.html"
+                                class="col s12 m4 btn btn-large center center-align waves-effect waves-light indigo"
+                                >submit</button>
                     </form>
+                    
                 </div>
             </div>
 
         </div>
     </section>
+    <div id="display">
+
+    </div>
 
     <!-- Footer -->
     <footer class="amber lighten-1 page-footer">
@@ -375,7 +382,7 @@
             databaseURL: "https://rosetta-a890c.firebaseio.com",
             projectId: "rosetta-a890c",
             // storageBucket: "",
-            // messagingSenderId: "965331850656",
+            messagingSenderId: "965331850656",
             appId: "1:965331850656:web:58747987bfdcd1db"
         };
         // Initialize Firebase
@@ -389,6 +396,7 @@
     </script>
 
     <script src="js/auth.js"></script>
+    <script src="js/subscribe.js"></script>
     <script>
         $(document).ready(function () {
             // Custom JS & jQuery here
