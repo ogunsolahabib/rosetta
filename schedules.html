@@ -111,7 +111,7 @@
             <div class="div">
 
               <a href="#delivery-info" class="btn indigo modal-trigger">
-                Edit <span class="hide-on-med-and-down">Profile</span></a>
+                Edit</a>
 
             </div>
           </div>
@@ -124,53 +124,174 @@
       </div>
     </div>
   </section>
-  <!-- Edit Modal-->
-  <div class="modal indigo-text" id="delivery-info">
+  <!-- Dropdown Structure -->
+  <ul id='dropdown-meals' class='dropdown-content center'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  </ul>
+
+  <!-- Footer -->
+  <footer class="amber lighten-1 page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l2 s6 m4 logo-container">
+          <img src="img/logo.png" class="logo responsive-img" width="120" alt="Rosetta Logo" />
+        </div>
+        <div class="col l2 offset-l2 s6 m4">
+          <h5 class="black-text bolder">Rosetta</h5>
+          <ul>
+            <li><a class="black-text text-lighten-3" href="#!">About </a></li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Careers </a>
+            </li>
+            <li><a class="black-text text-lighten-3" href="#!">Blog </a></li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Press & Media
+              </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Developers </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l2 s6 m4">
+          <h5 class="black-text">Support</h5>
+          <ul>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Customer Help
+              </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Fleet Help</a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Merchant Help
+              </a>
+            </li>
+            <br>
+            <br>
+          </ul>
+        </div>
+        <div class="col l2 s6 m4">
+          <h5 class="black-text">Follow us</h5>
+          <ul>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Twitter </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!"> Facebook </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Instagram</a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Snapchat</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l2  s6 m4">
+          <h5 class="black-text">Merchants</h5>
+          <ul>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Chefs & Caterers
+              </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!">Restaurants</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l2 s6 m4">
+          <h5 class="black-text">DOWNLOAD</h5>
+          <ul>
+            <li>
+              <a class="black-text text-lighten-3" href="#!"><img src="img/play-store.png" class="logo responsive-img"
+                  width="120" alt="Rosetta Logo" />
+              </a>
+            </li>
+            <li>
+              <a class="black-text text-lighten-3" href="#!"><img src="img/app-store.png" class="logo responsive-img"
+                  width="120" alt="Rosetta Logo" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright indigo-text center">
+      <div class="container">
+        © 2019 Copyright Rosetta
+      </div>
+    </div>
+  </footer>
+
+  <!-- Meals Modal-->
+  <div class="modal indigo-text" id="meal-select">
     <div class="modal-content center">
       <div class="modal-top-nav">
         <a class="right right-align modal-action modal-close black-text">
           <i class="material-icons">close</i></a>
       </div>
-      <h4>Edit Delivery Details</h4>
+      <h4>Select a new Meal!</h4>
       <br />
       <form class="center" action="">
         <div class="row">
-          <div class="input-field col s12">
-            <input type="text" data-error="wrong" data-success="right" class="validate" value="42, Montgomery Rd" />
-            <label for="first_name">
-              <h6 class="indigo-text">Street</h6>
-            </label>
+          <div class="input-field col s4 m3 l2">
+            <div class="type-img meal-img" id="Amala"><img src="img/Dessert.png" alt="" class="responsive-img">
+              <i class="material-icons indigo-text">done</i>
+            </div>
+            <p class="center">Amala</p>
           </div>
 
-          <div class="input-field col s12">
-            <input type="text" id="autocomplete-city" class="autocomplete input-city" value="Yaba" />
-            <label for="autocomplete-city">
-              <h6 class="indigo-text">City</h6>
-            </label>
+          <div class="input-field col s4 m3 l2">
+            <div class="type-img meal-img" id="Rice"><img src="img/Dessert.png" alt="" class="responsive-img">
+              <i class="material-icons indigo-text">done</i>
+            </div>
+            <p class="center">Rice</p>
           </div>
-          <div class="input-field col s6 time-and-date">
-            <label for="timepicker">
-              <h6 class="indigo-text">Delivery Time: </h6>
-            </label>
-            <input class="timepicker" type="text" id="timepicker" />
+          <div class="input-field col s4 m3 l2">
+            <div class="type-img meal-img" id="Pizza"><img src="img/Dessert.png" alt="" class="responsive-img">
+              <i class="material-icons indigo-text">done</i>
+            </div>
+            <p class="center">Pizza</p>
           </div>
-          <div class="input-field col s6 time-and-date">
-            <label for="datepicker">
-              <h6 class="indigo-text">Start Date: </h6>
-            </label>
-            <input class="datepicker" type="text" id="datepicker" />
+          <div class="input-field col s4 m3 l2">
+            <div class="type-img meal-img" id="Pouridge"><img src="img/Dessert.png" alt="" class="responsive-img">
+              <i class="material-icons indigo-text">done</i>
+            </div>
+            <p class="center">Pouridge</p>
           </div>
-          <br>
-          <br>
-          <a href="#signup_customize-plans"
-            class="col s12 m4 btn center center-align waves-effect waves-light indigo modal-action modal-close">
-            Save
-          </a>
+          <div class="input-field col s4 m3 l2">
+            <div class="type-img meal-img" id="Yam"><img src="img/Dessert.png" alt="" class="responsive-img">
+              <i class="material-icons indigo-text">done</i>
+            </div>
+            <p class="center">Yam</p>
+          </div>
+          <div class="input-field col s4 m3 l2">
+            <div class="type-img meal-img" id="Spaghetti"><img src="img/Dessert.png" alt="" class="responsive-img">
+              <i class="material-icons indigo-text">done</i>
+            </div>
+            <p class="center">Spaghetti</p>
+          </div>
         </div>
       </form>
     </div>
 
   </div>
+  <a class='dropdown-trigger' href='#' data-activates='dropdown1'>Drop Me!</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  </ul>
 
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -204,12 +325,8 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-    $(document).ready(function () {
-      // Init Modals
-      $(".modal").modal();
-    });
-  </script>
-  <script>
+
+
     $(document).ready(function () {
       // Custom JS & jQuery here
       // Init Side Nav
@@ -242,6 +359,8 @@
       $("select").material_select();
     });
   </script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var srcCalendarEl = document.getElementById("calendar");
@@ -378,9 +497,45 @@
         }
       });
 
+      // Set Content dropdown
+      window.addEventListener('load', function () {
+        $(".fc-day-grid-event").each(function (i) {
+          $(this).addClass("modal-trigger");
+          $(this).attr("id", "meal-" + i);
+          console.log($(this).text());
+
+          //         let drop = ` <ul id='dropdown-meals-${$(this).attr("id")}' class='dropdown-content center'>
+          //   <li><a href="#!">one</a></li>
+          //   <li><a href="#!">two</a></li>
+          //   <li class="divider" tabindex="-1"></li>
+          //   <li><a href="#!">three</a></li>
+          //   <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+          //   <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+          // </ul>`;
+          // $(this).attr("data-activates", "dropdown-meals-" + $(this).attr('id'));
+          $(this).attr("href", "#meal-select");
+        });
+
+        $("#meal-select").click(function (e) {
+          console.log(e.target.parentNode.id);
+          if (e.target.nodeName == "IMG")
+            $(".fc-day-grid-event").each(function () {
+              $(this).text(e.target.parentNode.id);
+            }
+
+            )
+
+        })
+
+
+      });
+
       srcCalendar.render();
     });
+
   </script>
+
+
 </body>
 
 </html>

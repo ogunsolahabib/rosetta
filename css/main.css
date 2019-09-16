@@ -143,8 +143,8 @@ svg path {
 }
 .eating {
   background: url("../img/eating_together.svg");
-  height: 24em;
   background-size: cover;
+  height: 25em;
   background-position: center;
 }
 .modal {

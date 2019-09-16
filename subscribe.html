@@ -81,8 +81,8 @@
                                     </div>
 
                                     <div class="input-field col s12">
-                                        <input type="text" id="street" name="street" data-error="wrong" data-success="right"
-                                            class="validate" required />
+                                        <input type="text" id="street" name="street" data-error="wrong"
+                                            data-success="right" class="validate" required />
                                         <label for="street">
                                             <h6 class="indigo-text">Street</h6>
                                         </label>
@@ -92,7 +92,8 @@
                                         <label for="timepicker">
                                             <h6 class="indigo-text">Delivery Time: </h6>
                                         </label>
-                                        <input class="timepicker validate" name="time" type="text" id="timepicker" required />
+                                        <input class="timepicker validate" name="time" type="text" id="timepicker"
+                                            required />
                                     </div>
                                     <div class="input-field col s6 time-and-date">
                                         <label for="datepicker">
@@ -146,11 +147,10 @@
                                 >submit</button> -->
 
                         </div>
-                        <button type="submit" href="schedules.html"
-                                class="col s12 m4 btn btn-large center center-align waves-effect waves-light indigo"
-                                >submit</button>
+                        <button type="submit" href="#signup_personal-data"
+                            class="col s12 m4 btn btn-large center center-align waves-effect waves-light indigo modal-trigger">submit</button>
                     </form>
-                    
+
                 </div>
             </div>
 
@@ -347,7 +347,7 @@
 
                             <button id="sign-up" type="submit" value="Sign Up"
                                 class="col s12 m4 btn btn-large waves-effect waves-light indigo"
-                                onclick="return isEmpty()">Sign Up
+                                onclick="window.location='schedules.html'">Sign Up
                             </button>
                             <br>
                             <br>
@@ -457,6 +457,7 @@
             $("#subscription-form").on("submit", function (e) {
                 e.preventDefault();
             })
+
 
         });
     </script>
