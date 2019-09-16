@@ -104,8 +104,7 @@
                                         <label for="timepicker">
                                             <h6 class="indigo-text">Delivery Time: </h6>
                                         </label>
-                                        <input class="timepicker validate" name="time" type="text" id="timepicker"
-                                            required />
+                                        <input class="timepicker" name="time" type="text" id="timepicker" required />
                                     </div>
                                     <div class="input-field col s6 time-and-date">
                                         <label for="datepicker">
@@ -282,14 +281,14 @@
                         <div class="row">
                             <div class="col s12 input-field">
                                 <input type="email" id="login-email" placeholder="me@example.com" required />
-                                <label for="email">
-                                    <h6 class="black-text">Email</h6>
+                                <label for="email" class="grey-text text-darken-2">
+                                    Email
                                 </label>
                             </div>
-                            <div class="col s12 input-field">
+                            <div class="col s12 input-field" class="grey-text text-darken-2">
                                 <input type="password" id="login-password" placeholder="Password" required />
                                 <label for="password">
-                                    <h6 class="black-text">Password</h6>
+                                    Password
                                 </label>
                                 <a href="#" class="modal-action modal-close indigo-text left left-align note">Forgot
                                     Password?</a>
@@ -328,29 +327,16 @@
                 <form class="center" id="signup-data">
                     <div class="container">
                         <div class="row">
-                            <!-- <div class="input-field col s12 m6">
-                      <input type="text" id="first_name" required data-error="wrong" data-success="right" class="validate">
-                      <label for="first_name">
-                        <h5 class="indigo-text">First Name</h5>
-                      </label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                      <input id="last_name" type="text" required data-error="wrong" data-success="right" class="validate">
-                      <label for="last_name">
-                        <h5 class="indigo-text">Last Name</h5>
-                      </label>
-                    </div> -->
-
                             <div class="input-field col s12">
                                 <input type="email" id="email" required class="active validate">
-                                <label for="email">
-                                    <h6 class="black-text">Email</h6>
+                                <label for="email" class="grey-text text-darken-4">
+                                    Email
                                 </label>
                             </div>
                             <div class="input-field col s12">
                                 <input type="password" id="password" required class="active validate" />
-                                <label for="email">
-                                    <h6 class="black-text">Create Password</h6>
+                                <label for="email" class="grey-text text-darken-4">
+                                    Password
                                 </label>
                                 <p class="indigo-text text-lighten-2 note">By clicking the Sign Up button, you agree
                                     to our Terms of

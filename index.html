@@ -436,16 +436,17 @@
             <div class="row">
               <div class="col s12 input-field">
                 <input type="email" id="login-email" placeholder="me@example.com" required />
-                <label for="email">
-                  <h6 class="black-text">Email</h6>
+                <label for="email" class="grey-text text-darken-2">
+                  Email
                 </label>
               </div>
-              <div class="col s12 input-field">
+              <div class="col s12 input-field" class="grey-text text-darken-2">
                 <input type="password" id="login-password" placeholder="Password" required />
                 <label for="password">
-                  <h6 class="black-text">Password</h6>
+                  Password
                 </label>
-                <a href="#" class="modal-action modal-close indigo-text left left-align note">Forgot Password?</a>
+                <a href="#" class="modal-action modal-close indigo-text left left-align note">Forgot
+                  Password?</a>
                 </p>
               </div>
               <br>
@@ -481,36 +482,24 @@
         <form class="center" id="signup-data">
           <div class="container">
             <div class="row">
-              <!-- <div class="input-field col s12 m6">
-              <input type="text" id="first_name" required data-error="wrong" data-success="right" class="validate">
-              <label for="first_name">
-                <h5 class="indigo-text">First Name</h5>
-              </label>
-            </div>
-            <div class="input-field col s12 m6">
-              <input id="last_name" type="text" required data-error="wrong" data-success="right" class="validate">
-              <label for="last_name">
-                <h5 class="indigo-text">Last Name</h5>
-              </label>
-            </div> -->
-
               <div class="input-field col s12">
                 <input type="email" id="email" required class="active validate">
-                <label for="email">
-                  <h6 class="black-text">Email</h6>
+                <label for="email" class="grey-text text-darken-4">
+                  Email
                 </label>
               </div>
               <div class="input-field col s12">
                 <input type="password" id="password" required class="active validate" />
-                <label for="email">
-                  <h6 class="black-text">Password</h6>
+                <label for="email" class="grey-text text-darken-4">
+                  Password
                 </label>
                 <p class="indigo-text text-lighten-2 note">By clicking the Sign Up button, you agree
                   to our Terms of
                   Service and Privacy Policy.</p>
               </div>
 
-              <button href="#delivery-info" id="sign-up" type="submit" value="Sign Up"
+              <button href="#delivery-info" onclick="window.location = 'subscribe.html'" id="sign-up" type="submit"
+                value="Sign Up"
                 class="col s12 m4 btn btn-large waves-effect waves-light indigo modal-trigger modal-close">Sign Up
               </button>
               <br>
