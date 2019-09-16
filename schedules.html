@@ -124,15 +124,7 @@
       </div>
     </div>
   </section>
-  <!-- Dropdown Structure -->
-  <ul id='dropdown-meals' class='dropdown-content center'>
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider" tabindex="-1"></li>
-    <li><a href="#!">three</a></li>
-    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-  </ul>
+
 
   <!-- Footer -->
   <footer class="amber lighten-1 page-footer">
@@ -240,38 +232,44 @@
       <form class="center" action="">
         <div class="row">
           <div class="input-field col s4 m3 l2">
-            <div class="type-img meal-img" id="Amala"><img src="img/Dessert.png" alt="" class="responsive-img">
+            <div class="type-img meal-img" id="Amala"><img src="img/Dessert.png" alt=""
+                class="responsive-img modal-action modal-close">
               <i class="material-icons indigo-text">done</i>
             </div>
             <p class="center">Amala</p>
           </div>
 
           <div class="input-field col s4 m3 l2">
-            <div class="type-img meal-img" id="Rice"><img src="img/Dessert.png" alt="" class="responsive-img">
+            <div class="type-img meal-img" id="Rice"><img src="img/Dessert.png" alt=""
+                class="responsive-img modal-action modal-close">
               <i class="material-icons indigo-text">done</i>
             </div>
             <p class="center">Rice</p>
           </div>
           <div class="input-field col s4 m3 l2">
-            <div class="type-img meal-img" id="Pizza"><img src="img/Dessert.png" alt="" class="responsive-img">
+            <div class="type-img meal-img" id="Pizza"><img src="img/Dessert.png" alt=""
+                class="responsive-img modal-action modal-close">
               <i class="material-icons indigo-text">done</i>
             </div>
             <p class="center">Pizza</p>
           </div>
           <div class="input-field col s4 m3 l2">
-            <div class="type-img meal-img" id="Pouridge"><img src="img/Dessert.png" alt="" class="responsive-img">
+            <div class="type-img meal-img" id="Pouridge"><img src="img/Dessert.png" alt=""
+                class="responsive-img modal-action modal-close">
               <i class="material-icons indigo-text">done</i>
             </div>
             <p class="center">Pouridge</p>
           </div>
           <div class="input-field col s4 m3 l2">
-            <div class="type-img meal-img" id="Yam"><img src="img/Dessert.png" alt="" class="responsive-img">
+            <div class="type-img meal-img" id="Yam"><img src="img/Dessert.png" alt=""
+                class="responsive-img modal-action modal-close">
               <i class="material-icons indigo-text">done</i>
             </div>
             <p class="center">Yam</p>
           </div>
           <div class="input-field col s4 m3 l2">
-            <div class="type-img meal-img" id="Spaghetti"><img src="img/Dessert.png" alt="" class="responsive-img">
+            <div class="type-img meal-img" id="Spaghetti"><img src="img/Dessert.png" alt=""
+                class="responsive-img modal-action modal-close">
               <i class="material-icons indigo-text">done</i>
             </div>
             <p class="center">Spaghetti</p>
@@ -279,19 +277,9 @@
         </div>
       </form>
     </div>
-
   </div>
-  <a class='dropdown-trigger' href='#' data-activates='dropdown1'>Drop Me!</a>
 
-  <!-- Dropdown Structure -->
-  <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider" tabindex="-1"></li>
-    <li><a href="#!">three</a></li>
-    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-  </ul>
+
 
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -500,9 +488,22 @@
       // Set Content dropdown
       window.addEventListener('load', function () {
         $(".fc-day-grid-event").each(function (i) {
-          $(this).addClass("modal-trigger");
           $(this).attr("id", "meal-" + i);
-          console.log($(this).text());
+          $(this).click(function () {
+            $(this).addClass("modal-trigger");
+
+
+            $(this).attr("href", "#meal-select");
+
+            let selectedId = $(this).attr("id");
+
+            $("#meal-select").click(function (e) {
+              if (e.target.nodeName == "IMG") {
+                $("#" + selectedId).find(".fc-title").text(e.target.parentNode.id);
+              }
+              selectedId = null;
+            })
+          })
 
           //         let drop = ` <ul id='dropdown-meals-${$(this).attr("id")}' class='dropdown-content center'>
           //   <li><a href="#!">one</a></li>
@@ -513,19 +514,10 @@
           //   <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
           // </ul>`;
           // $(this).attr("data-activates", "dropdown-meals-" + $(this).attr('id'));
-          $(this).attr("href", "#meal-select");
+
+
         });
 
-        $("#meal-select").click(function (e) {
-          console.log(e.target.parentNode.id);
-          if (e.target.nodeName == "IMG")
-            $(".fc-day-grid-event").each(function () {
-              $(this).text(e.target.parentNode.id);
-            }
-
-            )
-
-        })
 
 
       });

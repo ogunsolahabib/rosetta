@@ -141,21 +141,22 @@ svg path {
 .usage-steps {
   display: none;
 }
-.eating {
+/* .eating {
   background: url("../img/eating_together.svg");
   background-size: cover;
   height: 25em;
   background-position: center;
-}
+} */
 .modal {
   width: 30%;
   height: auto !important;
   max-height: 90%;
 }
-.modal#delivery-info,
-.modal#signup_meal-preferences {
-  width: 43%;
+
+.modal#meal-select {
+  width: 80%;
 }
+
 form#meal-types {
   margin-top: 3em;
 }
