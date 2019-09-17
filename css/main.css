@@ -10,7 +10,9 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
-
+.account-details{
+  color: #324ba6;
+}
 .navbar-fixed .brand-logo img {
   vertical-align: middle;
 }
@@ -148,7 +150,7 @@ svg path {
   background-position: center;
 } */
 .modal {
-  width: 30%;
+  width: 50%;
   height: auto !important;
   max-height: 90%;
 }

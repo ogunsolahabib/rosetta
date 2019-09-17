@@ -38,11 +38,11 @@
                     <ul class="right hide-on-med-and-down">
 
                         <li>
-                            <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
+                            <a href="#login-modal" class="btn btn-flat modal-trigger logged-out" style="display: none;">Log In</a>
                         </li>
 
                         <li>
-                            <a href="#signup_personal-data" class="btn indigo darken-1 modal-trigger">Sign Up</a>
+                            <a href="#signup_personal-data" class="btn indigo darken-1 modal-trigger logged-out" style="display: none;">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -73,13 +73,13 @@
                             <div class="col s12 delivery-data">
                                 <div class="row">
                                     <div class="input-field col s12 m6">
-                                        <input type="text" id="firstname" name="firtname" class="validate" required />
+                                        <input type="text" id="firstname" name="fname" class="validate" required />
                                         <label for="firstname">
                                             <h6 class="indigo-text">First Name</h6>
                                         </label>
                                     </div>
                                     <div class="input-field col s12 m6">
-                                        <input type="text" id="lastname" name="lastname" class="validate" required />
+                                        <input type="text" id="lastname" name="lname" class="validate" required />
                                         <label for="lastname">
                                             <h6 class="indigo-text">Last Name</h6>
                                         </label>
@@ -153,12 +153,12 @@
 
                                 </div>
                             </div>
-                            <!-- <button type="submit" href="schedules.html"
+                            <!-- <button type="submit" href="schedules.html" onclick="window.location='schedules.html'"
                                 class="col s12 m4 btn btn-large center center-align waves-effect waves-light indigo"
                                 >submit</button> -->
 
                         </div>
-                        <button type="submit" href="#signup_personal-data"
+                        <button type="submit" 
                             class="col s12 m4 btn btn-large center center-align waves-effect waves-light indigo modal-trigger">submit</button>
                     </form>
 
@@ -169,7 +169,7 @@
     </section>
     <div id="display">
 
-    </div>
+        </div>
 
     <!-- Footer -->
     <footer class="amber lighten-1 page-footer">
@@ -395,6 +395,8 @@
 
     <script src="js/auth.js"></script>
     <script src="js/subscribe.js"></script>
+    
+  <script src="js/index.js"></script>
     <script>
         $(document).ready(function () {
             // Custom JS & jQuery here

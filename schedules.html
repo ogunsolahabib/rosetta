@@ -45,7 +45,7 @@
     </ul>
     <nav class="amber lighten-1 blue-text">
       <div class="container">
-        <div class="nav-wrapper black-text">
+        <div class="nav-wrapper amber darken-4 blue-text">
           <a href="index.html" class="brand-logo">
             <img src="img/logo-small.png" class="logo responsive-img" alt="Rosetta Logo" />
             R O S E T T A
@@ -53,12 +53,15 @@
           <a href="#" data-activates="mobile-nav" class="right button-collapse">
             <i class="material-icons black-text">menu</i>
           </a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#about">About</a></li>
+          <ul class="right hide-on-med-and-down ">
+
+            <li class="account-details"></li>
+            <!-- <li><a href="#about">About</a></li> -->
             <!-- <li><a href="#delivery-info" class="modal-trigger indigo-text" >Register</a></li> -->
             <li>
               <a href="#" class="btn btn-flat" id="log-out">Log out</a>
             </li>
+            
             <li>
               <a class="dropdown-trigger" href="#!" data-activates="dropdown-profile"><i
                   class="material-icons">expand_more</i></a>
@@ -80,8 +83,8 @@
       <div class="col s3 schedules-side-nav hide-on-small-and-down">
         <div class="card-panel indigo white-text">
           <div class="container">
-            <h3>John Doe</h3>
-            <ul>
+            <!-- <h3>John Doe</h3> -->
+            <!-- <ul>
               <li>
                 <div class="row">
                   <span class="col s5 left indigo-text text-lighten-4">Location:</span>
@@ -101,13 +104,16 @@
                 </div>
               </li>
               <li>
+                 
                 <div class="row">
                   <span class="col s5 left indigo-text text-lighten-4">End Date:</span>
                   <span class="col s7">15th August, 2019</span>
                 </div>
               </li>
-            </ul>
+            </ul> -->
+            <div id="display">
 
+              </div>
             <div class="div">
 
               <a href="#delivery-info" class="btn indigo modal-trigger">
@@ -219,6 +225,73 @@
       </div>
     </div>
   </footer>
+<!-- edit modal -->
+<div class="modal indigo-text" id="delivery-info">
+    <div class="modal-content center">
+      <div class="modal-top-nav">
+        
+        <a class="right right-align modal-action modal-close black-text">
+          <i class="material-icons">close</i></a>
+      </div>
+      <h4 class="modal-header">Delivery Information</h4>
+      <br />
+      <form class="center" id="subscription-form" action="">
+          <div class="row">
+              <div class="col s12 delivery-data">
+                  <div class="row">
+                      <div class="input-field col s12 m6">
+                          <input type="text" id="firstname" name="fname" class="validate" required />
+                          <label for="firstname">
+                              <h6 class="indigo-text">First Name</h6>
+                          </label>
+                      </div>
+                      <div class="input-field col s12 m6">
+                          <input type="text" id="lastname" name="lname" class="validate" required />
+                          <label for="lastname">
+                              <h6 class="indigo-text">Last Name</h6>
+                          </label>
+                      </div>
+                      <div class="input-field col s12">
+                          <input type="text" id="autocomplete-city" name="city"
+                              class="autocomplete input-city validate" required />
+                          <label for="autocomplete-city">
+                              <h6 class="indigo-text">City</h6>
+                          </label>
+                      </div>
+
+                      <div class="input-field col s12">
+                          <input type="text" id="street" name="street" data-error="wrong"
+                              data-success="right" class="validate" required />
+                          <label for="street">
+                              <h6 class="indigo-text">Street</h6>
+                          </label>
+                      </div>
+
+                      <div class="input-field col s6 time-and-date">
+                          <label for="timepicker">
+                              <h6 class="indigo-text">Delivery Time: </h6>
+                          </label>
+                          <input class="timepicker" name="time" type="text" id="timepicker" required />
+                      </div>
+                      <div class="input-field col s6 time-and-date">
+                          <label for="datepicker">
+                              <h6 class="indigo-text">Start Date: </h6>
+                          </label>
+                          <input class="datepicker" type="date" name="date" id="datepicker" required />
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- <button type="submit" href="schedules.html" onclick="window.location='schedules.html'"
+                  class="col s12 m4 btn btn-large center center-align waves-effect waves-light indigo"
+                  >submit</button> -->
+
+          </div>
+          <button type="submit" 
+              class="col s12 m4 btn btn-large center center-align waves-effect waves-light indigo modal-trigger">submit</button>
+      </form>
+    </div>
+  </div>
 
   <!-- Meals Modal-->
   <div class="modal indigo-text" id="meal-select">
@@ -307,8 +380,9 @@
       // update  firestore settings
       // db.settings({timestampsInSnapshots: true});
   </script>
-
+<script src="js/auth.js"></script>
   <script src="js/authOut.js"></script>
+  <script src="js/index.js"></script>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>

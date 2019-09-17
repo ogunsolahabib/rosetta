@@ -38,12 +38,22 @@
           <ul class="right hide-on-med-and-down">
 
             <li>
-              <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
+              <a href="#login-modal" class="btn btn-flat modal-trigger logged-out" style="display: none;">Log In</a>
             </li>
-
+            <li class="account-details"></li>
+            <li >
+              <a href="/rosetta/schedules.html" class="btn btn-flat modal-trigger logged-in"
+                style="display: none;">Schedule page</a>
+            </li>
             <li>
-              <a href="#signup_personal-data" class="btn indigo darken-1 modal-trigger">Sign Up</a>
+              <a href="#" class="btn btn-flat logged-in" style="display: none;" id="log-out">Log out</a>
             </li>
+            <li>
+              <a href="#signup_personal-data" class="btn indigo darken-1 modal-trigger logged-out"
+                style="display: none;">Sign Up</a>
+            </li>
+            <div class="account-details"></div>
+
           </ul>
         </div>
       </div>
@@ -55,10 +65,11 @@
     <li><a href="#about">About</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li>
-      <a href="#login-modal" class="btn btn-flat modal-trigger">Log In</a>
+      <a href="#login-modal" class="btn btn-flat modal-trigger logged-out" style="display: none;">Log In</a>
     </li>
     <li>
-      <a href="#signup_personal-data" class="btn waves-effect waves-light indigo darken-1 modal-trigger">Sign Up</a>
+      <a href="#signup_personal-data" class="btn waves-effect waves-light indigo darken-1 modal-trigger logged-out"
+        style="display: none;">Sign Up</a>
     </li>
 
   </ul>
@@ -71,7 +82,7 @@
         <div class="caption center-align">
           <h2>Let’s take the stress off your plate</h2>
           <h5 class="light white-text hide-on-small-and-medium">
-            Schedule and preorder your favorite meals for up to a month in advance, all at the click of a buton.
+            Schedule and preorder your favorite meals for up to a month in advance, all at the click of a button.
           </h5>
         </div>
       </li>
@@ -97,7 +108,8 @@
         </div>
       </li>
     </ul>
-    <a href="subscribe.html" class="btn btn-large indigo darken-1 modal-trigger slider-signup-btn">Place
+    <a href="#signup_personal-data" class="btn btn-large indigo darken-1 modal-trigger slider-signup-btn logged-out"
+      style="display: none;">Place
       Order</a>
   </section>
 
@@ -482,24 +494,108 @@
         <form class="center" id="signup-data">
           <div class="container">
             <div class="row">
-              <div class="input-field col s12">
-                <input type="email" id="email" required class="active validate">
-                <label for="email" class="grey-text text-darken-4">
-                  Email
+              <div class="input-field col s12 m6">
+                <input type="text" id="firstname" name="fname" class="validate" required />
+                <label for="firstname">
+                  <h6 class="indigo-text">First Name</h6>
+                </label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input type="text" id="lastname" name="lname" class="validate" required />
+                <label for="lastname">
+                  <h6 class="indigo-text">Last Name</h6>
                 </label>
               </div>
               <div class="input-field col s12">
-                <input type="password" id="password" required class="active validate" />
-                <label for="email" class="grey-text text-darken-4">
-                  Password
+                <input type="text" id="autocomplete-city" name="city" class="autocomplete input-city validate"
+                  required />
+                <label for="autocomplete-city">
+                  <h6 class="indigo-text">City</h6>
                 </label>
-                <p class="indigo-text text-lighten-2 note">By clicking the Sign Up button, you agree
-                  to our Terms of
-                  Service and Privacy Policy.</p>
               </div>
 
-              <button href="#delivery-info" onclick="window.location = 'subscribe.html'" id="sign-up" type="submit"
-                value="Sign Up"
+              <div class="input-field col s12">
+                <input type="text" id="street" name="street" data-error="wrong" data-success="right" class="validate"
+                  required />
+                <label for="street">
+                  <h6 class="indigo-text">Street</h6>
+                </label>
+              </div>
+
+              <div class="input-field col s6 time-and-date">
+                <label for="timepicker">
+                  <h6 class="indigo-text">Delivery Time: </h6>
+                </label>
+                <input class="timepicker" name="time" type="text" id="timepicker" required />
+              </div>
+              <div class="input-field col s6 time-and-date">
+                <label for="datepicker">
+                  <h6 class="indigo-text">Start Date: </h6>
+                </label>
+                <input class="datepicker" type="date" name="date" id="datepicker" required />
+              </div>
+
+              
+                  <div class="input-field  col s12">
+                      <input type="text" id="signup-bio" required />
+                      <label for="signup-bio">One Line Bio</label>
+                    </div>
+                  <div class="input-field col s12">
+                    <input type="email" id="email" required class="active validate">
+                    <label for="email" class="grey-text text-darken-4">
+                      Email
+                    </label>
+                  </div>
+                  <div class="input-field  col s12">
+                    <input type="password" id="password" required class="active validate" />
+                    <label for="email" class="grey-text text-darken-4">
+                      Password
+                    </label>
+                    
+                  </div>
+                  <div class="col s12 meal-types">
+                      <div class="row">
+      
+                        <div>
+                          <div class="col s6 m3">
+                            <div class="type-img"><img src="img/egusi.png" alt="" class="responsive-img">
+                              <i class="material-icons indigo-text">done</i>
+                            </div>
+                            <p class="center">Local dishes</p>
+                          </div>
+                          <div class="col s6 m3">
+                            <div class="type-img"><img src="img/PIZZA.png" alt="" class="responsive-img">
+                              <i class="material-icons indigo-text">done</i>
+                            </div>
+                            <p class="center">Fast food</p>
+                          </div>
+                          <div class="col s6 m3">
+                            <div class="type-img"><img src="img/chinese_food.png" alt="" class="responsive-img">
+                              <i class="material-icons indigo-text">done</i>
+                            </div>
+                            <p class="center">Chinese</p>
+                          </div>
+                          <div class="col s6 m3">
+                            <div class="type-img"><img src="img/Dessert.png" alt="" class="responsive-img">
+                              <i class="material-icons indigo-text">done</i>
+                            </div>
+                            <p class="center">Dessert</p>
+                          </div>
+      
+      
+                          <br>
+                          <br>
+                          
+                        </div>
+                        
+                </div>
+
+
+              </div>
+              <p class="indigo-text text-lighten-2 note">By clicking the Sign Up button, you agree
+                  to our Terms of
+                  Service and Privacy Policy.</p>
+              <button id="sign-up" type="submit" value="Sign Up"
                 class="col s12 m4 btn btn-large waves-effect waves-light indigo modal-trigger modal-close">Sign Up
               </button>
               <br>
@@ -693,7 +789,7 @@
       databaseURL: "https://rosetta-a890c.firebaseio.com",
       projectId: "rosetta-a890c",
       // storageBucket: "",
-      // messagingSenderId: "965331850656",
+      messagingSenderId: "965331850656",
       appId: "1:965331850656:web:58747987bfdcd1db"
     };
     // Initialize Firebase
@@ -711,7 +807,12 @@
 
   <!-- Import Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
   <script src="js/auth.js"></script>
+  <script src="js/authup.js"></script>
+  <script src="js/authOut.js"></script>
+
+  <script src="js/index.js"></script>
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
