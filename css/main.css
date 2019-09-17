@@ -1,36 +1,31 @@
 body {
-  font-family: "Robotto", sans-serif !important;
+  font-family: Robotto, sans-serif !important;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 0.5px !important;
 }
-
 .navbar-fixed .brand-logo {
   color: #324ba6;
   font-size: 18px;
   font-weight: 500;
 }
-
 .navbar-fixed .brand-logo img {
   vertical-align: middle;
 }
-
 .nav-wrapper li a {
   color: #000 !important;
 }
 .nav-wrapper li .btn {
   color: #fff !important;
 }
-
 nav .active {
   text-decoration: underline;
 }
-
 .dropdown-content {
   color: #324ba6 !important;
 }
 .slider {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 .slider .slider-signup-btn {
   display: block;
@@ -47,9 +42,8 @@ nav .active {
 }
 .section-promo {
   background: #fff;
-  padding: 5em 0em;
+  padding: 5em 0;
 }
-
 .section-features {
   padding-top: 0;
 }
@@ -71,13 +65,11 @@ h3 {
   line-height: 50px;
   font-weight: 500;
 }
-
 h4 {
   font-size: 34px !important;
   line-height: 40px;
-  font-family: "Roboto";
+  font-family: Roboto;
 }
-
 .section-features .left .row,
 .section-features .right .row {
   display: grid !important;
@@ -108,17 +100,16 @@ h4 {
   transform: translate(-50%, -50%);
 }
 svg path {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1) !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 1) !important;
 }
 .feature-text {
   height: 14vw;
 }
-
 .btn {
   margin-top: 20px;
   border-radius: 20px !important;
   height: 35px;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-weight: 400;
   font-size: 14px;
 }
@@ -141,22 +132,14 @@ svg path {
 .usage-steps {
   display: none;
 }
-/* .eating {
-  background: url("../img/eating_together.svg");
-  background-size: cover;
-  height: 25em;
-  background-position: center;
-} */
 .modal {
   width: 30%;
   height: auto !important;
   max-height: 90%;
 }
-
 .modal#meal-select {
   width: 80%;
 }
-
 form#meal-types {
   margin-top: 3em;
 }
@@ -182,7 +165,6 @@ form#meal-types {
 .type-img.selected i {
   display: block;
 }
-
 .modal input {
   height: 0.5em;
   background-color: #fff !important;
@@ -194,11 +176,10 @@ form#meal-types {
 }
 .modal .note {
   font-size: 12px !important;
-  font-weight: normal !important;
+  font-weight: 400 !important;
 }
-
 .modal .modal-header {
-  font-weight: normal !important;
+  font-weight: 400 !important;
   border-bottom: 1px solid #c4c4c4;
   width: 80%;
   margin: auto;
@@ -242,26 +223,23 @@ form#meal-types {
 .time-and-date {
   position: relative;
 }
-/* Color of underline for input elements on focus */
 input:not([type]):focus:not([readonly]),
-input[type="text"]:not(.browser-default):focus:not([readonly]),
-input[type="password"]:not(.browser-default):focus:not([readonly]),
-input[type="email"]:not(.browser-default):focus:not([readonly]),
-input[type="url"]:not(.browser-default):focus:not([readonly]),
-input[type="time"]:not(.browser-default):focus:not([readonly]),
 input[type="date"]:not(.browser-default):focus:not([readonly]),
-input[type="datetime"]:not(.browser-default):focus:not([readonly]),
 input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
-input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
 input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
 input[type="search"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #324ba6;
   -webkit-box-shadow: 0 1px 0 0 #324ba6;
   box-shadow: 0 1px 0 0 #324ba6;
 }
-
-/* Autocomplete color */
 ul.autocomplete-content.dropdown-content {
   z-index: 100000 !important;
 }
@@ -278,18 +256,15 @@ ul.autocomplete-content.dropdown-content {
 .autocomplete-content li .highlight {
   color: #324ba6 !important;
 }
-
 .carousel.carousel-slider {
   height: 300px !important;
 }
 .carousel-item img {
   max-height: 200px !important;
 }
-
 .picker__date-display {
   background-color: #324ba6;
 }
-
 .schedules-side-nav .card-panel {
   min-height: 90vh !important;
 }
@@ -298,9 +273,8 @@ ul.autocomplete-content.dropdown-content {
   margin: 5px !important;
   font-size: 14px;
 }
-
 .meal-types {
-  margin: 1em 0em;
+  margin: 1em 0;
 }
 span.character-counter {
   display: none !important;
@@ -314,7 +288,6 @@ footer .logo-container {
   vertical-align: middle;
   width: 100px;
 }
-
 @media only screen and (max-width: 1100px) {
   .navbar-fixed .brand-logo {
     left: 0;
@@ -328,9 +301,8 @@ footer .logo-container {
     margin-top: 3em;
     margin-bottom: 3em;
   }
-
   .modal {
-    width: 70% !important ;
+    width: 70% !important;
   }
   .schedules-side-nav ul li .row span {
     display: block !important;
@@ -346,7 +318,6 @@ footer .logo-container {
     color: #324ba6 !important;
     background: inherit !important;
   }
-
   h3 {
     font-size: 30px;
   }
@@ -362,7 +333,6 @@ footer .logo-container {
     height: 400px !important;
     padding-top: 10%;
   }
-
   h2 {
     font-size: 25px !important;
   }
