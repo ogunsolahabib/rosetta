@@ -226,6 +226,18 @@
       <br />
       <form class="center" action="" id="edit-form">
         <div class="row">
+          <div class="input-field col s12 m6">
+            <input type="text" id="schedule_firstname" name="firtname" class="validate" />
+            <label for="firstname">
+              <h6 class="indigo-text">First Name</h6>
+            </label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input type="text" id="schedule_lastname" name="lastname" class="validate" />
+            <label for="lastname">
+              <h6 class="indigo-text">Last Name</h6>
+            </label>
+          </div>
           <div class="input-field col s12">
             <input type="text" id="schedule_city-input" class="autocomplete input-city validate" />
             <label for="schedule_city">
@@ -385,6 +397,8 @@
 
       $("#schedule_city-input").val(city);
       $("#schedule_street-input").val(street);
+      $("#schedule_firstname").val(sessionStorage.getItem("sub_firstname"));
+      $("#schedule_lastname").val(sessionStorage.getItem("sub_lastname"));
       $("#timepicker").val(deliveryTime);
       $("#datepicker").val(startDate);
       console.log(startDate);
@@ -399,16 +413,11 @@
       $("#edit-form").on("submit", function (e) {
         e.preventDefault();
         console.log("submited");
-        $("#schedule_city-input").val(city);
-        $("#schedule_street-input").val(street);
-        $("#timepicker").val(deliveryTime);
-        $("#datepicker").val(startDate);
-        console.log(startDate);
+
 
         const fullAddress = `${$("#schedule_street-input").val()}, ${$("#schedule_city-input").val()}, Lagos`;
 
-        $(".profile-name").text(fullName);
-        $("#schedule_location").text(fullAddress);
+        $(".profile-name").text($("#schedule_firstname").val() + " " + $("#schedule_lastname").val());
         $("#schedule_delivery-time").text($("#timepicker").val());
         $("#schedule_startdate").text(startDate);
       })
