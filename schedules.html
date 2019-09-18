@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
   <link rel="manifest" href="img/site.webmanifest" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,500,800&display=swap" rel="stylesheet">
 
   <link type="text/css" href="css/calendar.css" rel="stylesheet" />
 
@@ -29,6 +29,8 @@
 
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+
   <link type="text/css" rel="stylesheet" href="css/main.css" />
 
   <!--Let browser know website is optimized for mobile-->
@@ -54,10 +56,8 @@
             <i class="material-icons black-text">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#about">About</a></li>
-            <!-- <li><a href="#delivery-info" class="modal-trigger indigo-text" >Register</a></li> -->
             <li>
-              <a href="#" class="btn btn-flat" id="log-out">Log out</a>
+              <a href="index.html" id="log-out">Log out</a>
             </li>
             <li>
               <a class="dropdown-trigger" href="#!" data-activates="dropdown-profile"><i
@@ -78,39 +78,34 @@
   <section class="section section-shedules">
     <div class="row">
       <div class="col s3 schedules-side-nav hide-on-small-and-down">
-        <div class="card-panel indigo white-text">
-          <div class="container">
-            <h3>John Doe</h3>
+        <div class="indigo-text">
+          <div class="container center">
+            <h3 class="profile-name">John Doe</h3>
             <ul>
               <li>
                 <div class="row">
-                  <span class="col s5 left indigo-text text-lighten-4">Location:</span>
-                  <span class="col s7"> 42, Montgomery Road, Sabo, Yaba</span>
+                  <span class="col s5 left black-text">Location:</span>
+                  <span class="col s7" id="schedule_location"> 42, Montgomery Road, Sabo, Yaba</span>
                 </div>
               </li>
               <li>
                 <div class="row">
-                  <span class="col s5 left indigo-text text-lighten-4">Delivery Time:</span>
-                  <span class="col s7">2:30pm</span>
+                  <span class="col s5 left black-text">Delivery Time:</span>
+                  <span class="col s7" id="schedule_delivery-time">2:30pm</span>
                 </div>
               </li>
               <li>
                 <div class="row">
-                  <span class="col s5 left indigo-text text-lighten-4">Start Date: </span><span class="col s7">15th
+                  <span class="col s5 left black-text">Start Date: </span><span class="col s7"
+                    id="schedule_startdate">15th
                     July, 2019</span>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <span class="col s5 left indigo-text text-lighten-4">End Date:</span>
-                  <span class="col s7">15th August, 2019</span>
                 </div>
               </li>
             </ul>
 
             <div class="div">
 
-              <a href="#delivery-info" class="btn indigo modal-trigger">
+              <a href="#edit-info" class="btn btn-large indigo modal-trigger">
                 Edit</a>
 
             </div>
@@ -220,6 +215,46 @@
     </div>
   </footer>
 
+
+  <div class="modal indigo-text" id="edit-info">
+    <div class="modal-content center">
+      <div class="modal-top-nav">
+        <a class="right right-align modal-action modal-close black-text">
+          <i class="material-icons">close</i></a>
+      </div>
+      <h4 class="modal-header">Edit delivery information</h4>
+      <br />
+      <form class="center" action="" id="edit-form">
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="text" id="schedule_city-input" class="autocomplete input-city validate" />
+            <label for="schedule_city">
+              <h6 class="indigo-text">City</h6>
+            </label>
+          </div>
+          <div class="input-field col s12">
+            <input type="text" id="schedule_street-input" data-error="wrong" data-success="right" class="validate" />
+            <label for="schedule_street">
+              <h6 class="indigo-text">Street</h6>
+            </label>
+          </div>
+          <div class="input-field col s12 m6 time-and-date">
+            <label for="timepicker">
+              <h6 class="indigo-text">Delivery Time: </h6>
+            </label>
+            <input class="timepicker validate" type="text" id="timepicker" />
+          </div>
+          <br>
+          <br>
+          <button type="submit" id="edit-form-submit"
+            class="col s12 m4 btn btn-large center center-align waves-effect waves-light indigo modal-action modal-close">
+            save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- Meals Modal-->
   <div class="modal indigo-text" id="meal-select">
     <div class="modal-content center">
@@ -232,45 +267,41 @@
       <form class="center" action="">
         <div class="row">
           <div class="input-field col s4 m3 l2">
-            <div class="type-img meal-img" id="Amala"><img src="img/Dessert.png" alt=""
+            <div class="type-img meal-img" id="Poundo"><img src="img/egusi.png" alt=""
                 class="responsive-img modal-action modal-close">
               <i class="material-icons indigo-text">done</i>
             </div>
-            <p class="center">Amala</p>
+            <p class="center">Poundo</p>
           </div>
 
           <div class="input-field col s4 m3 l2">
-            <div class="type-img meal-img" id="Rice"><img src="img/Dessert.png" alt=""
-                class="responsive-img modal-action modal-close">
-              <i class="material-icons indigo-text">done</i>
-            </div>
-            <p class="center">Rice</p>
-          </div>
-          <div class="input-field col s4 m3 l2">
-            <div class="type-img meal-img" id="Pizza"><img src="img/Dessert.png" alt=""
+            <div class="type-img meal-img" id="Pizza"><img src="img/PIZZA.png" alt=""
                 class="responsive-img modal-action modal-close">
               <i class="material-icons indigo-text">done</i>
             </div>
             <p class="center">Pizza</p>
           </div>
           <div class="input-field col s4 m3 l2">
-            <div class="type-img meal-img" id="Pouridge"><img src="img/Dessert.png" alt=""
+            <div class="type-img meal-img" id="Spaghetti"><img src="img/chinese_food.png" alt=""
                 class="responsive-img modal-action modal-close">
-              <i class="material-icons indigo-text">done</i>
+            </div>
+            <p class="center">Spaghetti</p>
+          </div>
+          <div class="input-field col s4 m3 l2">
+            <div class="type-img meal-img" id="Dessert"><img src="img/Dessert.png" alt=""
+                class="responsive-img modal-action modal-close">
             </div>
             <p class="center">Pouridge</p>
           </div>
           <div class="input-field col s4 m3 l2">
             <div class="type-img meal-img" id="Yam"><img src="img/Dessert.png" alt=""
                 class="responsive-img modal-action modal-close">
-              <i class="material-icons indigo-text">done</i>
             </div>
             <p class="center">Yam</p>
           </div>
           <div class="input-field col s4 m3 l2">
             <div class="type-img meal-img" id="Spaghetti"><img src="img/Dessert.png" alt=""
                 class="responsive-img modal-action modal-close">
-              <i class="material-icons indigo-text">done</i>
             </div>
             <p class="center">Spaghetti</p>
           </div>
@@ -345,6 +376,43 @@
         $('label[for="timepicker"]').toggleClass("active");
       }
       $("select").material_select();
+
+      const fullName = sessionStorage.getItem("sub_firstname") + " " + sessionStorage.getItem("sub_lastname");
+      const city = sessionStorage.getItem("sub_city-auto");
+      const street = sessionStorage.getItem("sub_street");
+      const deliveryTime = sessionStorage.getItem("sub_timepicker");
+      const startDate = sessionStorage.getItem("sub_datepicker");
+
+      $("#schedule_city-input").val(city);
+      $("#schedule_street-input").val(street);
+      $("#timepicker").val(deliveryTime);
+      $("#datepicker").val(startDate);
+      console.log(startDate);
+
+      const fullAddress = `${$("#schedule_street-input").val()}, ${$("#schedule_city-input").val()}, Lagos`;
+
+      $(".profile-name").text(fullName);
+      $("#schedule_location").text(fullAddress);
+      $("#schedule_delivery-time").text($("#timepicker").val());
+      $("#schedule_startdate").text(startDate);
+
+      $("#edit-form").on("submit", function (e) {
+        e.preventDefault();
+        console.log("submited");
+        $("#schedule_city-input").val(city);
+        $("#schedule_street-input").val(street);
+        $("#timepicker").val(deliveryTime);
+        $("#datepicker").val(startDate);
+        console.log(startDate);
+
+        const fullAddress = `${$("#schedule_street-input").val()}, ${$("#schedule_city-input").val()}, Lagos`;
+
+        $(".profile-name").text(fullName);
+        $("#schedule_location").text(fullAddress);
+        $("#schedule_delivery-time").text($("#timepicker").val());
+        $("#schedule_startdate").text(startDate);
+      })
+
     });
   </script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
@@ -485,16 +553,14 @@
         }
       });
 
-      // Set Content dropdown
-      window.addEventListener('load', function () {
+      // Set Content Change Modal
+      $("body").on("DOMSubtreeModified", function () {
+
         $(".fc-day-grid-event").each(function (i) {
           $(this).attr("id", "meal-" + i);
           $(this).click(function () {
             $(this).addClass("modal-trigger");
-
-
             $(this).attr("href", "#meal-select");
-
             let selectedId = $(this).attr("id");
 
             $("#meal-select").click(function (e) {
@@ -504,23 +570,9 @@
               selectedId = null;
             })
           })
-
-          //         let drop = ` <ul id='dropdown-meals-${$(this).attr("id")}' class='dropdown-content center'>
-          //   <li><a href="#!">one</a></li>
-          //   <li><a href="#!">two</a></li>
-          //   <li class="divider" tabindex="-1"></li>
-          //   <li><a href="#!">three</a></li>
-          //   <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-          //   <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-          // </ul>`;
-          // $(this).attr("data-activates", "dropdown-meals-" + $(this).attr('id'));
-
-
         });
-
-
-
-      });
+      }
+      )
 
       srcCalendar.render();
     });

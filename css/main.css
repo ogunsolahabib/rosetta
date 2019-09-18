@@ -138,7 +138,10 @@ svg path {
   max-height: 90%;
 }
 .modal#meal-select {
-  width: 80%;
+  width: 60%;
+}
+.modal#edit-info {
+  width: 50%;
 }
 form#meal-types {
   margin-top: 3em;
@@ -276,8 +279,12 @@ ul.autocomplete-content.dropdown-content {
 .meal-types {
   margin: 1em 0;
 }
-span.character-counter {
+.schedules-side-nav span.character-counter {
   display: none !important;
+}
+.profile-name {
+  font-size: 42px !important;
+  margin-bottom: 1em;
 }
 footer {
   position: relative;
